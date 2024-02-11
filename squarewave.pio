@@ -1,0 +1,38 @@
+.program squarewave
+    
+
+outerloop:
+    set pindirs, 1      ;set pin to output
+    pull block          ;bring data from FIFO into OSR waiting if FIFO empty
+    out x, 1            ;pull first bit from OSR 
+    jmp !x skip         ;if 0 set bit length (y) to 24, if 1 set bit length to 9
+    set y, 8
+    jmp innerloop
+
+skip:
+    set y, 24
+    jmp innerloop
+
+innerloop:
+    out x, 1            ;move one bit from OSR into x register
+    jmp !x zerobit         ;if bit = 0, jump to zerobit
+
+onebit:
+    set pins, 0 [4]     ;one bit
+    set pins, 1 [11]  
+    jmp y-- innerloop
+    jmp readbit
+
+
+zerobit:
+    set pins, 0 [14]    ;zero bit
+    set pins, 1 [1] 
+    jmp y-- innerloop
+    jmp readbit
+
+readbit:
+    set pindirs, 0
+    nop[31]
+    nop[31]
+ 
+ 
