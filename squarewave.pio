@@ -6,12 +6,11 @@ outerloop:
     pull block          ;bring data from FIFO into OSR waiting if FIFO empty
     out x, 1            ;pull first bit from OSR 
     jmp !x skip         ;if 0 set bit length (y) to 24, if 1 set bit length to 9
-    set y, 8
+    set y, 7
     jmp innerloop
 
 skip:
-    set y, 24
-    jmp innerloop
+    set y, 23
 
 innerloop:
     out x, 1            ;move one bit from OSR into x register
@@ -21,8 +20,7 @@ onebit:
     set pins, 0 [4]     ;one bit
     set pins, 1 [11]  
     jmp y-- innerloop
-    set x, 31
-    jmp readbit
+    jmp endbit
 
 
 zerobit:
@@ -30,11 +28,12 @@ zerobit:
     set pins, 1 [1] 
     jmp y-- innerloop
 
-readbit:
+endbit:
+    set pins, 0 [4]     ;one bit
     set pindirs, 0
+    set x, 31
 
-    nop[31]
-    nop[31]
-    nop[31]
+readbit:
+    wait 0 pin 0 [5]    ;wait for begining of next bit
+    in pins, 1          ;read bit
     jmp x-- readbit
-    jmp outerloop

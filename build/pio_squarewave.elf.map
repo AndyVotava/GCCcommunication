@@ -53,8 +53,6 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .text._ZN12GCcontroller9getreportEv
-                0x00000000       0x24 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1258,9 +1256,9 @@ Discarded input sections
                 0x00000000       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.__func__.0
                 0x00000000       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccc3DPxN.o
- .data          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccc3DPxN.o
- .bss           0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccc3DPxN.o
+ .text          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccMqO5wJ.o
+ .data          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccMqO5wJ.o
+ .bss           0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccMqO5wJ.o
  .data          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1476,11 +1474,11 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\Andy\AppData\Local\Temp\ccc3DPxN.o
+ .boot2         0x10000000      0x100 C:\Users\Andy\AppData\Local\Temp\ccMqO5wJ.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x4360
+.text           0x10000100     0x43a8
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1541,370 +1539,378 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
                 0x100002b8                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002bc       0x48 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text._ZN12GCcontrollerC2EP8pio_hw_tjj
+                0x10000304       0xa4 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                0x10000304                GCcontroller::GCcontroller(pio_hw_t*, unsigned int, unsigned int)
+                0x10000304                GCcontroller::GCcontroller(pio_hw_t*, unsigned int, unsigned int)
+ .text._ZN12GCcontroller9getreportEv
+                0x100003a8       0x24 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                0x100003a8                GCcontroller::getreport()
  .text._ZN12GCcontroller9getoriginEv
-                0x10000304       0x24 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
-                0x10000304                GCcontroller::getorigin()
- .text.main     0x10000328       0xac CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
-                0x10000328                main
+                0x100003cc       0x20 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                0x100003cc                GCcontroller::getorigin()
+ .text.main     0x100003ec       0x2c CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                0x100003ec                main
  .text.gpio_set_function
-                0x100003d4       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x100003d4                gpio_set_function
+                0x10000418       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000418                gpio_set_function
  .text.running_on_fpga
-                0x10000404       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x10000404                running_on_fpga
+                0x10000448       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x10000448                running_on_fpga
  .text.hw_claim_lock
-                0x10000418       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000418                hw_claim_lock
+                0x1000045c       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000045c                hw_claim_lock
  .text.hw_claim_unlock
-                0x10000430       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000430                hw_claim_unlock
+                0x10000474       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000474                hw_claim_unlock
  .text.hw_claim_or_assert
-                0x10000444       0x32 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000444                hw_claim_or_assert
+                0x10000488       0x32 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x10000488                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x10000476       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000476                hw_claim_unused_from_range
- *fill*         0x100004c6        0x2 
+                0x100004ba       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x100004ba                hw_claim_unused_from_range
+ *fill*         0x1000050a        0x2 
  .text.spin_locks_reset
-                0x100004c8       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100004c8                spin_locks_reset
+                0x1000050c       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x1000050c                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x100004e8       0x1c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100004e8                next_striped_spin_lock_num
+                0x1000052c       0x1c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x1000052c                next_striped_spin_lock_num
  .text.set_raw_irq_handler_and_unlock
-                0x10000504       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000548       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.make_branch
-                0x1000052c       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000570       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.insert_branch_and_link
-                0x10000574       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100005b8       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .text.irq_is_enabled
-                0x100005b4       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005b4                irq_is_enabled
+                0x100005f8       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100005f8                irq_is_enabled
  .text.irq_set_mask_enabled
-                0x100005cc       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005cc                irq_set_mask_enabled
+                0x10000610       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000610                irq_set_mask_enabled
  .text.irq_set_enabled
-                0x100005ec        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005ec                irq_set_enabled
- *fill*         0x100005fa        0x2 
+                0x10000630        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000630                irq_set_enabled
+ *fill*         0x1000063e        0x2 
  .text.irq_get_vtable_handler
-                0x100005fc       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100005fc                irq_get_vtable_handler
+                0x10000640       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000640                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x1000060c       0x54 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000060c                irq_set_exclusive_handler
+                0x10000650       0x54 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000650                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x10000660      0x1ac CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000660                irq_remove_handler
+                0x100006a4      0x1ac CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100006a4                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x1000080c       0xf0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000080c                irq_add_tail_to_free_list
+                0x10000850       0xf0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000850                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x100008fc       0x1c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100008fc                irq_init_priorities
+                0x10000940       0x1c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000940                irq_init_priorities
  .text.lock_init
-                0x10000918       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x10000918                lock_init
+                0x1000095c       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x1000095c                lock_init
  .text.mutex_init
-                0x10000928       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000928                mutex_init
+                0x1000096c       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000096c                mutex_init
  .text.recursive_mutex_init
-                0x10000942       0x1e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10000942                recursive_mutex_init
+                0x10000986       0x1e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x10000986                recursive_mutex_init
  .text.alarm_pool_post_alloc_init
-                0x10000960       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x100009a4       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .text.sleep_until_callback
-                0x100009a0       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x100009e4       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .text.timer_pool_entry_comparator
-                0x100009d0       0x7c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                0x100009d0                timer_pool_entry_comparator
+                0x10000a14       0x7c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000a14                timer_pool_entry_comparator
  .text.ph_add_child_node
-                0x10000a4c       0xa4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000a90       0xa4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .text.ph_merge_nodes
-                0x10000af0       0x3e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10000b2e        0x2 
+                0x10000b34       0x3e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10000b72        0x2 
  .text.add_alarm_under_lock
-                0x10000b30      0x174 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000b74      0x174 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000ca4      0x33c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000ce8      0x33c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000fe0       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000fe0                alarm_pool_init_default
+                0x10001024       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001024                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x10001020       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                0x10001020                alarm_pool_get_default
+                0x10001064       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001064                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x1000104c      0x168 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000104c                alarm_pool_add_alarm_at
+                0x10001090      0x168 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10001090                alarm_pool_add_alarm_at
  .text.alarm_pool_cancel_alarm
-                0x100011b4       0xf8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                0x100011b4                alarm_pool_cancel_alarm
+                0x100011f8       0xf8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x100011f8                alarm_pool_cancel_alarm
  .text.best_effort_wfe_or_timeout
-                0x100012ac       0xac CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                0x100012ac                best_effort_wfe_or_timeout
+                0x100012f0       0xac CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x100012f0                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x10001358       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000139c       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x100013e8       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100013e8                hardware_alarm_claim
+                0x1000142c       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000142c                hardware_alarm_claim
  .text.time_us_64
-                0x10001400       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001400                time_us_64
+                0x10001444       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001444                time_us_64
  .text.hardware_alarm_set_callback
-                0x10001418       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001418                hardware_alarm_set_callback
+                0x1000145c       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x1000145c                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x100014a8       0xe8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x100014a8                hardware_alarm_set_target
+                0x100014ec       0xe8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100014ec                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001590       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001590                hardware_alarm_cancel
+                0x100015d4       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x100015d4                hardware_alarm_cancel
  .text.ph_add_child_node
-                0x100015d0       0xa4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001614       0xa4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_merge_nodes
-                0x10001674       0x3e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x100016b2        0x2 
+                0x100016b8       0x3e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x100016f6        0x2 
  .text.ph_clear
-                0x100016b4       0x70 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100016b4                ph_clear
+                0x100016f8       0x70 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100016f8                ph_clear
  .text.ph_post_alloc_init
-                0x10001724        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001724                ph_post_alloc_init
- *fill*         0x10001732        0x2 
+                0x10001768        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001768                ph_post_alloc_init
+ *fill*         0x10001776        0x2 
  .text.ph_merge_two_pass
-                0x10001734       0xa8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001734                ph_merge_two_pass
+                0x10001778       0xa8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001778                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x100017dc      0x128 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001820      0x128 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x10001904       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001904                ph_remove_head
+                0x10001948       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001948                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001918       0xf8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001918                ph_remove_and_free_node
+                0x1000195c       0xf8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000195c                ph_remove_and_free_node
  .text.clock_configure
-                0x10001a10      0x108 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001a10                clock_configure
+                0x10001a54      0x108 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001a54                clock_configure
  .text.clocks_init
-                0x10001b18      0x100 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x10001b18                clocks_init
+                0x10001b5c      0x100 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001b5c                clocks_init
  .text.pll_init
-                0x10001c18      0x120 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001c18                pll_init
+                0x10001c5c      0x120 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001c5c                pll_init
  .text.watchdog_start_tick
-                0x10001d38       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x10001d38                watchdog_start_tick
+                0x10001d7c       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x10001d7c                watchdog_start_tick
  .text.xosc_init
-                0x10001d48       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x10001d48                xosc_init
- .text._exit    0x10001d70        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001d70                _exit
- .text.exit     0x10001d74        0x6 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001d74                exit
- *fill*         0x10001d7a        0x2 
+                0x10001d8c       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x10001d8c                xosc_init
+ .text._exit    0x10001db4        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001db4                _exit
+ .text.exit     0x10001db8        0x6 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001db8                exit
+ *fill*         0x10001dbe        0x2 
  .text.__assert_func
-                0x10001d7c       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001d7c                __assert_func
+                0x10001dc0       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001dc0                __assert_func
  .text.runtime_init
-                0x10001db8       0xf8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001db8                runtime_init
- .text.panic    0x10001eb0       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001eb0                panic
+                0x10001dfc       0xf8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001dfc                runtime_init
+ .text.panic    0x10001ef4       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001ef4                panic
  .text._out_null
-                0x10001ee0        0x2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001f24        0x2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x10001ee2        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._atoi    0x10001ef0       0x24 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001f26        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._atoi    0x10001f34       0x24 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x10001f14       0xae CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10001f58       0xae CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x10001fc2      0x112 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002006      0x112 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long
-                0x100020d4       0xbc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002118       0xbc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_long_long
-                0x10002190       0xe2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10002272        0x2 
- .text._etoa    0x10002274      0x414 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x10002688      0x354 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x100021d4       0xe2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x100022b6        0x2 
+ .text._etoa    0x100022b8      0x414 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x100026cc      0x354 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x100029dc      0x624 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10002a20      0x624 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x10003000       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10003000                vfctprintf
- .text          0x10003020       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x10003044       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10003044                vfctprintf
+ .text          0x10003064       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10003030       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003030                rom_func_lookup
+                0x10003074       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003074                rom_func_lookup
  .text.rom_data_lookup
-                0x10003040       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003040                rom_data_lookup
+                0x10003084       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003084                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10003050       0x36 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10003050                rom_funcs_lookup
- *fill*         0x10003086        0x2 
+                0x10003094       0x36 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x10003094                rom_funcs_lookup
+ *fill*         0x100030ca        0x2 
  .text.__wrap___aeabi_idiv
-                0x10003088       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003088                __wrap___aeabi_idivmod
-                0x10003088                divmod_s32s32
-                0x10003088                div_s32s32
-                0x10003088                __wrap___aeabi_idiv
-                0x10003090                divmod_s32s32_unsafe
-                0x100030bc                divmod_s32s32_savestate
+                0x100030cc       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100030cc                __wrap___aeabi_idivmod
+                0x100030cc                divmod_s32s32
+                0x100030cc                div_s32s32
+                0x100030cc                __wrap___aeabi_idiv
+                0x100030d4                divmod_s32s32_unsafe
+                0x10003100                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x100030d8       0x4c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100030d8                __wrap___aeabi_uidiv
-                0x100030d8                __wrap___aeabi_uidivmod
-                0x100030d8                div_u32u32
-                0x100030d8                divmod_u32u32
-                0x100030e0                divmod_u32u32_unsafe
-                0x10003108                divmod_u32u32_savestate
+                0x1000311c       0x4c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x1000311c                __wrap___aeabi_uidiv
+                0x1000311c                __wrap___aeabi_uidivmod
+                0x1000311c                div_u32u32
+                0x1000311c                divmod_u32u32
+                0x10003124                divmod_u32u32_unsafe
+                0x1000314c                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x10003124      0x424 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x10003124                div_s64s64
-                0x10003124                divmod_s64s64
-                0x10003124                __wrap___aeabi_ldivmod
-                0x10003154                divmod_u64u64
-                0x10003154                div_u64u64
-                0x10003154                __wrap___aeabi_uldivmod
-                0x10003164                divmod_u64u64_savestate
-                0x10003184                divmod_s64s64_unsafe
-                0x1000320c                divmod_u64u64_unsafe
+                0x10003168      0x424 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x10003168                div_s64s64
+                0x10003168                divmod_s64s64
+                0x10003168                __wrap___aeabi_ldivmod
+                0x10003198                divmod_u64u64
+                0x10003198                div_u64u64
+                0x10003198                __wrap___aeabi_uldivmod
+                0x100031a8                divmod_u64u64_savestate
+                0x100031c8                divmod_s64s64_unsafe
+                0x10003250                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x10003548       0x80 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003548                __wrap___aeabi_drsub
-                0x1000354e                __wrap___aeabi_dsub
-                0x10003560                __wrap___aeabi_dadd
-                0x10003572                __wrap___aeabi_ddiv
-                0x100035ae                __wrap___aeabi_dmul
+                0x1000358c       0x80 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x1000358c                __wrap___aeabi_drsub
+                0x10003592                __wrap___aeabi_dsub
+                0x100035a4                __wrap___aeabi_dadd
+                0x100035b6                __wrap___aeabi_ddiv
+                0x100035f2                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x100035c8       0x6c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100035c8                __wrap___aeabi_cdrcmple
-                0x100035d8                __wrap___aeabi_cdcmpeq
-                0x100035d8                __wrap___aeabi_cdcmple
+                0x1000360c       0x6c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x1000360c                __wrap___aeabi_cdrcmple
+                0x1000361c                __wrap___aeabi_cdcmpeq
+                0x1000361c                __wrap___aeabi_cdcmple
  .text.__wrap___aeabi_dcmplt
-                0x10003634        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003634                __wrap___aeabi_dcmplt
+                0x10003678        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003678                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmple
-                0x10003640       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003640                __wrap___aeabi_dcmple
+                0x10003684       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003684                __wrap___aeabi_dcmple
  .text.__wrap___aeabi_dcmpge
-                0x10003650       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003650                __wrap___aeabi_dcmpge
+                0x10003694       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003694                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x10003660        0xa CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003660                __wrap___aeabi_dcmpgt
+                0x100036a4        0xa CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100036a4                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x1000366a       0x1c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x1000366a                __wrap___aeabi_dcmpun
- *fill*         0x10003686        0x2 
+                0x100036ae       0x1c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100036ae                __wrap___aeabi_dcmpun
+ *fill*         0x100036ca        0x2 
  .text.__wrap___aeabi_i2d
-                0x10003688       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003688                __wrap___aeabi_ui2d
-                0x10003690                __wrap___aeabi_i2d
+                0x100036cc       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x100036cc                __wrap___aeabi_ui2d
+                0x100036d4                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x100036c0       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x100036c0                double2int_z
-                0x100036c0                __wrap___aeabi_d2iz
+                0x10003704       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x10003704                double2int_z
+                0x10003704                __wrap___aeabi_d2iz
  .text.__wrap___aeabi_d2uiz
-                0x10003708       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x10003708                __wrap___aeabi_d2uiz
-                0x10003708                double2uint
+                0x1000374c       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x1000374c                __wrap___aeabi_d2uiz
+                0x1000374c                double2uint
  .text.__aeabi_double_init
-                0x10003720       0xc8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x10003720                __aeabi_double_init
+                0x10003764       0xc8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10003764                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x100037e8       0x34 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x100037e8                double_table_shim_on_use_helper
+                0x1000382c       0x34 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x1000382c                double_table_shim_on_use_helper
  .text.__wrap___aeabi_dsub
-                0x1000381c       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000381c                drsub_shim
-                0x10003822                dsub_shim
+                0x10003860       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003860                drsub_shim
+                0x10003866                dsub_shim
  .text.dadd_shim
-                0x1000382c      0x15c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x1000382c                dadd_shim
+                0x10003870      0x15c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003870                dadd_shim
  .text.dmul_shim
-                0x10003988      0x15c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003988                dmul_shim
+                0x100039cc      0x15c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x100039cc                dmul_shim
  .text.ddiv_shim
-                0x10003ae4      0x1b0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003ae4                ddiv_shim
+                0x10003b28      0x1b0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003b28                ddiv_shim
  .text.double2uint_shim
-                0x10003c94        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003c94                double2uint_shim
-                0x10003c96                double2ufix_shim
- *fill*         0x10003ca2        0x2 
+                0x10003cd8        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003cd8                double2uint_shim
+                0x10003cda                double2ufix_shim
+ *fill*         0x10003ce6        0x2 
  .text.double2uint64_shim
-                0x10003ca4       0x70 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003ca4                double2uint64_shim
-                0x10003ca6                double2ufix64_shim
-                0x10003cc6                d2fix_a
+                0x10003ce8       0x70 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003ce8                double2uint64_shim
+                0x10003cea                double2ufix64_shim
+                0x10003d0a                d2fix_a
  .text.dunpacks
-                0x10003d14       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10003d14                dunpacks
+                0x10003d58       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10003d58                dunpacks
  .text.__aeabi_float_init
-                0x10003d50       0xfc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10003d50                __aeabi_float_init
+                0x10003d94       0xfc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10003d94                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10003e4c       0x34 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10003e4c                float_table_shim_on_use_helper
- .text          0x10003e80       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10003e80                __aeabi_mem_init
- .text.memset   0x10003e90        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10003e90                __wrap_memset
- .text.memcpy   0x10003e9c        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10003e9c                __wrap_memcpy
-                0x10003e9c                __wrap___aeabi_memcpy
+                0x10003e90       0x34 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x10003e90                float_table_shim_on_use_helper
+ .text          0x10003ec4       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10003ec4                __aeabi_mem_init
+ .text.memset   0x10003ed4        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10003ed4                __wrap_memset
+ .text.memcpy   0x10003ee0        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10003ee0                __wrap_memcpy
+                0x10003ee0                __wrap___aeabi_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10003ea8        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10003eb6        0x2 
+                0x10003eec        0xe CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x10003efa        0x2 
  .text.stdio_out_chars_crlf
-                0x10003eb8       0x80 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003efc       0x80 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_stack_buffer_flush
-                0x10003f38       0x44 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003f7c       0x44 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x10003f7c       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003fc0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdout_serialize_begin
-                0x10003f9c       0x5c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10003f9c                stdout_serialize_begin
+                0x10003fe0       0x5c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10003fe0                stdout_serialize_begin
  .text.stdout_serialize_end
-                0x10003ff8       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10003ff8                stdout_serialize_end
+                0x1000403c       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000403c                stdout_serialize_end
  .text.stdio_put_string
-                0x10004008       0x98 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x1000404c       0x98 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_flush
-                0x100040a0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100040a0                stdio_flush
+                0x100040e4       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100040e4                stdio_flush
  .text.__wrap_puts
-                0x100040c0       0x1e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100040c0                __wrap_puts
- *fill*         0x100040de        0x2 
+                0x10004104       0x1e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004104                __wrap_puts
+ *fill*         0x10004122        0x2 
  .text.__wrap_vprintf
-                0x100040e0       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x100040e0                __wrap_vprintf
+                0x10004124       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004124                __wrap_vprintf
  .text.__wrap_printf
-                0x10004120       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10004120                __wrap_printf
+                0x10004164       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10004164                __wrap_printf
  .text._pio_can_add_program_at_offset
-                0x10004138       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x1000417c       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text._pio_find_offset_for_program
-                0x10004174       0x7c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100041b8       0x7c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text._pio_add_program_at_offset
-                0x100041f0       0x78 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10004234       0x78 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .text.pio_claim_unused_sm
-                0x10004268       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10004268                pio_claim_unused_sm
+                0x100042ac       0x3c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100042ac                pio_claim_unused_sm
  .text.pio_add_program
-                0x100042a4       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x100042a4                pio_add_program
+                0x100042e8       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100042e8                pio_add_program
  .text.pio_sm_init
-                0x100042dc       0xe4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x100042dc                pio_sm_init
- .text.strlen   0x100043c0       0x5c c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
-                0x100043c0                strlen
+                0x10004320       0xe4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10004320                pio_sm_init
+ .text.strlen   0x10004404       0x5c c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x10004404                strlen
  *(.fini)
- .fini          0x1000441c        0x4 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
-                0x1000441c                _fini
- .fini.__stub   0x10004420       0x40 linker stubs
+ .fini          0x10004460        0x4 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crti.o
+                0x10004460                _fini
+ *fill*         0x10004464        0x4 
+ .fini.__stub   0x10004468       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1916,257 +1922,258 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10004460        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10004460                . = ALIGN (0x4)
+ .eh_frame      0x100044a8        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100044a8                . = ALIGN (0x4)
 
-.glue_7         0x10004460        0x0
- .glue_7        0x10004460        0x0 linker stubs
+.glue_7         0x100044a8        0x0
+ .glue_7        0x100044a8        0x0 linker stubs
 
-.glue_7t        0x10004460        0x0
- .glue_7t       0x10004460        0x0 linker stubs
+.glue_7t        0x100044a8        0x0
+ .glue_7t       0x100044a8        0x0 linker stubs
 
-.vfp11_veneer   0x10004460        0x0
- .vfp11_veneer  0x10004460        0x0 linker stubs
+.vfp11_veneer   0x100044a8        0x0
+ .vfp11_veneer  0x100044a8        0x0 linker stubs
 
-.v4_bx          0x10004460        0x0
- .v4_bx         0x10004460        0x0 linker stubs
+.v4_bx          0x100044a8        0x0
+ .v4_bx         0x100044a8        0x0 linker stubs
 
-.iplt           0x10004460        0x0
- .iplt          0x10004460        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x100044a8        0x0
+ .iplt          0x100044a8        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10004460     0x1104
+.rodata         0x100044a8     0x1104
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata._ZL18squarewave_program
-                0x10004460        0x6 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- *fill*         0x10004466        0x2 
+                0x100044a8        0x6 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ *fill*         0x100044ae        0x2 
  .rodata._ZL31squarewave_program_instructions
-                0x10004468       0x30 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                0x100044b0       0x2c CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
  .rodata.make_branch.str1.4
-                0x10004498       0x89 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004521        0x3 
+                0x100044dc       0x89 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004565        0x3 
  .rodata.insert_branch_and_link.str1.4
-                0x10004524       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10004568       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.irq_set_exclusive_handler.str1.4
-                0x10004534       0x36 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000456a        0x2 
+                0x10004578       0x36 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100045ae        0x2 
  .rodata.irq_add_shared_handler.str1.4
-                0x1000456c       0xd9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004645        0x3 
+                0x100045b0       0xd9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004689        0x3 
  .rodata.irq_remove_handler.str1.4
-                0x10004648       0x3a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004682        0x2 
+                0x1000468c       0x3a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x100046c6        0x2 
  .rodata.irq_add_tail_to_free_list.str1.4
-                0x10004684       0x3a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100046be        0x2 
+                0x100046c8       0x3a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004702        0x2 
  .rodata.__func__.0
-                0x100046c0       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100046da        0x2 
+                0x10004704       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000471e        0x2 
  .rodata.__func__.1
-                0x100046dc       0x17 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x100046f3        0x1 
+                0x10004720       0x17 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004737        0x1 
  .rodata.__func__.2
-                0x100046f4       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004707        0x1 
+                0x10004738       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x1000474b        0x1 
  .rodata.__func__.3
-                0x10004708        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000474c        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .rodata.__func__.4
-                0x10004714        0xf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x10004723        0x1 
+                0x10004758        0xf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004767        0x1 
  .rodata.__func__.6
-                0x10004724       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x1000473e        0x2 
+                0x10004768       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x10004782        0x2 
  .rodata.str1.4
-                0x10004740      0x125 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10004865        0x3 
+                0x10004784      0x125 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x100048a9        0x3 
  .rodata.__func__.1
-                0x10004868        0xb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- *fill*         0x10004873        0x1 
+                0x100048ac        0xb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ *fill*         0x100048b7        0x1 
  .rodata.__func__.3
-                0x10004874       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x100048b8       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
  .rodata.repeating_timer_callback.str1.4
-                0x1000488c       0x67 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100048f3        0x1 
+                0x100048d0       0x67 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004937        0x1 
  .rodata.timer_pool_entry_comparator.str1.4
-                0x100048f4       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004916        0x2 
+                0x10004938       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x1000495a        0x2 
  .rodata.ph_add_child_node.str1.4
-                0x10004918       0xb2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x100049ca        0x2 
+                0x1000495c       0xb2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004a0e        0x2 
  .rodata.add_alarm_under_lock.str1.4
-                0x100049cc       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10004a10       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
                                  0x2b (size before relaxing)
  .rodata.alarm_pool_alarm_callback.str1.4
-                0x100049f4       0x98 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10004a38       0x98 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
                                 0x118 (size before relaxing)
  .rodata.alarm_pool_get_default.str1.4
-                0x10004a8c       0x21 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004aad        0x3 
+                0x10004ad0       0x21 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004af1        0x3 
  .rodata.alarm_pool_cancel_alarm.str1.4
-                0x10004ab0       0x27 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004ad7        0x1 
+                0x10004af4       0x27 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b1b        0x1 
  .rodata.__func__.1
-                0x10004ad8       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10004b1c       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.10
-                0x10004af0       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b05        0x3 
+                0x10004b34       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b49        0x3 
  .rodata.__func__.11
-                0x10004b08       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b22        0x2 
+                0x10004b4c       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b66        0x2 
  .rodata.__func__.12
-                0x10004b24        0xa CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b2e        0x2 
+                0x10004b68        0xa CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b72        0x2 
  .rodata.__func__.3
-                0x10004b30       0x17 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b47        0x1 
+                0x10004b74       0x17 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b8b        0x1 
  .rodata.__func__.4
-                0x10004b48       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b5a        0x2 
+                0x10004b8c       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004b9e        0x2 
  .rodata.__func__.5
-                0x10004b5c        0xd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b69        0x3 
+                0x10004ba0        0xd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004bad        0x3 
  .rodata.__func__.6
-                0x10004b6c       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b7e        0x2 
+                0x10004bb0       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004bc2        0x2 
  .rodata.__func__.7
-                0x10004b80        0xf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004b8f        0x1 
+                0x10004bc4        0xf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004bd3        0x1 
  .rodata.__func__.8
-                0x10004b90        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x10004bd4        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .rodata.__func__.9
-                0x10004b9c       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- *fill*         0x10004bb1        0x3 
+                0x10004be0       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ *fill*         0x10004bf5        0x3 
  .rodata.hardware_alarm_claim.str1.4
-                0x10004bb4       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10004bd6        0x2 
+                0x10004bf8       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10004c1a        0x2 
  .rodata.hardware_alarm_set_target.str1.4
-                0x10004bd8       0x81 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10004c59        0x3 
+                0x10004c1c       0x81 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10004c9d        0x3 
  .rodata.__func__.0
-                0x10004c5c       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10004ca0       0x1a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .rodata.ph_add_child_node.str1.4
-                0x10004c76       0xb2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004c76        0x2 
+                0x10004cba       0xb2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004cba        0x2 
  .rodata.ph_remove_any_head.str1.4
-                0x10004c78       0xa8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10004cbc       0xa8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0xbc (size before relaxing)
  .rodata.ph_remove_and_free_node.str1.4
-                0x10004d20       0x1e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10004d64       0x1e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
                                  0x26 (size before relaxing)
- *fill*         0x10004d3e        0x2 
+ *fill*         0x10004d82        0x2 
  .rodata.__func__.0
-                0x10004d40       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10004d84       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.__func__.1
-                0x10004d58       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004d6b        0x1 
+                0x10004d9c       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004daf        0x1 
  .rodata.__func__.2
-                0x10004d6c       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- *fill*         0x10004d7e        0x2 
+                0x10004db0       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ *fill*         0x10004dc2        0x2 
  .rodata.__func__.3
-                0x10004d80        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10004dc4        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
  .rodata.clock_configure.str1.4
-                0x10004d8c       0x73 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- *fill*         0x10004dff        0x1 
+                0x10004dd0       0x73 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ *fill*         0x10004e43        0x1 
  .rodata.__func__.1
-                0x10004e00       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10004e44       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .rodata.pll_init.str1.4
-                0x10004e10      0x140 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10004e54      0x140 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .rodata.__func__.0
-                0x10004f50        0x9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- *fill*         0x10004f59        0x3 
+                0x10004f94        0x9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ *fill*         0x10004f9d        0x3 
  .rodata.__assert_func.str1.4
-                0x10004f5c       0x3f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10004fa0       0x3f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                  0x43 (size before relaxing)
- *fill*         0x10004f9b        0x1 
+ *fill*         0x10004fdf        0x1 
  .rodata.runtime_init.str1.4
-                0x10004f9c       0x7d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10005019        0x3 
+                0x10004fe0       0x7d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x1000505d        0x3 
  .rodata.panic.str1.4
-                0x1000501c       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x1000502e        0x2 
+                0x10005060       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10005072        0x2 
  .rodata.__func__.2
-                0x10005030        0xd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x1000503d        0x3 
+                0x10005074        0xd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10005081        0x3 
  .rodata._ftoa.str1.4
-                0x10005040       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x10005055        0x3 
+                0x10005084       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x10005099        0x3 
  .rodata._vsnprintf
-                0x10005058      0x1e0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000509c      0x1e0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x1000527c        0x4 
  .rodata.pow10.0
-                0x10005238       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x10005280       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.__aeabi_double_init.str1.4
-                0x10005288       0xb8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x100052d0       0xb8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__func__.0
-                0x10005340       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10005388       0x14 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.__aeabi_float_init.str1.4
-                0x10005354       0x96 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x1000539c       0x96 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                  0x9a (size before relaxing)
- *fill*         0x100053ea        0x2 
+ *fill*         0x10005432        0x2 
  .rodata.__func__.0
-                0x100053ec       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- *fill*         0x100053ff        0x1 
+                0x10005434       0x13 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ *fill*         0x10005447        0x1 
  .rodata.str1.4
-                0x10005400       0x44 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005448       0x44 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10005444        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x1000548c        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10005450        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10005498        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x1000545c        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100054a4        0xc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.stdout_serialize_begin.str1.4
-                0x10005468       0x7d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x100054b0       0x7d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .rodata.__func__.3
-                0x10005468       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x1000547d        0x3 
+                0x100054b0       0x15 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x100054c5        0x3 
  .rodata.crlf_str.2
-                0x10005480        0x2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x10005482        0x2 
+                0x100054c8        0x2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x100054ca        0x2 
  .rodata._pio_find_offset_for_program.str1.4
-                0x10005484       0x85 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- *fill*         0x10005509        0x3 
+                0x100054cc       0x85 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ *fill*         0x10005551        0x3 
  .rodata._pio_add_program_at_offset.str1.4
-                0x1000550c       0x11 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- *fill*         0x1000551d        0x3 
+                0x10005554       0x11 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ *fill*         0x10005565        0x3 
  .rodata.pio_claim_unused_sm.str1.4
-                0x10005520       0x24 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x10005568       0x24 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.__func__.1
-                0x10005544       0x1d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                0x10005564                . = ALIGN (0x4)
- *fill*         0x10005561        0x3 
+                0x1000558c       0x1d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x100055ac                . = ALIGN (0x4)
+ *fill*         0x100055a9        0x3 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10005564                . = ALIGN (0x4)
+                0x100055ac                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10005564                __exidx_start = .
+                0x100055ac                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10005564                __exidx_end = .
-                0x10005564                . = ALIGN (0x4)
-                0x10005564                __binary_info_start = .
+                0x100055ac                __exidx_end = .
+                0x100055ac                . = ALIGN (0x4)
+                0x100055ac                __binary_info_start = .
 
-.binary_info    0x10005564       0x1c
+.binary_info    0x100055ac       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x10005564        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055ac        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x10005568        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055b0        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x1000556c        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055b4        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x10005570        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055b8        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10005574        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055bc        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x10005578        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055c0        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x1000557c        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x100055c4        0x4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x10005580                __binary_info_end = .
+                0x100055c8                __binary_info_end = .
 
-.rel.dyn        0x10005580        0x0
- .rel.iplt      0x10005580        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
-                0x10005580                . = ALIGN (0x4)
+.rel.dyn        0x100055c8        0x0
+ .rel.iplt      0x100055c8        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+                0x100055c8                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -2175,7 +2182,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
                 0x20000000       0xc0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x22c load address 0x10005580
+.data           0x200000c0      0x22c load address 0x100055c8
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2256,29 +2263,29 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  *(.jcr)
                 0x200002ec                . = ALIGN (0x4)
                 0x200002ec                __data_end__ = .
-                0x10005580                __etext = LOADADDR (.data)
+                0x100055c8                __etext = LOADADDR (.data)
 
-.igot.plt       0x200002ec        0x0 load address 0x100057ac
+.igot.plt       0x200002ec        0x0 load address 0x100057f4
  .igot.plt      0x200002ec        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x200002ec        0x0 load address 0x100057ac
+                0x200002ec        0x0 load address 0x100057f4
                 0x200002ec                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100057ac
+.scratch_x      0x20040000        0x0 load address 0x100057f4
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x100057ac                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100057f4                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100057ac
+.scratch_y      0x20041000        0x0 load address 0x100057f4
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x100057ac                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100057f4                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x200002f0      0x3d0
                 0x200002f0                . = ALIGN (0x4)
@@ -2335,8 +2342,8 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100057ac        0x0
-                0x100057ac                PROVIDE (__flash_binary_end = .)
+.flash_end      0x100057f4        0x0
+                0x100057f4                PROVIDE (__flash_binary_end = .)
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2392,7 +2399,7 @@ LOAD CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1
 LOAD CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 LOAD CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD C:\Users\Andy\AppData\Local\Temp\ccc3DPxN.o
+LOAD C:\Users\Andy\AppData\Local\Temp\ccMqO5wJ.o
 LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -2481,7 +2488,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x00000544       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x00000570       0x22 C:\Users\Andy\AppData\Local\Temp\ccc3DPxN.o
+                0x00000570       0x22 C:\Users\Andy\AppData\Local\Temp\ccMqO5wJ.o
  .ARM.attributes
                 0x00000592       0x1e c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
@@ -2513,310 +2520,310 @@ LOAD linker stubs
  .comment       0x00000049       0x4a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .comment       0x00000049       0x4a CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_info     0x00000000    0x16b15
- .debug_info    0x00000000     0x1173 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .debug_info    0x00001173     0x187e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x000029f1      0x1e3 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x00002bd4      0x6be CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x00003292      0x58e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x00003820     0x1c9e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x000054be      0x1a4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x00005662     0x20d5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x00007737     0x4068 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x0000b79f     0x13f0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000cb8f     0x123b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x0000ddca      0xfcf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x0000ed99      0x51b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x0000f2b4      0x4ee CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x0000f7a2      0x1d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x0000f97a     0x1053 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x000109cd     0x1a5f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x0001242c       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x0001244e      0x27c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x000126ca       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x000126ec       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x0001270e      0x2d1 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x000129df       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x00012a01       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x00012a23      0x2eb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x00012d0e       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x00012d30       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x00012d52       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x00012d74      0x2fb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x0001306f     0x1827 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x00014896     0x227f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_info     0x00000000    0x16c4c
+ .debug_info    0x00000000     0x12aa CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ .debug_info    0x000012aa     0x187e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x00002b28      0x1e3 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x00002d0b      0x6be CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x000033c9      0x58e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00003957     0x1c9e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x000055f5      0x1a4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x00005799     0x20d5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000786e     0x4068 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x0000b8d6     0x13f0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000ccc6     0x123b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x0000df01      0xfcf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x0000eed0      0x51b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x0000f3eb      0x4ee CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x0000f8d9      0x1d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x0000fab1     0x1053 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x00010b04     0x1a5f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x00012563       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x00012585      0x27c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x00012801       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x00012823       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x00012845      0x2d1 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x00012b16       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x00012b38       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x00012b5a      0x2eb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x00012e45       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x00012e67       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x00012e89       0x22 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x00012eab      0x2fb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x000131a6     0x1827 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x000149cd     0x227f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_abbrev   0x00000000     0x42e4
- .debug_abbrev  0x00000000      0x4d2 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .debug_abbrev  0x000004d2      0x379 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x0000084b       0xeb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x00000936      0x2e9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000c1f      0x21b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000e3a      0x4e7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x00001321      0x116 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x00001437      0x397 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x000017ce      0x571 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x00001d3f      0x3b8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x000020f7      0x297 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x0000238e      0x3c7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002755      0x1ea CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x0000293f      0x1a8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00002ae7      0x109 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00002bf0      0x4cb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x000030bb      0x384 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x0000343f       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x00003451      0x13b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x0000358c       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x0000359e       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x000035b0      0x179 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x00003729       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x0000373b       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x0000374d      0x18c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x000038d9       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x000038eb       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x000038fd       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x0000390f       0xad CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x000039bc      0x4a5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x00003e61      0x483 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_abbrev   0x00000000     0x434b
+ .debug_abbrev  0x00000000      0x539 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ .debug_abbrev  0x00000539      0x379 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x000008b2       0xeb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x0000099d      0x2e9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000c86      0x21b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00000ea1      0x4e7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x00001388      0x116 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x0000149e      0x397 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x00001835      0x571 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x00001da6      0x3b8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x0000215e      0x297 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x000023f5      0x3c7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x000027bc      0x1ea CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x000029a6      0x1a8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00002b4e      0x109 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x00002c57      0x4cb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x00003122      0x384 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x000034a6       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x000034b8      0x13b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x000035f3       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x00003605       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x00003617      0x179 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x00003790       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x000037a2       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x000037b4      0x18c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x00003940       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003952       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x00003964       0x12 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x00003976       0xad CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x00003a23      0x4a5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x00003ec8      0x483 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_loc      0x00000000     0xfd0c
- .debug_loc     0x00000000      0x602 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .debug_loc     0x00000602     0x1237 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_loc     0x00001839       0xe9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_loc     0x00001922      0x45f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_loc     0x00001d81      0x233 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_loc     0x00001fb4     0x13f5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_loc     0x000033a9       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_loc     0x00003409     0x152e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_loc     0x00004937     0x31e5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_loc     0x00007b1c      0xacb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_loc     0x000085e7     0x1446 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_loc     0x00009a2d      0x832 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_loc     0x0000a25f      0x310 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_loc     0x0000a56f      0x2ec CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_loc     0x0000a85b       0x71 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_loc     0x0000a8cc      0x674 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_loc     0x0000af40     0x2095 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_loc     0x0000cfd5      0x1a1 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_loc     0x0000d176       0x59 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_loc     0x0000d1cf       0x73 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_loc     0x0000d242      0xe23 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_loc     0x0000e065     0x1ca7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_loc      0x00000000     0xfe71
+ .debug_loc     0x00000000      0x767 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ .debug_loc     0x00000767     0x1237 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_loc     0x0000199e       0xe9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_loc     0x00001a87      0x45f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_loc     0x00001ee6      0x233 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_loc     0x00002119     0x13f5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_loc     0x0000350e       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_loc     0x0000356e     0x152e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_loc     0x00004a9c     0x31e5 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_loc     0x00007c81      0xacb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_loc     0x0000874c     0x1446 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_loc     0x00009b92      0x832 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_loc     0x0000a3c4      0x310 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_loc     0x0000a6d4      0x2ec CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_loc     0x0000a9c0       0x71 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_loc     0x0000aa31      0x674 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_loc     0x0000b0a5     0x2095 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_loc     0x0000d13a      0x1a1 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_loc     0x0000d2db       0x59 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_loc     0x0000d334       0x73 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_loc     0x0000d3a7      0xe23 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_loc     0x0000e1ca     0x1ca7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_aranges  0x00000000      0xe60
+.debug_aranges  0x00000000      0xe68
  .debug_aranges
-                0x00000000       0x30 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                0x00000000       0x38 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
  .debug_aranges
-                0x00000030      0x100 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000038      0x100 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_aranges
-                0x00000130       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000138       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .debug_aranges
-                0x00000158       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000160       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .debug_aranges
-                0x000001a0       0x58 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000001a8       0x58 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .debug_aranges
-                0x000001f8       0xc8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000200       0xc8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .debug_aranges
-                0x000002c0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x000002c8       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .debug_aranges
-                0x000002e0       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x000002e8       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
  .debug_aranges
-                0x00000370       0xe8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000378       0xe8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .debug_aranges
-                0x00000458       0x88 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000460       0x88 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .debug_aranges
-                0x000004e0       0x78 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000004e8       0x78 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
  .debug_aranges
-                0x00000558       0x70 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000560       0x70 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .debug_aranges
-                0x000005c8       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x000005d0       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .debug_aranges
-                0x000005f0       0x58 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x000005f8       0x58 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .debug_aranges
-                0x00000648       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000650       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .debug_aranges
-                0x00000678       0x88 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000680       0x88 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .debug_aranges
-                0x00000700       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000708       0x90 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .debug_aranges
-                0x00000790       0x68 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x00000798       0x68 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .debug_aranges
-                0x000007f8       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000800       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .debug_aranges
-                0x00000828       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000830       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .debug_aranges
-                0x00000868      0x140 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x00000870      0x140 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .debug_aranges
-                0x000009a8       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x000009b0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .debug_aranges
-                0x000009c8       0xc8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x000009d0       0xc8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .debug_aranges
-                0x00000a90      0x130 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000a98      0x130 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .debug_aranges
-                0x00000bc0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000bc8       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .debug_aranges
-                0x00000be0       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000be8       0x50 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .debug_aranges
-                0x00000c30       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x00000c38       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .debug_aranges
-                0x00000c68       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x00000c70       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
  .debug_aranges
-                0x00000c90       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000c98       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .debug_aranges
-                0x00000ca8      0x100 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000cb0      0x100 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .debug_aranges
-                0x00000da8       0xb8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x00000db0       0xb8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_ranges   0x00000000     0x3630
- .debug_ranges  0x00000000      0x1e0 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .debug_ranges  0x000001e0      0x150 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_ranges  0x00000330       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_ranges  0x00000348       0xd8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_ranges  0x00000420       0xf0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_ranges  0x00000510      0x400 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_ranges  0x00000910       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_ranges  0x00000920      0xac0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_ranges  0x000013e0      0xcb8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_ranges  0x00002098      0x3d0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_ranges  0x00002468      0x248 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_ranges  0x000026b0       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_ranges  0x00002710       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_ranges  0x00002740       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_ranges  0x00002788       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_ranges  0x000027a8      0x168 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_ranges  0x00002910      0x108 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_ranges  0x00002a18       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_ranges  0x00002a78       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_ranges  0x00002ab0       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_ranges  0x00002ae8      0x138 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_ranges  0x00002c20       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_ranges  0x00002c50       0xc0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_ranges  0x00002d10      0x128 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_ranges  0x00002e38       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_ranges  0x00002e60       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_ranges  0x00002ea8       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_ranges  0x00002ed8       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_ranges  0x00002ef8      0x258 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_ranges  0x00003150      0x4e0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_ranges   0x00000000     0x3638
+ .debug_ranges  0x00000000      0x1e8 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ .debug_ranges  0x000001e8      0x150 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_ranges  0x00000338       0x18 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_ranges  0x00000350       0xd8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_ranges  0x00000428       0xf0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_ranges  0x00000518      0x400 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_ranges  0x00000918       0x10 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_ranges  0x00000928      0xac0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_ranges  0x000013e8      0xcb8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_ranges  0x000020a0      0x3d0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_ranges  0x00002470      0x248 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_ranges  0x000026b8       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_ranges  0x00002718       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_ranges  0x00002748       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_ranges  0x00002790       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_ranges  0x000027b0      0x168 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_ranges  0x00002918      0x108 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_ranges  0x00002a20       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_ranges  0x00002a80       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_ranges  0x00002ab8       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_ranges  0x00002af0      0x138 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_ranges  0x00002c28       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_ranges  0x00002c58       0xc0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_ranges  0x00002d18      0x128 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_ranges  0x00002e40       0x28 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_ranges  0x00002e68       0x48 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_ranges  0x00002eb0       0x30 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_ranges  0x00002ee0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_ranges  0x00002f00      0x258 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_ranges  0x00003158      0x4e0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_line     0x00000000     0xf470
- .debug_line    0x00000000      0x7e7 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .debug_line    0x000007e7      0xd98 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x0000157f      0x2d6 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x00001855      0x4e2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x00001d37      0x4df CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00002216     0x112d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00003343      0x28e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x000035d1     0x116d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x0000473e     0x1cb7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x000063f5      0xd04 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x000070f9      0x8e8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x000079e1      0xae6 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x000084c7      0x60c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x00008ad3      0x45b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x00008f2e      0x2ff CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0000922d      0xc0b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x00009e38     0x1254 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000b08c      0x163 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000b1ef      0x26b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000b45a      0x2ec CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000b746      0x441 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000bb87      0x3bc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000bf43      0x6b9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000c5fc      0x3f7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000c9f3      0x3ae CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000cda1      0x1e3 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000cf84       0xdd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000d061       0xeb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000d14c      0x211 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000d35d      0xfbd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x0000e31a     0x1156 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_line     0x00000000     0xf48f
+ .debug_line    0x00000000      0x806 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ .debug_line    0x00000806      0xd98 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x0000159e      0x2d6 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x00001874      0x4e2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00001d56      0x4df CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x00002235     0x112d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x00003362      0x28e CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x000035f0     0x116d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x0000475d     0x1cb7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00006414      0xd04 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x00007118      0x8e8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00007a00      0xae6 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x000084e6      0x60c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x00008af2      0x45b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x00008f4d      0x2ff CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x0000924c      0xc0b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x00009e57     0x1254 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000b0ab      0x163 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000b20e      0x26b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000b479      0x2ec CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000b765      0x441 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000bba6      0x3bc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000bf62      0x6b9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000c61b      0x3f7 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000ca12      0x3ae CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000cdc0      0x1e3 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000cfa3       0xdd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000d080       0xeb CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000d16b      0x211 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0000d37c      0xfbd CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x0000e339     0x1156 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_str      0x00000000     0x3fb1
- .debug_str     0x00000000      0x701 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
-                                0x7f5 (size before relaxing)
- .debug_str     0x00000701      0x7d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+.debug_str      0x00000000     0x3fda
+ .debug_str     0x00000000      0x72a CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+                                0x819 (size before relaxing)
+ .debug_str     0x0000072a      0x7d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
                                 0xa18 (size before relaxing)
- .debug_str     0x00000ed9       0x9d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_str     0x00000f02       0x9d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
                                 0x23f (size before relaxing)
- .debug_str     0x00000f76      0x1d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_str     0x00000f9f      0x1d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
                                 0x383 (size before relaxing)
- .debug_str     0x0000114e      0x108 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_str     0x00001177      0x108 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
                                 0x36a (size before relaxing)
- .debug_str     0x00001256      0x404 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_str     0x0000127f      0x404 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
                                 0x7e8 (size before relaxing)
- .debug_str     0x0000165a       0x78 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_str     0x00001683       0x78 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
                                 0x220 (size before relaxing)
- .debug_str     0x000016d2      0x27b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_str     0x000016fb      0x27b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
                                 0x612 (size before relaxing)
- .debug_str     0x0000194d      0x721 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_str     0x00001976      0x721 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
                                 0xc74 (size before relaxing)
- .debug_str     0x0000206e      0x167 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_str     0x00002097      0x167 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
                                 0x73c (size before relaxing)
- .debug_str     0x000021d5      0x102 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_str     0x000021fe      0x102 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
                                 0x409 (size before relaxing)
- .debug_str     0x000022d7      0x343 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_str     0x00002300      0x343 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
                                 0x6d9 (size before relaxing)
- .debug_str     0x0000261a       0xdf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_str     0x00002643       0xdf CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
                                 0x2fb (size before relaxing)
- .debug_str     0x000026f9      0x13b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_str     0x00002722      0x13b CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
                                 0x341 (size before relaxing)
- .debug_str     0x00002834       0x87 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_str     0x0000285d       0x87 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
                                 0x23e (size before relaxing)
- .debug_str     0x000028bb      0x2f2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_str     0x000028e4      0x2f2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                                 0x801 (size before relaxing)
- .debug_str     0x00002bad      0x27d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_str     0x00002bd6      0x27d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
                                 0x49f (size before relaxing)
- .debug_str     0x00002e2a       0x71 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_str     0x00002e53       0x71 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                                  0x9b (size before relaxing)
- .debug_str     0x00002e9b       0xe0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_str     0x00002ec4       0xe0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
                                 0x279 (size before relaxing)
- .debug_str     0x00002f7b       0x5d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_str     0x00002fa4       0x5d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
                                  0x95 (size before relaxing)
- .debug_str     0x00002fd8       0x61 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_str     0x00003001       0x61 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
                                  0x99 (size before relaxing)
- .debug_str     0x00003039       0xb9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_str     0x00003062       0xb9 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
                                 0x2b8 (size before relaxing)
- .debug_str     0x000030f2       0x67 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_str     0x0000311b       0x67 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
                                  0x9f (size before relaxing)
- .debug_str     0x00003159       0x5f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_str     0x00003182       0x5f CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
                                  0x97 (size before relaxing)
- .debug_str     0x000031b8       0x9d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_str     0x000031e1       0x9d CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                 0x2d4 (size before relaxing)
- .debug_str     0x00003255       0x65 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_str     0x0000327e       0x65 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
                                  0x9d (size before relaxing)
- .debug_str     0x000032ba       0x63 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_str     0x000032e3       0x63 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
                                  0x9b (size before relaxing)
- .debug_str     0x0000331d       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_str     0x00003346       0x60 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
                                  0x98 (size before relaxing)
- .debug_str     0x0000337d      0x260 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_str     0x000033a6      0x260 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
                                 0x401 (size before relaxing)
- .debug_str     0x000035dd      0x512 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_str     0x00003606      0x512 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
                                 0x9d8 (size before relaxing)
- .debug_str     0x00003aef      0x4c2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ .debug_str     0x00003b18      0x4c2 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
                                 0xa64 (size before relaxing)
 
-.debug_frame    0x00000000     0x19a4
- .debug_frame   0x00000000       0x5c CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
- .debug_frame   0x0000005c      0x278 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x000002d4       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_frame   0x0000030c       0x9c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_frame   0x000003a8       0xc4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x0000046c      0x20c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x00000678       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x00000698      0x1b0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x00000848      0x2dc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_frame   0x00000b24      0x15c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x00000c80      0x164 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_frame   0x00000de4      0x130 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x00000f14       0x44 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x00000f58       0xa8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_frame   0x00001000       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x00001040      0x150 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x00001190      0x1f8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x00001388       0x64 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x000013ec       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_frame   0x00001418       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_frame   0x00001444      0x2d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x0000171c      0x260 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .debug_frame   0x0000197c       0x28 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+.debug_frame    0x00000000     0x19cc
+ .debug_frame   0x00000000       0x84 CMakeFiles/pio_squarewave.dir/squarewave.cpp.obj
+ .debug_frame   0x00000084      0x278 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x000002fc       0x38 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_frame   0x00000334       0x9c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_frame   0x000003d0       0xc4 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x00000494      0x20c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x000006a0       0x20 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x000006c0      0x1b0 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x00000870      0x2dc CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_frame   0x00000b4c      0x15c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x00000ca8      0x164 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_frame   0x00000e0c      0x130 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x00000f3c       0x44 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x00000f80       0xa8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_frame   0x00001028       0x40 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x00001068      0x150 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x000011b8      0x1f8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x000013b0       0x64 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x00001414       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_frame   0x00001440       0x2c CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_frame   0x0000146c      0x2d8 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x00001744      0x260 CMakeFiles/pio_squarewave.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ .debug_frame   0x000019a4       0x28 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)

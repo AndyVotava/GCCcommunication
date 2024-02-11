@@ -13,7 +13,7 @@
 // ---------- //
 
 #define squarewave_wrap_target 0
-#define squarewave_wrap 23
+#define squarewave_wrap 21
 
 static const uint16_t squarewave_program_instructions[] = {
             //     .wrap_target
@@ -21,33 +21,31 @@ static const uint16_t squarewave_program_instructions[] = {
     0x80a0, //  1: pull   block                      
     0x6021, //  2: out    x, 1                       
     0x0026, //  3: jmp    !x, 6                      
-    0xe048, //  4: set    y, 8                       
-    0x0008, //  5: jmp    8                          
-    0xe058, //  6: set    y, 24                      
-    0x0008, //  7: jmp    8                          
-    0x6021, //  8: out    x, 1                       
-    0x002f, //  9: jmp    !x, 15                     
-    0xe400, // 10: set    pins, 0                [4] 
-    0xeb01, // 11: set    pins, 1                [11]
-    0x0088, // 12: jmp    y--, 8                     
-    0xe03f, // 13: set    x, 31                      
-    0x0012, // 14: jmp    18                         
-    0xee00, // 15: set    pins, 0                [14]
-    0xe101, // 16: set    pins, 1                [1] 
-    0x0088, // 17: jmp    y--, 8                     
-    0xe080, // 18: set    pindirs, 0                 
+    0xe047, //  4: set    y, 7                       
+    0x0007, //  5: jmp    7                          
+    0xe057, //  6: set    y, 23                      
+    0x6021, //  7: out    x, 1                       
+    0x002d, //  8: jmp    !x, 13                     
+    0xe400, //  9: set    pins, 0                [4] 
+    0xeb01, // 10: set    pins, 1                [11]
+    0x0087, // 11: jmp    y--, 7                     
+    0x0010, // 12: jmp    16                         
+    0xee00, // 13: set    pins, 0                [14]
+    0xe101, // 14: set    pins, 1                [1] 
+    0x0087, // 15: jmp    y--, 7                     
+    0xe400, // 16: set    pins, 0                [4] 
+    0xe080, // 17: set    pindirs, 0                 
+    0xbf42, // 18: nop                           [31]
     0xbf42, // 19: nop                           [31]
     0xbf42, // 20: nop                           [31]
-    0xbf42, // 21: nop                           [31]
-    0x0052, // 22: jmp    x--, 18                    
-    0x0000, // 23: jmp    0                          
+    0x0052, // 21: jmp    x--, 18                    
             //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
 static const struct pio_program squarewave_program = {
     .instructions = squarewave_program_instructions,
-    .length = 24,
+    .length = 22,
     .origin = -1,
 };
 
