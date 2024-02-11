@@ -1702,8 +1702,8 @@
 	"kind" : "cmakeFiles",
 	"paths" : 
 	{
-		"build" : "C:/Users/Andy/Documents/learnpio/build",
-		"source" : "C:/Users/Andy/Documents/learnpio"
+		"build" : "C:/Users/Andy/Documents/wirelessGCC/build",
+		"source" : "C:/Users/Andy/Documents/wirelessGCC"
 	},
 	"version" : 
 	{

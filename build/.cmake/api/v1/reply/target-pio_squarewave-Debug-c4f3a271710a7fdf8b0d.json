@@ -291,7 +291,7 @@
 			[
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/Andy/Documents/learnpio/build"
+					"path" : "C:/Users/Andy/Documents/wirelessGCC/build"
 				},
 				{
 					"backtrace" : 2,
@@ -307,7 +307,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Andy/Documents/learnpio/build/generated/pico_base"
+					"path" : "C:/Users/Andy/Documents/wirelessGCC/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -627,7 +627,7 @@
 			[
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/Andy/Documents/learnpio/build"
+					"path" : "C:/Users/Andy/Documents/wirelessGCC/build"
 				},
 				{
 					"backtrace" : 2,
@@ -643,7 +643,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Andy/Documents/learnpio/build/generated/pico_base"
+					"path" : "C:/Users/Andy/Documents/wirelessGCC/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -995,7 +995,7 @@
 			[
 				{
 					"backtrace" : 11,
-					"path" : "C:/Users/Andy/Documents/learnpio/build"
+					"path" : "C:/Users/Andy/Documents/wirelessGCC/build"
 				},
 				{
 					"backtrace" : 2,
@@ -1011,7 +1011,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Andy/Documents/learnpio/build/generated/pico_base"
+					"path" : "C:/Users/Andy/Documents/wirelessGCC/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,

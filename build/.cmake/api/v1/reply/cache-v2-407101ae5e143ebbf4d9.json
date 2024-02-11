@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Andy/Documents/learnpio/build"
+			"value" : "c:/Users/Andy/Documents/wirelessGCC/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/learnpio/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -739,7 +739,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Andy/Documents/learnpio"
+			"value" : "C:/Users/Andy/Documents/wirelessGCC"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1751,7 +1751,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/learnpio/build/pico-sdk"
+			"value" : "C:/Users/Andy/Documents/wirelessGCC/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",
@@ -1787,7 +1787,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/learnpio/build"
+			"value" : "C:/Users/Andy/Documents/wirelessGCC/build"
 		},
 		{
 			"name" : "pio_squarewave_IS_TOP_LEVEL",
@@ -1811,7 +1811,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/learnpio"
+			"value" : "C:/Users/Andy/Documents/wirelessGCC"
 		}
 	],
 	"kind" : "cache",

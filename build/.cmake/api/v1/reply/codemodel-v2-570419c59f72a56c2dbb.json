@@ -1140,7 +1140,7 @@
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
-					"jsonFile" : "target-bs2_default-Debug-1de284151668b4509248.json",
+					"jsonFile" : "target-bs2_default-Debug-85f300d888906e5fccb4.json",
 					"name" : "bs2_default",
 					"projectIndex" : 1
 				},
@@ -1168,7 +1168,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "pio_squarewave::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pio_squarewave-Debug-2c5726bb0c3d59835ef8.json",
+					"jsonFile" : "target-pio_squarewave-Debug-c4f3a271710a7fdf8b0d.json",
 					"name" : "pio_squarewave",
 					"projectIndex" : 0
 				},
@@ -1199,8 +1199,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "C:/Users/Andy/Documents/learnpio/build",
-		"source" : "C:/Users/Andy/Documents/learnpio"
+		"build" : "C:/Users/Andy/Documents/wirelessGCC/build",
+		"source" : "C:/Users/Andy/Documents/wirelessGCC"
 	},
 	"version" : 
 	{

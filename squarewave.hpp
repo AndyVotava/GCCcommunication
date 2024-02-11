@@ -1,4 +1,30 @@
-static inline void squarewave_init(PIO pio, uint sm, uint offset, uint pin){
+//uint16_t status = 0b1000000001;          //first bit to set length to 9 -> 8 bits of probe + end bit
+//uint16_t origin = 0b1100000101;
+
+
+struct __attribute__((packed)) GCreport {
+    private:
+    uint8_t a : 1; uint8_t b : 1; uint8_t x:1; uint8_t y : 1; uint8_t start : 1; uint8_t pad0 : 3;
+    uint8_t dLeft : 1; uint8_t dRight : 1; uint8_t dDown : 1; uint8_t dUp : 1; uint8_t z : 1; uint8_t r : 1; uint8_t l : 1; uint8_t pad1 : 1;
+    uint8_t xStick;
+    uint8_t yStick;
+    uint8_t cxStick;
+    uint8_t cyStick;
+    uint8_t analogL;
+    uint8_t analogR;
+};
+
+class GCcontroller : protected GCreport {
+    public:
+    PIO pio;
+    uint sm; 
+    inline void init(uint pin);
+    void getreport();
+};
+
+void GCcontroller::init(uint pin){
+
+    uint offset = pio_add_program(pio, &squarewave_program);
 
     pio_sm_config c = squarewave_program_get_default_config(offset);
 
@@ -11,3 +37,9 @@ static inline void squarewave_init(PIO pio, uint sm, uint offset, uint pin){
     pio_sm_set_clkdiv(pio, sm, 31.25);
     pio_sm_set_enabled(pio, sm, true);
 }
+
+void GCcontroller::getreport(){
+    uint32_t requestreport = 0b10100000011000000000000100;  //Bits go from right to left. first bit is length indicator 0 = 24 bits and 1 end bit, 1 = 8 bits + 1 end bit
+    pio_sm_put_blocking(pio, sm, requestreport);
+}
+
