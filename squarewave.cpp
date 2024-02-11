@@ -13,7 +13,7 @@ int main() {
 
     while(true){
 
-        controller1.getreport();
+        controller1.getorigin();
 
     }
 

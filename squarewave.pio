@@ -21,6 +21,7 @@ onebit:
     set pins, 0 [4]     ;one bit
     set pins, 1 [11]  
     jmp y-- innerloop
+    set x, 31
     jmp readbit
 
 
@@ -28,11 +29,12 @@ zerobit:
     set pins, 0 [14]    ;zero bit
     set pins, 1 [1] 
     jmp y-- innerloop
-    jmp readbit
 
 readbit:
     set pindirs, 0
+
     nop[31]
     nop[31]
- 
- 
+    nop[31]
+    jmp x-- readbit
+    jmp outerloop

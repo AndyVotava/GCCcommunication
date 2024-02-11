@@ -20,6 +20,7 @@ class GCcontroller : protected GCreport {
     uint sm; 
     inline void init(uint pin);
     void getreport();
+    void getorigin();
 };
 
 void GCcontroller::init(uint pin){
@@ -40,6 +41,12 @@ void GCcontroller::init(uint pin){
 
 void GCcontroller::getreport(){
     uint32_t requestreport = 0b10100000011000000000000100;  //Bits go from right to left. first bit is length indicator 0 = 24 bits and 1 end bit, 1 = 8 bits + 1 end bit
+    uint8_t recievebitlength = 0b00;
     pio_sm_put_blocking(pio, sm, requestreport);
 }
 
+void GCcontroller::getorigin(){
+    uint16_t requestorigin = 0b1100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits and 1 end bit, 1 = 8 bits + 1 end bit
+    uint8_t recievebitlength = 0b00;
+    pio_sm_put_blocking(pio, sm, requestorigin);
+}
