@@ -13,6 +13,9 @@ pico_generate_pio_header(pio_squarewave ${CMAKE_CURRENT_LIST_DIR}/squarewave.pio
 target_sources(pio_squarewave PRIVATE squarewave.cpp)
 
 target_link_libraries(pio_squarewave PRIVATE pico_stdlib hardware_pio)
+
+pico_enable_stdio_usb(pio_squarewave 1)     #this command is for printing for debugging
+
 pico_add_extra_outputs(pio_squarewave)
 
 file(MAKE_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/generated)

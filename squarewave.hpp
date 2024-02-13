@@ -1,5 +1,6 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
+#include <stdio.h>      //for print
 
 //uint16_t status = 0b000000001;          //first bit to set length to 9 -> 8 bits of probe + end bit
 //uint16_t origin = 0b100000101;
@@ -34,7 +35,7 @@ GCcontroller::GCcontroller(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
     pio_sm_config c = squarewave_program_get_default_config(offset);
 
     sm_config_set_set_pins(&c, pin, 1);
-    sm_config_set_in_shift(&c, false, true, 32);
+    sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_out_shift(&c, true, false, 32);
 
     pio_gpio_init(pio, pin);
@@ -53,5 +54,6 @@ void GCcontroller::getorigin(){
     uint16_t requestorigin = 0b100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits
     uint8_t recievebitlength = 0b00;                //80 bits sent from controller
     pio_sm_put_blocking(pio, sm, requestorigin);
-    pio_sm_get_blocking(pio, sm);
+    uint32_t data_read = pio_sm_get_blocking(pio, sm);
+    printf("%lu\n", data_read);
 }
