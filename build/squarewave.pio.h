@@ -13,46 +13,42 @@
 // ---------- //
 
 #define squarewave_wrap_target 0
-#define squarewave_wrap 28
+#define squarewave_wrap 24
 
 static const uint16_t squarewave_program_instructions[] = {
             //     .wrap_target
-    0xe05f, //  0: set    y, 31                      
-    0xbf42, //  1: nop                           [31]
-    0xbf42, //  2: nop                           [31]
-    0xbf42, //  3: nop                           [31]
-    0xbf42, //  4: nop                           [31]
-    0x0086, //  5: jmp    y--, 6                     
-    0x80a0, //  6: pull   block                      
+    0x80a0, //  0: pull   block                      
+    0x6021, //  1: out    x, 1                       
+    0x0025, //  2: jmp    !x, 5                      
+    0xe047, //  3: set    y, 7                       
+    0x0006, //  4: jmp    6                          
+    0xe057, //  5: set    y, 23                      
+    0xe081, //  6: set    pindirs, 1                 
     0x6021, //  7: out    x, 1                       
-    0x002b, //  8: jmp    !x, 11                     
-    0xe047, //  9: set    y, 7                       
-    0x000c, // 10: jmp    12                         
-    0xe057, // 11: set    y, 23                      
-    0xe081, // 12: set    pindirs, 1                 
-    0x6021, // 13: out    x, 1                       
-    0x0033, // 14: jmp    !x, 19                     
-    0xe400, // 15: set    pins, 0                [4] 
-    0xeb01, // 16: set    pins, 1                [11]
-    0x008c, // 17: jmp    y--, 12                    
-    0x0016, // 18: jmp    22                         
-    0xee00, // 19: set    pins, 0                [14]
-    0xe101, // 20: set    pins, 1                [1] 
-    0x008c, // 21: jmp    y--, 12                    
-    0xe400, // 22: set    pins, 0                [4] 
-    0xe080, // 23: set    pindirs, 0                 
-    0xe02a, // 24: set    x, 10                      
-    0x2520, // 25: wait   0 pin, 0               [5] 
-    0x4001, // 26: in     pins, 1                    
-    0x0059, // 27: jmp    x--, 25                    
-    0x8040, // 28: push   iffull noblock             
+    0x002d, //  8: jmp    !x, 13                     
+    0xe400, //  9: set    pins, 0                [4] 
+    0xeb01, // 10: set    pins, 1                [11]
+    0x0086, // 11: jmp    y--, 6                     
+    0x0010, // 12: jmp    16                         
+    0xee00, // 13: set    pins, 0                [14]
+    0xe101, // 14: set    pins, 1                [1] 
+    0x0086, // 15: jmp    y--, 6                     
+    0xe400, // 16: set    pins, 0                [4] 
+    0xe080, // 17: set    pindirs, 0                 
+    0xe047, // 18: set    y, 7                       
+    0xe027, // 19: set    x, 7                       
+    0x2520, // 20: wait   0 pin, 0               [5] 
+    0x4501, // 21: in     pins, 1                [5] 
+    0x0054, // 22: jmp    x--, 20                    
+    0x8000, // 23: push   noblock                    
+    0x0093, // 24: jmp    y--, 19                    
             //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
 static const struct pio_program squarewave_program = {
     .instructions = squarewave_program_instructions,
-    .length = 29,
+    .length = 25,
     .origin = -1,
 };
 

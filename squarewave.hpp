@@ -7,9 +7,9 @@
 
 
 struct __attribute__((packed)) GCreport {
-    private:
-    uint8_t a : 1; uint8_t b : 1; uint8_t x:1; uint8_t y : 1; uint8_t start : 1; uint8_t pad0 : 3;
-    uint8_t dLeft : 1; uint8_t dRight : 1; uint8_t dDown : 1; uint8_t dUp : 1; uint8_t z : 1; uint8_t r : 1; uint8_t l : 1; uint8_t pad1 : 1;
+    public:
+    uint8_t SYXBA;
+    uint8_t LRZD;
     uint8_t xStick;
     uint8_t yStick;
     uint8_t cxStick;
@@ -18,7 +18,7 @@ struct __attribute__((packed)) GCreport {
     uint8_t analogR;
 };
 
-class GCcontroller : protected GCreport {
+class GCcontroller{
     public:
     PIO pio;
     uint sm; 
@@ -26,6 +26,11 @@ class GCcontroller : protected GCreport {
 
     void getreport();
     void getorigin();
+
+    GCreport origin;
+    GCreport report;
+
+
 };
 
 GCcontroller::GCcontroller(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
@@ -46,14 +51,31 @@ GCcontroller::GCcontroller(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
 
 void GCcontroller::getreport(){
     uint32_t requestreport = 0b0100000011000000000000100;   //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits
-    uint8_t recievebitlength = 0b00;                        //64 bits sent from controller
+
     pio_sm_put_blocking(pio, sm, requestreport);
+
+    report.SYXBA = pio_sm_get_blocking(pio, sm);
+    report.LRZD = pio_sm_get_blocking(pio, sm);
+    report.xStick = pio_sm_get_blocking(pio, sm);
+    report.yStick = pio_sm_get_blocking(pio, sm);
+    report.cxStick = pio_sm_get_blocking(pio, sm);
+    report.cyStick = pio_sm_get_blocking(pio, sm);
+    report.analogL = pio_sm_get_blocking(pio, sm);
+    report.analogR = pio_sm_get_blocking(pio, sm);
 }
 
 void GCcontroller::getorigin(){
+    
     uint16_t requestorigin = 0b100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits
-    uint8_t recievebitlength = 0b00;                //80 bits sent from controller
+
     pio_sm_put_blocking(pio, sm, requestorigin);
-    uint32_t data_read = pio_sm_get_blocking(pio, sm);
-    printf("%lu\n", data_read);
+    uint8_t data_read0 = pio_sm_get_blocking(pio, sm);
+    uint8_t data_read1 = pio_sm_get_blocking(pio, sm);
+    origin.xStick = pio_sm_get_blocking(pio, sm);
+    origin.yStick = pio_sm_get_blocking(pio, sm);
+    origin.cxStick = pio_sm_get_blocking(pio, sm);
+    origin.cyStick = pio_sm_get_blocking(pio, sm);
+    origin.analogL = pio_sm_get_blocking(pio, sm);
+    origin.analogR = pio_sm_get_blocking(pio, sm);
+
 }

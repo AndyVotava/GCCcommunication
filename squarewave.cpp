@@ -8,14 +8,15 @@ int main() {
 
     GCcontroller controller1(pio0, sm, 0);
 
+    
     while(true){
 
-        controller1.getorigin();
-        //controller1.getreport();
+        controller1.getreport();
+        busy_wait_us(400);
+        printf("X: %hhu Y: %hhu\n", controller1.report.xStick, controller1.report.yStick);
+
     }
 
     return 0;
 
 }
-
-
