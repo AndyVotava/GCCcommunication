@@ -12,8 +12,6 @@ int main() {
     while(true){
 
         controller1.getreport();
-        busy_wait_us(400);
-        printf("X: %hhu Y: %hhu\n", controller1.report.xStick, controller1.report.yStick);
 
     }
 

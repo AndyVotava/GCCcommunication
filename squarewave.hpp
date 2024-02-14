@@ -25,8 +25,11 @@ class GCcontroller{
     GCcontroller(PIO pio, uint sm, uint pin);
 
     void getreport();
+    void printreport();
     void getorigin();
+    void printorigin();
 
+    protected:
     GCreport origin;
     GCreport report;
 
@@ -62,6 +65,9 @@ void GCcontroller::getreport(){
     report.cyStick = pio_sm_get_blocking(pio, sm);
     report.analogL = pio_sm_get_blocking(pio, sm);
     report.analogR = pio_sm_get_blocking(pio, sm);
+
+
+    busy_wait_us(10); //delay for end bit to come through
 }
 
 void GCcontroller::getorigin(){
@@ -69,8 +75,9 @@ void GCcontroller::getorigin(){
     uint16_t requestorigin = 0b100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits
 
     pio_sm_put_blocking(pio, sm, requestorigin);
-    uint8_t data_read0 = pio_sm_get_blocking(pio, sm);
-    uint8_t data_read1 = pio_sm_get_blocking(pio, sm);
+
+    origin.SYXBA = pio_sm_get_blocking(pio, sm);
+    origin.LRZD = pio_sm_get_blocking(pio, sm);
     origin.xStick = pio_sm_get_blocking(pio, sm);
     origin.yStick = pio_sm_get_blocking(pio, sm);
     origin.cxStick = pio_sm_get_blocking(pio, sm);
@@ -78,4 +85,12 @@ void GCcontroller::getorigin(){
     origin.analogL = pio_sm_get_blocking(pio, sm);
     origin.analogR = pio_sm_get_blocking(pio, sm);
 
+    busy_wait_us(74); //delay for 0's and end bits to come through
 }
+
+void GCcontroller::printreport(){
+    
+    printf("SYXBA: %hhu LRZD: %hhu X: %hhu Y: %hhu CX: %hhu CY: %hhu L: %hhu R: %hhu\n", report.SYXBA, report.LRZD, report.xStick, report.yStick, report.cxStick, report.cyStick, report.analogL, report.analogR);
+
+}
+
