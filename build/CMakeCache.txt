@@ -126,7 +126,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/pio_squarewave
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/wirelessgcc_project
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/gcc-arm-none-eabi/bin/arm-none-eabi-ld.exe
@@ -168,7 +168,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=pio_squarewave
+CMAKE_PROJECT_NAME:STATIC=wirelessgcc_project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib.exe
@@ -308,13 +308,13 @@ pico_sdk_IS_TOP_LEVEL:STATIC=OFF
 pico_sdk_SOURCE_DIR:STATIC=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk
 
 //Value Computed by CMake
-pio_squarewave_BINARY_DIR:STATIC=C:/Users/Andy/Documents/wirelessGCC/build
+wirelessgcc_project_BINARY_DIR:STATIC=C:/Users/Andy/Documents/wirelessGCC/build
 
 //Value Computed by CMake
-pio_squarewave_IS_TOP_LEVEL:STATIC=ON
+wirelessgcc_project_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-pio_squarewave_SOURCE_DIR:STATIC=C:/Users/Andy/Documents/wirelessGCC
+wirelessgcc_project_SOURCE_DIR:STATIC=C:/Users/Andy/Documents/wirelessGCC
 
 
 ########################

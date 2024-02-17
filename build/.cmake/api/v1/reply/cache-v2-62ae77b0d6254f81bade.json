@@ -751,7 +751,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/pio_squarewave"
+			"value" : "C:/Program Files (x86)/wirelessgcc_project"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -971,7 +971,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "pio_squarewave"
+			"value" : "wirelessgcc_project"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1778,7 +1778,7 @@
 			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk"
 		},
 		{
-			"name" : "pio_squarewave_BINARY_DIR",
+			"name" : "wirelessgcc_project_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1790,7 +1790,7 @@
 			"value" : "C:/Users/Andy/Documents/wirelessGCC/build"
 		},
 		{
-			"name" : "pio_squarewave_IS_TOP_LEVEL",
+			"name" : "wirelessgcc_project_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1802,7 +1802,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "pio_squarewave_SOURCE_DIR",
+			"name" : "wirelessgcc_project_SOURCE_DIR",
 			"properties" : 
 			[
 				{

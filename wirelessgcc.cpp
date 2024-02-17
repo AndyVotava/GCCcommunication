@@ -1,5 +1,5 @@
-#include "squarewave.pio.h"
-#include "squarewave.hpp"
+#include "readgcc.pio.h"
+#include "gcclibrary.hpp"
 
 int main() {
     stdio_init_all();
@@ -12,6 +12,7 @@ int main() {
     while(true){
 
         controller1.getreport();
+        controller1.printreport();
 
     }
 

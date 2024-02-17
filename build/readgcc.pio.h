@@ -8,14 +8,14 @@
 #include "hardware/pio.h"
 #endif
 
-// ---------- //
-// squarewave //
-// ---------- //
+// ------- //
+// readgcc //
+// ------- //
 
-#define squarewave_wrap_target 0
-#define squarewave_wrap 28
+#define readgcc_wrap_target 0
+#define readgcc_wrap 24
 
-static const uint16_t squarewave_program_instructions[] = {
+static const uint16_t readgcc_program_instructions[] = {
             //     .wrap_target
     0x80a0, //  0: pull   block                      
     0x6021, //  1: out    x, 1                       
@@ -42,23 +42,19 @@ static const uint16_t squarewave_program_instructions[] = {
     0x0054, // 22: jmp    x--, 20                    
     0x8000, // 23: push   noblock                    
     0x0093, // 24: jmp    y--, 19                    
-    0xbf42, // 25: nop                           [31]
-    0xbf42, // 26: nop                           [31]
-    0xbf42, // 27: nop                           [31]
-    0xbf42, // 28: nop                           [31]
             //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
-static const struct pio_program squarewave_program = {
-    .instructions = squarewave_program_instructions,
-    .length = 29,
+static const struct pio_program readgcc_program = {
+    .instructions = readgcc_program_instructions,
+    .length = 25,
     .origin = -1,
 };
 
-static inline pio_sm_config squarewave_program_get_default_config(uint offset) {
+static inline pio_sm_config readgcc_program_get_default_config(uint offset) {
     pio_sm_config c = pio_get_default_sm_config();
-    sm_config_set_wrap(&c, offset + squarewave_wrap_target, offset + squarewave_wrap);
+    sm_config_set_wrap(&c, offset + readgcc_wrap_target, offset + readgcc_wrap);
     return c;
 }
 #endif

@@ -1,5 +1,6 @@
-C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/pio_squarewave.dir
-C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/pio_squarewave_squarewave_pio_h.dir
+C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/wirelessgcc_project.dir
+C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/wirelessgcc_project_readgcc_pio_h.dir
+C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/wirelessgcc_project_writegcc_pio_h.dir
 C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/edit_cache.dir
 C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/rebuild_cache.dir
 C:/Users/Andy/Documents/wirelessGCC/build/pico-sdk/CMakeFiles/edit_cache.dir

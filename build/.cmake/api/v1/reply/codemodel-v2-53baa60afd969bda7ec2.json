@@ -19,8 +19,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						6,
+						7,
+						8
 					]
 				},
 				{
@@ -788,8 +789,8 @@
 					"source" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/tinyusb",
 					"targetIndexes" : 
 					[
-						6,
-						7
+						4,
+						5
 					]
 				},
 				{
@@ -1031,11 +1032,12 @@
 					[
 						0
 					],
-					"name" : "pio_squarewave",
+					"name" : "wirelessgcc_project",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						6,
+						7,
+						8
 					]
 				},
 				{
@@ -1130,8 +1132,8 @@
 						1,
 						2,
 						3,
-						6,
-						7
+						4,
+						5
 					]
 				}
 			],
@@ -1166,20 +1168,6 @@
 					"projectIndex" : 1
 				},
 				{
-					"directoryIndex" : 0,
-					"id" : "pio_squarewave::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pio_squarewave-Debug-ea224aa89feeda64a652.json",
-					"name" : "pio_squarewave",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "pio_squarewave_squarewave_pio_h::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-pio_squarewave_squarewave_pio_h-Debug-c1f75f20b213cca538c1.json",
-					"name" : "pio_squarewave_squarewave_pio_h",
-					"projectIndex" : 0
-				},
-				{
 					"directoryIndex" : 61,
 					"id" : "tinyusb_pico_pio_usb_usb_rx_pio_h::@36e52159cb4e937c58c5",
 					"jsonFile" : "target-tinyusb_pico_pio_usb_usb_rx_pio_h-Debug-b883600de11fb2b4c783.json",
@@ -1192,6 +1180,27 @@
 					"jsonFile" : "target-tinyusb_pico_pio_usb_usb_tx_pio_h-Debug-084685bf0f66cde330c2.json",
 					"name" : "tinyusb_pico_pio_usb_usb_tx_pio_h",
 					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wirelessgcc_project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wirelessgcc_project-Debug-b5a7997df9fd02cb0407.json",
+					"name" : "wirelessgcc_project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wirelessgcc_project_readgcc_pio_h::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wirelessgcc_project_readgcc_pio_h-Debug-e64eb3badb5ef383aac3.json",
+					"name" : "wirelessgcc_project_readgcc_pio_h",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "wirelessgcc_project_writegcc_pio_h::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-wirelessgcc_project_writegcc_pio_h-Debug-9a80d5c3401583c0e38d.json",
+					"name" : "wirelessgcc_project_writegcc_pio_h",
+					"projectIndex" : 0
 				}
 			]
 		}

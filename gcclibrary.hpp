@@ -38,9 +38,9 @@ class GCcontroller{
 
 GCcontroller::GCcontroller(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
 
-    uint offset = pio_add_program(pio, &squarewave_program);
+    uint offset = pio_add_program(pio, &readgcc_program);
 
-    pio_sm_config c = squarewave_program_get_default_config(offset);
+    pio_sm_config c = readgcc_program_get_default_config(offset);
 
     sm_config_set_set_pins(&c, pin, 1);
     sm_config_set_in_shift(&c, false, false, 32);
@@ -92,5 +92,30 @@ void GCcontroller::printreport(){
     
     printf("SYXBA: %hhu LRZD: %hhu X: %hhu Y: %hhu CX: %hhu CY: %hhu L: %hhu R: %hhu\n", report.SYXBA, report.LRZD, report.xStick, report.yStick, report.cxStick, report.cyStick, report.analogL, report.analogR);
 
+}
+
+class GCconsole
+{
+public:
+PIO pio;
+uint sm;
+GCconsole(PIO pio, uint sm, uint pin);
+
+};
+
+GCconsole::GCconsole(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
+
+    uint offset = pio_add_program(pio, &readgcc_program);
+
+    pio_sm_config c = readgcc_program_get_default_config(offset);
+
+    sm_config_set_set_pins(&c, pin, 1);
+    sm_config_set_in_shift(&c, false, false, 32);
+    sm_config_set_out_shift(&c, true, false, 32);
+
+    pio_gpio_init(pio, pin);
+    pio_sm_init(pio, sm, offset, &c);
+    pio_sm_set_clkdiv(pio, sm, 31.25);
+    pio_sm_set_enabled(pio, sm, true);
 }
 
