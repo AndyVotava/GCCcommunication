@@ -1,4 +1,3 @@
-#include "readgcc.pio.h"
 #include "gcclibrary.hpp"
 
 int main() {
@@ -8,11 +7,12 @@ int main() {
 
     GCcontroller controller1(pio0, 0);
 
+    GCconsole console1(pio1, 1);
+
     
     while(true){
 
-        controller1.getreport();
-        controller1.printreport();
+        console1.write();
 
     }
 

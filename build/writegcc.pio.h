@@ -13,15 +13,24 @@
 // -------- //
 
 #define writegcc_wrap_target 0
-#define writegcc_wrap 0
+#define writegcc_wrap 6
 
 static const uint16_t writegcc_program_instructions[] = {
+            //     .wrap_target
+    0xe080, //  0: set    pindirs, 0                 
+    0xe025, //  1: set    x, 5                       
+    0x2521, //  2: wait   0 pin, 1               [5] 
+    0x4501, //  3: in     pins, 1                [5] 
+    0x0042, //  4: jmp    x--, 2                     
+    0x8000, //  5: push   noblock                    
+    0x0001, //  6: jmp    1                          
+            //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
 static const struct pio_program writegcc_program = {
     .instructions = writegcc_program_instructions,
-    .length = 0,
+    .length = 7,
     .origin = -1,
 };
 

@@ -1,1 +1,13 @@
 .program writegcc
+
+set pindirs, 0
+
+outerloop:
+set x, 5            ;bits for byte
+    
+readbit:
+    wait 0 pin 1 [5]    ;wait for begining of next bit
+    in pins, 1 [5]          ;read bit
+    jmp x-- readbit
+    push noblock
+    jmp outerloop

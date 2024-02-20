@@ -1,5 +1,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
+#include "readgcc.pio.h"
+#include "writegcc.pio.h"
 #include <stdio.h>      //for print
 
 //uint16_t status = 0b000000001;          //first bit to set length to 9 -> 8 bits of probe + end bit
@@ -102,6 +104,7 @@ public:
 PIO pio;
 uint sm;
 GCconsole(PIO pio, uint pin);
+void write();
 
 };
 
@@ -109,9 +112,9 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio){
 
     sm = pio_claim_unused_sm(pio, true);
 
-    uint offset = pio_add_program(pio, &readgcc_program);
+    uint offset = pio_add_program(pio, &writegcc_program);
 
-    pio_sm_config c = readgcc_program_get_default_config(offset);
+    pio_sm_config c = writegcc_program_get_default_config(offset);
 
     sm_config_set_set_pins(&c, pin, 1);
     sm_config_set_in_shift(&c, false, false, 32);
@@ -121,4 +124,13 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio){
     pio_sm_init(pio, sm, offset, &c);
     pio_sm_set_clkdiv(pio, sm, 31.25);
     pio_sm_set_enabled(pio, sm, true);
+}
+
+void GCconsole::write(){
+
+    uint16_t statusrequest = pio_sm_get_blocking(pio, sm);
+    printf("%u\n", statusrequest);
+
+    busy_wait_us(10);
+
 }
