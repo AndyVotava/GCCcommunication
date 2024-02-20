@@ -6,7 +6,7 @@ int main() {
 
     uint sm = pio_claim_unused_sm(pio0, true);
 
-    GCcontroller controller1(pio0, sm, 0);
+    GCcontroller controller1(pio0, 0);
 
     
     while(true){

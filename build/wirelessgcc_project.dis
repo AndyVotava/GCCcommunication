@@ -31,21 +31,21 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY
  13 .comment      00000049  00000000  00000000  0000bd08  2**0
                   CONTENTS, READONLY
- 14 .debug_info   0002a33b  00000000  00000000  0000bd51  2**0
+ 14 .debug_info   0002a31f  00000000  00000000  0000bd51  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 15 .debug_abbrev 000076e7  00000000  00000000  0003608c  2**0
+ 15 .debug_abbrev 000076d3  00000000  00000000  00036070  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 16 .debug_loc    0001c3a9  00000000  00000000  0003d773  2**0
+ 16 .debug_loc    0001c343  00000000  00000000  0003d743  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_aranges 000015f0  00000000  00000000  00059b20  2**3
+ 17 .debug_aranges 000015f0  00000000  00000000  00059a88  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_ranges 00005bd0  00000000  00000000  0005b110  2**3
+ 18 .debug_ranges 00005bd0  00000000  00000000  0005b078  2**3
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_line   0001ad2c  00000000  00000000  00060ce0  2**0
+ 19 .debug_line   0001ad4b  00000000  00000000  00060c48  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .debug_str    00008227  00000000  00000000  0007ba0c  2**0
+ 20 .debug_str    00008223  00000000  00000000  0007b993  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 21 .debug_frame  00002e1c  00000000  00000000  00083c34  2**2
+ 21 .debug_frame  00002e0c  00000000  00000000  00083bb8  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 C:/Users/Andy/Documents/wirelessGCC/build/wirelessgcc_project.elf:     file format elf32-littlearm
@@ -328,45 +328,44 @@ Disassembly of section .text:
 100002fc:	20000dd4 	.word	0x20000dd4
 10000300:	10007430 	.word	0x10007430
 
-10000304 <_ZN12GCcontrollerC1EP8pio_hw_tjj>:
+10000304 <_ZN12GCcontrollerC1EP8pio_hw_tj>:
 10000304:	b5f0      	push	{r4, r5, r6, r7, lr}
-10000306:	46c6      	mov	lr, r8
-10000308:	b500      	push	{lr}
-1000030a:	b084      	sub	sp, #16
-1000030c:	0006      	movs	r6, r0
-1000030e:	000c      	movs	r4, r1
-10000310:	0015      	movs	r5, r2
-10000312:	4698      	mov	r8, r3
-10000314:	6001      	str	r1, [r0, #0]
-10000316:	6042      	str	r2, [r0, #4]
-10000318:	4923      	ldr	r1, [pc, #140]	; (100003a8 <_ZN12GCcontrollerC1EP8pio_hw_tjj+0xa4>)
-1000031a:	0020      	movs	r0, r4
-1000031c:	f006 ff5a 	bl	100071d4 <pio_add_program>
-10000320:	0007      	movs	r7, r0
-10000322:	2210      	movs	r2, #16
-10000324:	2100      	movs	r1, #0
-10000326:	4668      	mov	r0, sp
-10000328:	f004 f924 	bl	10004574 <__wrap_memset>
-1000032c:	2380      	movs	r3, #128	; 0x80
-1000032e:	025b      	lsls	r3, r3, #9
-10000330:	9300      	str	r3, [sp, #0]
-10000332:	23f8      	movs	r3, #248	; 0xf8
-10000334:	025b      	lsls	r3, r3, #9
-10000336:	9301      	str	r3, [sp, #4]
-10000338:	2380      	movs	r3, #128	; 0x80
-1000033a:	02db      	lsls	r3, r3, #11
-1000033c:	9302      	str	r3, [sp, #8]
-1000033e:	23c0      	movs	r3, #192	; 0xc0
-10000340:	031b      	lsls	r3, r3, #12
-10000342:	9302      	str	r3, [sp, #8]
-10000344:	003a      	movs	r2, r7
-10000346:	3218      	adds	r2, #24
-10000348:	01fb      	lsls	r3, r7, #7
-1000034a:	0312      	lsls	r2, r2, #12
-1000034c:	4313      	orrs	r3, r2
-1000034e:	9301      	str	r3, [sp, #4]
-10000350:	4643      	mov	r3, r8
-10000352:	015a      	lsls	r2, r3, #5
+10000306:	b085      	sub	sp, #20
+10000308:	0005      	movs	r5, r0
+1000030a:	000c      	movs	r4, r1
+1000030c:	0017      	movs	r7, r2
+1000030e:	6001      	str	r1, [r0, #0]
+10000310:	2101      	movs	r1, #1
+10000312:	0020      	movs	r0, r4
+10000314:	f006 ff40 	bl	10007198 <pio_claim_unused_sm>
+10000318:	6068      	str	r0, [r5, #4]
+1000031a:	4923      	ldr	r1, [pc, #140]	; (100003a8 <_ZN12GCcontrollerC1EP8pio_hw_tj+0xa4>)
+1000031c:	0020      	movs	r0, r4
+1000031e:	f006 ff59 	bl	100071d4 <pio_add_program>
+10000322:	0006      	movs	r6, r0
+10000324:	2210      	movs	r2, #16
+10000326:	2100      	movs	r1, #0
+10000328:	4668      	mov	r0, sp
+1000032a:	f004 f923 	bl	10004574 <__wrap_memset>
+1000032e:	2380      	movs	r3, #128	; 0x80
+10000330:	025b      	lsls	r3, r3, #9
+10000332:	9300      	str	r3, [sp, #0]
+10000334:	23f8      	movs	r3, #248	; 0xf8
+10000336:	025b      	lsls	r3, r3, #9
+10000338:	9301      	str	r3, [sp, #4]
+1000033a:	2380      	movs	r3, #128	; 0x80
+1000033c:	02db      	lsls	r3, r3, #11
+1000033e:	9302      	str	r3, [sp, #8]
+10000340:	23c0      	movs	r3, #192	; 0xc0
+10000342:	031b      	lsls	r3, r3, #12
+10000344:	9302      	str	r3, [sp, #8]
+10000346:	0032      	movs	r2, r6
+10000348:	3218      	adds	r2, #24
+1000034a:	01f3      	lsls	r3, r6, #7
+1000034c:	0312      	lsls	r2, r2, #12
+1000034e:	4313      	orrs	r3, r2
+10000350:	9301      	str	r3, [sp, #4]
+10000352:	017a      	lsls	r2, r7, #5
 10000354:	2380      	movs	r3, #128	; 0x80
 10000356:	04db      	lsls	r3, r3, #19
 10000358:	4313      	orrs	r3, r2
@@ -374,38 +373,38 @@ Disassembly of section .text:
 1000035c:	2380      	movs	r3, #128	; 0x80
 1000035e:	031b      	lsls	r3, r3, #12
 10000360:	9302      	str	r3, [sp, #8]
-10000362:	4b12      	ldr	r3, [pc, #72]	; (100003ac <_ZN12GCcontrollerC1EP8pio_hw_tjj+0xa8>)
+10000362:	4b12      	ldr	r3, [pc, #72]	; (100003ac <_ZN12GCcontrollerC1EP8pio_hw_tj+0xa8>)
 10000364:	429c      	cmp	r4, r3
-10000366:	d01c      	beq.n	100003a2 <_ZN12GCcontrollerC1EP8pio_hw_tjj+0x9e>
+10000366:	d01c      	beq.n	100003a2 <_ZN12GCcontrollerC1EP8pio_hw_tj+0x9e>
 10000368:	2107      	movs	r1, #7
-1000036a:	4640      	mov	r0, r8
+1000036a:	0038      	movs	r0, r7
 1000036c:	f000 f8a6 	bl	100004bc <gpio_set_function>
 10000370:	466b      	mov	r3, sp
-10000372:	003a      	movs	r2, r7
-10000374:	0029      	movs	r1, r5
+10000372:	0032      	movs	r2, r6
+10000374:	6869      	ldr	r1, [r5, #4]
 10000376:	0020      	movs	r0, r4
 10000378:	f006 ff48 	bl	1000720c <pio_sm_init>
-1000037c:	006b      	lsls	r3, r5, #1
-1000037e:	195b      	adds	r3, r3, r5
-10000380:	00db      	lsls	r3, r3, #3
-10000382:	18e3      	adds	r3, r4, r3
-10000384:	33c8      	adds	r3, #200	; 0xc8
-10000386:	22fa      	movs	r2, #250	; 0xfa
-10000388:	0352      	lsls	r2, r2, #13
-1000038a:	601a      	str	r2, [r3, #0]
-1000038c:	6822      	ldr	r2, [r4, #0]
-1000038e:	2301      	movs	r3, #1
-10000390:	40ab      	lsls	r3, r5
-10000392:	439a      	bics	r2, r3
-10000394:	4313      	orrs	r3, r2
-10000396:	6023      	str	r3, [r4, #0]
-10000398:	0030      	movs	r0, r6
-1000039a:	b004      	add	sp, #16
-1000039c:	bc80      	pop	{r7}
-1000039e:	46b8      	mov	r8, r7
+1000037c:	686a      	ldr	r2, [r5, #4]
+1000037e:	0053      	lsls	r3, r2, #1
+10000380:	189b      	adds	r3, r3, r2
+10000382:	00db      	lsls	r3, r3, #3
+10000384:	18e3      	adds	r3, r4, r3
+10000386:	33c8      	adds	r3, #200	; 0xc8
+10000388:	22fa      	movs	r2, #250	; 0xfa
+1000038a:	0352      	lsls	r2, r2, #13
+1000038c:	601a      	str	r2, [r3, #0]
+1000038e:	6822      	ldr	r2, [r4, #0]
+10000390:	2301      	movs	r3, #1
+10000392:	6869      	ldr	r1, [r5, #4]
+10000394:	408b      	lsls	r3, r1
+10000396:	439a      	bics	r2, r3
+10000398:	4313      	orrs	r3, r2
+1000039a:	6023      	str	r3, [r4, #0]
+1000039c:	0028      	movs	r0, r5
+1000039e:	b005      	add	sp, #20
 100003a0:	bdf0      	pop	{r4, r5, r6, r7, pc}
 100003a2:	2106      	movs	r1, #6
-100003a4:	e7e1      	b.n	1000036a <_ZN12GCcontrollerC1EP8pio_hw_tjj+0x66>
+100003a4:	e7e1      	b.n	1000036a <_ZN12GCcontrollerC1EP8pio_hw_tj+0x66>
 100003a6:	46c0      	nop			; (mov r8, r8)
 100003a8:	1000747c 	.word	0x1000747c
 100003ac:	50200000 	.word	0x50200000
@@ -528,16 +527,16 @@ Disassembly of section .text:
 10000496:	2101      	movs	r1, #1
 10000498:	0020      	movs	r0, r4
 1000049a:	f006 fe7d 	bl	10007198 <pio_claim_unused_sm>
-1000049e:	0002      	movs	r2, r0
-100004a0:	2300      	movs	r3, #0
-100004a2:	0021      	movs	r1, r4
-100004a4:	4668      	mov	r0, sp
-100004a6:	f7ff ff2d 	bl	10000304 <_ZN12GCcontrollerC1EP8pio_hw_tjj>
-100004aa:	4668      	mov	r0, sp
-100004ac:	f7ff ff80 	bl	100003b0 <_ZN12GCcontroller9getreportEv>
-100004b0:	4668      	mov	r0, sp
-100004b2:	f7ff ffd5 	bl	10000460 <_ZN12GCcontroller11printreportEv>
-100004b6:	e7f8      	b.n	100004aa <main+0x1e>
+1000049e:	2200      	movs	r2, #0
+100004a0:	0021      	movs	r1, r4
+100004a2:	4668      	mov	r0, sp
+100004a4:	f7ff ff2e 	bl	10000304 <_ZN12GCcontrollerC1EP8pio_hw_tj>
+100004a8:	4668      	mov	r0, sp
+100004aa:	f7ff ff81 	bl	100003b0 <_ZN12GCcontroller9getreportEv>
+100004ae:	4668      	mov	r0, sp
+100004b0:	f7ff ffd6 	bl	10000460 <_ZN12GCcontroller11printreportEv>
+100004b4:	e7f8      	b.n	100004a8 <main+0x1c>
+100004b6:	46c0      	nop			; (mov r8, r8)
 100004b8:	50200000 	.word	0x50200000
 
 100004bc <gpio_set_function>:

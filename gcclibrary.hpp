@@ -22,7 +22,7 @@ class GCcontroller{
     public:
     PIO pio;
     uint sm; 
-    GCcontroller(PIO pio, uint sm, uint pin);
+    GCcontroller(PIO pio, uint pin);
 
     void getreport();
     void printreport();
@@ -36,7 +36,9 @@ class GCcontroller{
 
 };
 
-GCcontroller::GCcontroller(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
+GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio){
+
+    sm = pio_claim_unused_sm(pio, true);
 
     uint offset = pio_add_program(pio, &readgcc_program);
 
@@ -99,11 +101,13 @@ class GCconsole
 public:
 PIO pio;
 uint sm;
-GCconsole(PIO pio, uint sm, uint pin);
+GCconsole(PIO pio, uint pin);
 
 };
 
-GCconsole::GCconsole(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
+GCconsole::GCconsole(PIO pio, uint pin): pio(pio){
+
+    sm = pio_claim_unused_sm(pio, true);
 
     uint offset = pio_add_program(pio, &readgcc_program);
 
@@ -118,4 +122,3 @@ GCconsole::GCconsole(PIO pio, uint sm, uint pin): pio(pio), sm(sm){
     pio_sm_set_clkdiv(pio, sm, 31.25);
     pio_sm_set_enabled(pio, sm, true);
 }
-
