@@ -11,7 +11,8 @@ int main() {
     while(true){
 
         console1.write();
-        //printf("controller sm: %u pio: %u pin:%u\t   console sm: %u pio: %u pin: %u\n",controller1.pio, controller1.sm, controller1.pin, console1.pio, console1.sm, console1.pin);
+        controller1.getreport();
+        controller1.printreport();
 
     }
 
