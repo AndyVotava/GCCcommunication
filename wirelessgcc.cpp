@@ -1,4 +1,3 @@
-#include "readgcc.pio.h"
 #include "gcclibrary.hpp"
 
 int main() {
@@ -6,11 +5,12 @@ int main() {
 
     uint sm = pio_claim_unused_sm(pio0, true);
 
+    GCconsole console1(pio1, 1);
     GCcontroller controller1(pio0, 0);
-
     
     while(true){
 
+        console1.write();
         controller1.getreport();
         controller1.printreport();
 
