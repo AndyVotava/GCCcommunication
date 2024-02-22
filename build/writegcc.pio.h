@@ -18,9 +18,9 @@
 static const uint16_t writegcc_program_instructions[] = {
             //     .wrap_target
     0xe080, //  0: set    pindirs, 0                 
-    0xe025, //  1: set    x, 5                       
-    0x2521, //  2: wait   0 pin, 1               [5] 
-    0x4501, //  3: in     pins, 1                [5] 
+    0xe028, //  1: set    x, 8                       
+    0x2720, //  2: wait   0 pin, 0               [7] 
+    0x4901, //  3: in     pins, 1                [9] 
     0x0042, //  4: jmp    x--, 2                     
     0x8000, //  5: push   noblock                    
     0x0001, //  6: jmp    1                          

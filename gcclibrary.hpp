@@ -24,6 +24,7 @@ class GCcontroller{
     public:
     PIO pio;
     uint sm; 
+    uint pin;
     GCcontroller(PIO pio, uint pin);
 
     void getreport();
@@ -38,7 +39,7 @@ class GCcontroller{
 
 };
 
-GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio){
+GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio), pin(pin){
 
     sm = pio_claim_unused_sm(pio, true);
 
@@ -47,6 +48,7 @@ GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio){
     pio_sm_config c = readgcc_program_get_default_config(offset);
 
     sm_config_set_set_pins(&c, pin, 1);
+    sm_config_set_in_pins(&c, pin);
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_out_shift(&c, true, false, 32);
 
@@ -103,20 +105,22 @@ class GCconsole
 public:
 PIO pio;
 uint sm;
+uint pin;
 GCconsole(PIO pio, uint pin);
 void write();
 
 };
 
-GCconsole::GCconsole(PIO pio, uint pin): pio(pio){
+GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
 
-    sm = pio_claim_unused_sm(pio, true);
+    sm = pio_claim_unused_sm(pio, true);        //get unused state machine in pio
 
-    uint offset = pio_add_program(pio, &writegcc_program);
+    uint offset = pio_add_program(pio, &writegcc_program);  //
 
     pio_sm_config c = writegcc_program_get_default_config(offset);
 
     sm_config_set_set_pins(&c, pin, 1);
+    sm_config_set_in_pins(&c, pin);
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_out_shift(&c, true, false, 32);
 
