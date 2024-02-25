@@ -59,7 +59,7 @@ GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio), pin(pin){
 }
 
 void GCcontroller::getreport(){
-    uint32_t requestreport = 0b0100000011000000000000100;   //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits
+    uint32_t requestreport = 0b10100000011000000000000100;   //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits, LAST BIT IS FOR RECIEVE LENGTH
 
     pio_sm_put_blocking(pio, sm, requestreport);
 
@@ -72,13 +72,11 @@ void GCcontroller::getreport(){
     report.analogL = pio_sm_get_blocking(pio, sm);
     report.analogR = pio_sm_get_blocking(pio, sm);
 
-
-    busy_wait_us(10); //delay for end bit to come through
 }
 
 void GCcontroller::getorigin(){
     
-    uint16_t requestorigin = 0b100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits
+    uint16_t requestorigin = 0b0100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits LAST BIT IS FOR RECIEVE LENGTH
 
     pio_sm_put_blocking(pio, sm, requestorigin);
 
@@ -90,8 +88,6 @@ void GCcontroller::getorigin(){
     origin.cyStick = pio_sm_get_blocking(pio, sm);
     origin.analogL = pio_sm_get_blocking(pio, sm);
     origin.analogR = pio_sm_get_blocking(pio, sm);
-
-    busy_wait_us(74); //delay for 0's and end bits to come through
 }
 
 void GCcontroller::printreport(){

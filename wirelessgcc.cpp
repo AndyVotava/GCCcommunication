@@ -10,9 +10,8 @@ int main() {
     
     while(true){
 
-        console1.write();
+        controller1.getorigin();
         controller1.getreport();
-        controller1.printreport();
 
     }
 

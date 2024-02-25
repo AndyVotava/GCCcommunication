@@ -42,3 +42,15 @@ readbit:
     jmp x-- readbit
     push noblock
     jmp y-- readbitouter
+
+out x, 1    ;Read bit to see how long to delay
+jmp !x originDelay
+set x, 5        ;TODO DELAY TIMES CAN BE REDUCED
+jmp delay
+
+originDelay:
+    set x, 13   ;TODO DELAY TIMES CAN BE REDUCED
+
+delay:
+    nop[31]     ;TODO DELAY TIMES CAN BE REDUCED
+    jmp x-- delay
