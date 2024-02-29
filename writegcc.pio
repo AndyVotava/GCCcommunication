@@ -10,4 +10,23 @@ readbit:
     in pins, 1 [9]          ;read bit
     jmp x-- readbit
     push noblock
-    jmp outerloop
+    ;jmp outerloop
+
+pull block
+set pindirs 1
+set y, 23;
+writebit:
+    set pins, 0 [3]     ;write bit
+    mov pins, osr [6]
+    out null, 1
+    set pins, 1 [2]  
+    jmp y-- writebit
+
+set pins, 0 [3]         ;end bit
+set pins, 1
+set pindirs 0
+
+set y, 31
+delay:
+    nop[31]
+    jmp y-- delay

@@ -10,7 +10,7 @@ int main() {
     
     while(true){
 
-        console1.write()
+        console1.write();
 
     }
 

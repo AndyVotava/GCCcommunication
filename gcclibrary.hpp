@@ -117,6 +117,7 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
 
     sm_config_set_set_pins(&c, pin, 1);
     sm_config_set_in_pins(&c, pin);
+    sm_config_set_out_pins(&c, pin, 1);
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_out_shift(&c, true, false, 32);
 
@@ -128,8 +129,17 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
 
 void GCconsole::write(){
 
+
+    uint32_t conchresponse = 0b110000000000000010010000; 
+
     uint16_t statusrequest = pio_sm_get_blocking(pio, sm);
-    printf("%u\n", statusrequest);
+    //printf("%u\n", statusrequest);
+    //if(statusrequest == 1){
+    pio_sm_put_blocking(pio, sm, conchresponse);
+
+    //}
+
+    //else reset pio
 
     busy_wait_us(10);
 
