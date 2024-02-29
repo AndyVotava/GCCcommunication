@@ -13,37 +13,39 @@
 // -------- //
 
 #define writegcc_wrap_target 0
-#define writegcc_wrap 19
+#define writegcc_wrap 21
 
 static const uint16_t writegcc_program_instructions[] = {
             //     .wrap_target
     0xe080, //  0: set    pindirs, 0                 
-    0xe028, //  1: set    x, 8                       
-    0x2720, //  2: wait   0 pin, 0               [7] 
-    0x4901, //  3: in     pins, 1                [9] 
-    0x0042, //  4: jmp    x--, 2                     
-    0x8000, //  5: push   noblock                    
-    0x80a0, //  6: pull   block                      
-    0xe081, //  7: set    pindirs, 1                 
-    0xe057, //  8: set    y, 23                      
-    0xe300, //  9: set    pins, 0                [3] 
-    0xa607, // 10: mov    pins, osr              [6] 
-    0x6061, // 11: out    null, 1                    
-    0xe201, // 12: set    pins, 1                [2] 
-    0x0089, // 13: jmp    y--, 9                     
+    0x80a0, //  1: pull   block                      
+    0x6024, //  2: out    x, 4                       
+    0xe047, //  3: set    y, 7                       
+    0x2720, //  4: wait   0 pin, 0               [7] 
+    0x4901, //  5: in     pins, 1                [9] 
+    0x0084, //  6: jmp    y--, 4                     
+    0x8000, //  7: push   noblock                    
+    0x0043, //  8: jmp    x--, 3                     
+    0x80a0, //  9: pull   block                      
+    0x6024, // 10: out    x, 4                       
+    0x80a0, // 11: pull   block                      
+    0xe881, // 12: set    pindirs, 1             [8] 
+    0xe047, // 13: set    y, 7                       
     0xe300, // 14: set    pins, 0                [3] 
-    0xe001, // 15: set    pins, 1                    
-    0xe080, // 16: set    pindirs, 0                 
-    0xe05f, // 17: set    y, 31                      
-    0xbf42, // 18: nop                           [31]
-    0x0092, // 19: jmp    y--, 18                    
+    0xa607, // 15: mov    pins, osr              [6] 
+    0x6061, // 16: out    null, 1                    
+    0xe201, // 17: set    pins, 1                [2] 
+    0x008e, // 18: jmp    y--, 14                    
+    0x004d, // 19: jmp    x--, 13                    
+    0xe300, // 20: set    pins, 0                [3] 
+    0xe001, // 21: set    pins, 1                    
             //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
 static const struct pio_program writegcc_program = {
     .instructions = writegcc_program_instructions,
-    .length = 20,
+    .length = 22,
     .origin = -1,
 };
 

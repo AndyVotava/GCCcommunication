@@ -1,32 +1,33 @@
 .program writegcc
 
 set pindirs, 0
+pull block
+out x, 4            ;how many bytes to read
 
-outerloop:
-set x, 8            ;bits for byte
-    
+readbyte:
+set y, 7            ;bits per byte
 readbit:
-    wait 0 pin 0 [7]     ;wait for begining of next bit
-    in pins, 1 [9]          ;read bit
-    jmp x-- readbit
+    wait 0 pin 0 [7]     
+    in pins, 1 [9]          
+    jmp y-- readbit
     push noblock
-    ;jmp outerloop
+    jmp x-- readbyte
+
+
 
 pull block
-set pindirs 1
-set y, 23;
+out x, 4        ;how many bytes to write
+pull block
+set pindirs 1 [8]
+writebyte:
+set y, 7        ;bits per byte
 writebit:
     set pins, 0 [3]     ;write bit
     mov pins, osr [6]
     out null, 1
     set pins, 1 [2]  
     jmp y-- writebit
+    jmp x-- writebyte
 
 set pins, 0 [3]         ;end bit
 set pins, 1
-set pindirs 0
-
-set y, 31
-delay:
-    nop[31]
-    jmp y-- delay

@@ -103,7 +103,7 @@ PIO pio;
 uint sm;
 uint pin;
 GCconsole(PIO pio, uint pin);
-void write();
+void write(GCreport data);
 
 };
 
@@ -127,20 +127,25 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
     pio_sm_set_enabled(pio, sm, true);
 }
 
-void GCconsole::write(){
+void GCconsole::write(GCreport data){
+    uint32_t gccresponse = 0b110000000000000010010000; 
+    uint8_t one = 0b0;
+    uint8_t three = 0b10;
+    uint8_t eight = 0b111;
+    uint8_t ten = 0b1001;
+    uint16_t consolerequest;
 
+    pio_sm_put_blocking(pio, sm, one);
+    consolerequest = pio_sm_get_blocking(pio, sm);
+    printf("%u\n", consolerequest);
 
-    uint32_t conchresponse = 0b110000000000000010010000; 
+    if (consolerequest != 0){
+        //reset pio
+        busy_wait_us(1);
+    }
+        pio_sm_put_blocking(pio, sm, three);
+        pio_sm_put_blocking(pio, sm, gccresponse);    
 
-    uint16_t statusrequest = pio_sm_get_blocking(pio, sm);
-    //printf("%u\n", statusrequest);
-    //if(statusrequest == 1){
-    pio_sm_put_blocking(pio, sm, conchresponse);
-
-    //}
-
-    //else reset pio
-
-    busy_wait_us(10);
+    busy_wait_ms(1);
 
 }
