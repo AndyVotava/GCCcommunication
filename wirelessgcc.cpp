@@ -10,7 +10,9 @@ int main() {
     
     while(true){
 
-        console1.write();
+        GCreport origin = controller1.getorigin();
+        console1.write(origin);
+        
 
     }
 

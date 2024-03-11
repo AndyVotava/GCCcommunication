@@ -17,10 +17,10 @@ readbit:
 
 pull block
 out x, 4        ;how many bytes to write
-pull block
 set pindirs 1 [8]
 writebyte:
 set y, 7        ;bits per byte
+pull block
 writebit:
     set pins, 0 [3]     ;write bit
     mov pins, osr [6]

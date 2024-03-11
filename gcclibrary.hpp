@@ -27,9 +27,9 @@ class GCcontroller{
     uint pin;
     GCcontroller(PIO pio, uint pin);
 
-    void getreport();
+    GCreport getreport();
     void printreport();
-    void getorigin();
+    GCreport getorigin();
     void printorigin();
 
     protected:
@@ -58,7 +58,7 @@ GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio), pin(pin){
     pio_sm_set_enabled(pio, sm, true);
 }
 
-void GCcontroller::getreport(){
+GCreport GCcontroller::getreport(){
     uint32_t requestreport = 0b10100000011000000000000100;   //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits, LAST BIT IS FOR RECIEVE LENGTH
 
     pio_sm_put_blocking(pio, sm, requestreport);
@@ -72,9 +72,10 @@ void GCcontroller::getreport(){
     report.analogL = pio_sm_get_blocking(pio, sm);
     report.analogR = pio_sm_get_blocking(pio, sm);
 
+    return(report);
 }
 
-void GCcontroller::getorigin(){
+GCreport GCcontroller::getorigin(){
     
     uint16_t requestorigin = 0b0100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits LAST BIT IS FOR RECIEVE LENGTH
 
@@ -88,6 +89,8 @@ void GCcontroller::getorigin(){
     origin.cyStick = pio_sm_get_blocking(pio, sm);
     origin.analogL = pio_sm_get_blocking(pio, sm);
     origin.analogR = pio_sm_get_blocking(pio, sm);
+
+    return(origin);
 }
 
 void GCcontroller::printreport(){
@@ -128,23 +131,47 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
 }
 
 void GCconsole::write(GCreport data){
-    uint32_t gccresponse = 0b110000000000000010010000; 
+    uint32_t pollresponse = 0b110000000000000010010000; 
+    uint8_t pollresponse1 = 0b10010000;
+    uint8_t pollresponse2 = 0x00;
+    uint8_t pollresponse3 = 0b11000000;
+
     uint8_t one = 0b0;
     uint8_t three = 0b10;
     uint8_t eight = 0b111;
     uint8_t ten = 0b1001;
-    uint16_t consolerequest;
+    uint16_t proberequest;
+    uint16_t originrequest;
 
-    pio_sm_put_blocking(pio, sm, one);
-    consolerequest = pio_sm_get_blocking(pio, sm);
-    printf("%u\n", consolerequest);
+    pio_sm_put_blocking(pio, sm, one);              //read one byte, console poll request
+    proberequest = pio_sm_get_blocking(pio, sm);
+    //printf("%u\n", proberequest);
 
-    if (consolerequest != 0){
+    if (proberequest != 0){
         //reset pio
         busy_wait_us(1);
     }
-        pio_sm_put_blocking(pio, sm, three);
-        pio_sm_put_blocking(pio, sm, gccresponse);    
+    
+    pio_sm_put_blocking(pio, sm, three);        //write three bytes to console responding to poll request
+    pio_sm_put_blocking(pio, sm, pollresponse1);
+    pio_sm_put_blocking(pio, sm, pollresponse2); 
+    pio_sm_put_blocking(pio, sm, pollresponse3);   
+
+    
+    pio_sm_put_blocking(pio, sm, one);             //read one bit from console origin request
+    originrequest = pio_sm_get_blocking(pio, sm);
+    //printf("%u\n", originrequest);
+
+    pio_sm_put_blocking(pio, sm, eight);        //write one bytes to console responding to origin request
+    pio_sm_put_blocking(pio, sm, data.SYXBA);  
+    pio_sm_put_blocking(pio, sm, data.LRZD);
+    pio_sm_put_blocking(pio, sm, data.xStick);    
+    pio_sm_put_blocking(pio, sm, data.yStick);
+    pio_sm_put_blocking(pio, sm, data.cxStick);    
+    pio_sm_put_blocking(pio, sm, data.cyStick);
+    pio_sm_put_blocking(pio, sm, data.analogL);    
+    pio_sm_put_blocking(pio, sm, data.analogR);
+    
 
     busy_wait_ms(1);
 

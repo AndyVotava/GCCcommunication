@@ -28,15 +28,15 @@ static const uint16_t writegcc_program_instructions[] = {
     0x0043, //  8: jmp    x--, 3                     
     0x80a0, //  9: pull   block                      
     0x6024, // 10: out    x, 4                       
-    0x80a0, // 11: pull   block                      
-    0xe881, // 12: set    pindirs, 1             [8] 
-    0xe047, // 13: set    y, 7                       
+    0xe881, // 11: set    pindirs, 1             [8] 
+    0xe047, // 12: set    y, 7                       
+    0x80a0, // 13: pull   block                      
     0xe300, // 14: set    pins, 0                [3] 
     0xa607, // 15: mov    pins, osr              [6] 
     0x6061, // 16: out    null, 1                    
     0xe201, // 17: set    pins, 1                [2] 
     0x008e, // 18: jmp    y--, 14                    
-    0x004d, // 19: jmp    x--, 13                    
+    0x004c, // 19: jmp    x--, 12                    
     0xe300, // 20: set    pins, 0                [3] 
     0xe001, // 21: set    pins, 1                    
             //     .wrap
