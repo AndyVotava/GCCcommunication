@@ -1,8 +1,7 @@
 .program writegcc
 
 set pindirs, 0
-pull block
-out x, 4            ;how many bytes to read
+
 
 readbyte:
 set y, 7            ;bits per byte
@@ -10,8 +9,9 @@ readbit:
     wait 0 pin 0 [7]     
     in pins, 1 [9]          
     jmp y-- readbit
-    push noblock
-    jmp x-- readbyte
+    
+push noblock
+
 
 
 
