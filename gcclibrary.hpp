@@ -4,9 +4,17 @@
 #include "writegcc.pio.h"
 #include <stdio.h>      //for print
 
-//uint16_t status = 0b000000001;          //first bit to set length to 9 -> 8 bits of probe + end bit
-//uint16_t origin = 0b100000101;
-
+uint8_t reversebits(uint8_t n){
+    uint8_t rev = 0;
+ 
+    for (int i = 0; i<8; i++) {
+        rev <<= 1;
+        if (n & 1 == 1)
+            rev ^= 1;
+        n >>= 1;
+    }
+    return rev;
+}
 
 struct __attribute__((packed)) GCreport {
     public:
@@ -27,9 +35,9 @@ class GCcontroller{
     uint pin;
     GCcontroller(PIO pio, uint pin);
 
-    void getreport();
+    GCreport getreport();
     void printreport();
-    void getorigin();
+    GCreport getorigin();
     void printorigin();
 
     protected:
@@ -58,7 +66,7 @@ GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio), pin(pin){
     pio_sm_set_enabled(pio, sm, true);
 }
 
-void GCcontroller::getreport(){
+GCreport GCcontroller::getreport(){
     uint32_t requestreport = 0b10100000011000000000000100;   //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits, LAST BIT IS FOR RECIEVE LENGTH
 
     pio_sm_put_blocking(pio, sm, requestreport);
@@ -72,9 +80,10 @@ void GCcontroller::getreport(){
     report.analogL = pio_sm_get_blocking(pio, sm);
     report.analogR = pio_sm_get_blocking(pio, sm);
 
+    return(report);
 }
 
-void GCcontroller::getorigin(){
+GCreport GCcontroller::getorigin(){
     
     uint16_t requestorigin = 0b0100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits LAST BIT IS FOR RECIEVE LENGTH
 
@@ -88,6 +97,8 @@ void GCcontroller::getorigin(){
     origin.cyStick = pio_sm_get_blocking(pio, sm);
     origin.analogL = pio_sm_get_blocking(pio, sm);
     origin.analogR = pio_sm_get_blocking(pio, sm);
+
+    return(origin);
 }
 
 void GCcontroller::printreport(){
@@ -102,8 +113,10 @@ public:
 PIO pio;
 uint sm;
 uint pin;
+
 GCconsole(PIO pio, uint pin);
-void write();
+bool write(GCreport origin, GCreport report);
+
 
 };
 
@@ -117,6 +130,7 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
 
     sm_config_set_set_pins(&c, pin, 1);
     sm_config_set_in_pins(&c, pin);
+    sm_config_set_out_pins(&c, pin, 1);
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_out_shift(&c, true, false, 32);
 
@@ -126,11 +140,58 @@ GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
     pio_sm_set_enabled(pio, sm, true);
 }
 
-void GCconsole::write(){
 
-    uint16_t statusrequest = pio_sm_get_blocking(pio, sm);
-    printf("%u\n", statusrequest);
+bool GCconsole::write(GCreport origin, GCreport report){
+    uint8_t request;
 
-    busy_wait_us(10);
+    request = pio_sm_get_blocking(pio, sm);
 
+    if (request == 0x00){
+        pio_sm_put_blocking(pio, sm, 0x02);        // three bytes
+        pio_sm_put_blocking(pio, sm, reversebits(0x09));        //first byte to output  
+        pio_sm_put_blocking(pio, sm, 0x00);                     //second byte to output
+        pio_sm_put_blocking(pio, sm, reversebits(0x03));        //thrid byte to output
+        return false;
+
+    }
+    
+    else if(request == 0x41){                       //origin request
+        pio_sm_put_blocking(pio, sm, 0x09);         //write ten bytes to console
+
+        pio_sm_put_blocking(pio, sm, reversebits(origin.SYXBA));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.LRZD));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.xStick));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.yStick));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.cxStick));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.cyStick));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.analogL));
+        pio_sm_put_blocking(pio, sm, reversebits(origin.analogR));
+        pio_sm_put_blocking(pio, sm, 0x00);
+        pio_sm_put_blocking(pio, sm, 0x00);
+        return true;
+
+    }
+
+    else if(request == 0x40){
+        busy_wait_us(80);
+        pio_sm_put_blocking(pio, sm, 0x07);        //write eight bytes to console
+
+        pio_sm_put_blocking(pio, sm, reversebits(report.SYXBA));
+        pio_sm_put_blocking(pio, sm, reversebits(report.LRZD));
+        pio_sm_put_blocking(pio, sm, reversebits(report.xStick));
+        pio_sm_put_blocking(pio, sm, reversebits(report.yStick));
+        pio_sm_put_blocking(pio, sm, reversebits(report.cxStick));
+        pio_sm_put_blocking(pio, sm, reversebits(report.cyStick));
+        pio_sm_put_blocking(pio, sm, reversebits(report.analogL));
+        pio_sm_put_blocking(pio, sm, reversebits(report.analogR));
+        return true;
+
+    }
+    
+    else{
+        printf("failed communication");
+        return false;
+    }
+    
+    
 }

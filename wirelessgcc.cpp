@@ -7,11 +7,14 @@ int main() {
 
     GCconsole console1(pio1, 1);
     GCcontroller controller1(pio0, 0);
+    GCreport origin = controller1.getorigin();
+    GCreport report = controller1.getreport();
     
     while(true){
 
-        console1.write()
-
+        if(console1.write(origin, report)){
+            report = controller1.getreport();
+        }
     }
 
     return 0;
