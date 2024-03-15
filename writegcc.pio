@@ -2,8 +2,6 @@
 
 set pindirs, 0
 
-
-readbyte:
 set y, 7            ;bits per byte
 readbit:
     wait 0 pin 0 [7]     
@@ -11,9 +9,6 @@ readbit:
     jmp y-- readbit
     
 push noblock
-
-
-
 
 pull block
 out x, 4        ;how many bytes to write

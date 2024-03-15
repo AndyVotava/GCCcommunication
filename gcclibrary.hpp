@@ -30,24 +30,24 @@ struct __attribute__((packed)) GCreport {
 
 class GCcontroller{
     public:
-    PIO pio;
-    uint sm; 
     uint pin;
-    GCcontroller(PIO pio, uint pin);
+    GCcontroller(uint pin);
 
     GCreport getreport();
     void printreport();
     GCreport getorigin();
     void printorigin();
 
-    protected:
+    private:
+    PIO pio = pio1;
+    uint sm; 
     GCreport origin;
     GCreport report;
 
 
 };
 
-GCcontroller::GCcontroller(PIO pio, uint pin): pio(pio), pin(pin){
+GCcontroller::GCcontroller(uint pin):pin(pin){
 
     sm = pio_claim_unused_sm(pio, true);
 
@@ -110,17 +110,18 @@ void GCcontroller::printreport(){
 class GCconsole
 {
 public:
-PIO pio;
-uint sm;
 uint pin;
 
-GCconsole(PIO pio, uint pin);
+GCconsole(uint pin);
 bool write(GCreport origin, GCreport report);
 
+private:
+PIO pio = pio0;
+uint sm;
 
 };
 
-GCconsole::GCconsole(PIO pio, uint pin): pio(pio), pin(pin){
+GCconsole::GCconsole(uint pin):pin(pin){
 
     sm = pio_claim_unused_sm(pio, true);        //get unused state machine in pio
 
@@ -189,7 +190,8 @@ bool GCconsole::write(GCreport origin, GCreport report){
     }
     
     else{
-        printf("failed communication");
+        printf("failed communication\n");
+        printf("request = %u\n", request);
         return false;
     }
     
