@@ -57,6 +57,7 @@ GCcontroller::GCcontroller(uint pin):pin(pin){
 
     sm_config_set_set_pins(&c, pin, 1);
     sm_config_set_in_pins(&c, pin);
+    sm_config_set_out_pins(&c, pin, 1);
     sm_config_set_in_shift(&c, false, false, 32);
     sm_config_set_out_shift(&c, true, false, 32);
 
