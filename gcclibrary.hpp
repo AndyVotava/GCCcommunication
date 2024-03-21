@@ -95,7 +95,7 @@ GCreport GCcontroller::getorigin(){
     pio_sm_put_blocking(pio, sm, 0x00);                 //write one byte
     pio_sm_put_blocking(pio, sm, reversebits(0x41));
 
-    pio_sm_put_blocking(pio, sm, 0x07);                 //read eight bytes
+    pio_sm_put_blocking(pio, sm, 0x09);                 //read ten bytes
     origin.SYXBA = pio_sm_get_blocking(pio, sm);
     origin.LRZD = pio_sm_get_blocking(pio, sm);
     origin.xStick = pio_sm_get_blocking(pio, sm);
@@ -104,6 +104,8 @@ GCreport GCcontroller::getorigin(){
     origin.cyStick = pio_sm_get_blocking(pio, sm);
     origin.analogL = pio_sm_get_blocking(pio, sm);
     origin.analogR = pio_sm_get_blocking(pio, sm);
+    pio_sm_get_blocking(pio, sm);
+    pio_sm_get_blocking(pio, sm);
 
     return(origin);
 }
