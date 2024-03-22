@@ -68,10 +68,14 @@ GCcontroller::GCcontroller(uint pin):pin(pin){
 }
 
 GCreport GCcontroller::getreport(){
-    uint32_t requestreport = 0b10100000011000000000000100;   //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits, LAST BIT IS FOR RECIEVE LENGTH
 
-    pio_sm_put_blocking(pio, sm, requestreport);
+    pio_sm_put_blocking(pio, sm, 0x02);                 //write three byte
+    pio_sm_put_blocking(pio, sm, reversebits(0x40));
+    pio_sm_put_blocking(pio, sm, reversebits(0x03));
+    pio_sm_put_blocking(pio, sm, reversebits(0x00));
 
+    
+    pio_sm_put_blocking(pio, sm, 0x07);                 //read eight bytes
     report.SYXBA = pio_sm_get_blocking(pio, sm);
     report.LRZD = pio_sm_get_blocking(pio, sm);
     report.xStick = pio_sm_get_blocking(pio, sm);
@@ -81,15 +85,17 @@ GCreport GCcontroller::getreport(){
     report.analogL = pio_sm_get_blocking(pio, sm);
     report.analogR = pio_sm_get_blocking(pio, sm);
 
+    
     return(report);
+
 }
 
 GCreport GCcontroller::getorigin(){
     
-    uint16_t requestorigin = 0b0100000101;  //Bits go from right to left. first bit is length indicator 0 = 24 bits, 1 = 8 bits LAST BIT IS FOR RECIEVE LENGTH
+    pio_sm_put_blocking(pio, sm, 0x00);                 //write one byte
+    pio_sm_put_blocking(pio, sm, reversebits(0x41));
 
-    pio_sm_put_blocking(pio, sm, requestorigin);
-
+    pio_sm_put_blocking(pio, sm, 0x09);                 //read ten bytes
     origin.SYXBA = pio_sm_get_blocking(pio, sm);
     origin.LRZD = pio_sm_get_blocking(pio, sm);
     origin.xStick = pio_sm_get_blocking(pio, sm);
@@ -98,6 +104,8 @@ GCreport GCcontroller::getorigin(){
     origin.cyStick = pio_sm_get_blocking(pio, sm);
     origin.analogL = pio_sm_get_blocking(pio, sm);
     origin.analogR = pio_sm_get_blocking(pio, sm);
+    pio_sm_get_blocking(pio, sm);
+    pio_sm_get_blocking(pio, sm);
 
     return(origin);
 }

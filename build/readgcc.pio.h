@@ -13,49 +13,42 @@
 // ------- //
 
 #define readgcc_wrap_target 0
-#define readgcc_wrap 31
+#define readgcc_wrap 24
 
 static const uint16_t readgcc_program_instructions[] = {
             //     .wrap_target
     0x80a0, //  0: pull   block                      
-    0x6021, //  1: out    x, 1                       
-    0x0025, //  2: jmp    !x, 5                      
+    0x6024, //  1: out    x, 4                       
+    0xe081, //  2: set    pindirs, 1                 
     0xe047, //  3: set    y, 7                       
-    0x0006, //  4: jmp    6                          
-    0xe057, //  5: set    y, 23                      
-    0xe081, //  6: set    pindirs, 1                 
-    0x6021, //  7: out    x, 1                       
-    0x002d, //  8: jmp    !x, 13                     
-    0xe400, //  9: set    pins, 0                [4] 
-    0xeb01, // 10: set    pins, 1                [11]
-    0x0086, // 11: jmp    y--, 6                     
-    0x0010, // 12: jmp    16                         
-    0xee00, // 13: set    pins, 0                [14]
-    0xe101, // 14: set    pins, 1                [1] 
-    0x0086, // 15: jmp    y--, 6                     
-    0xe400, // 16: set    pins, 0                [4] 
-    0xe080, // 17: set    pindirs, 0                 
-    0xe047, // 18: set    y, 7                       
-    0xe027, // 19: set    x, 7                       
-    0x2520, // 20: wait   0 pin, 0               [5] 
-    0x4501, // 21: in     pins, 1                [5] 
-    0x0054, // 22: jmp    x--, 20                    
-    0x8000, // 23: push   noblock                    
-    0x0093, // 24: jmp    y--, 19                    
-    0x6021, // 25: out    x, 1                       
-    0x003d, // 26: jmp    !x, 29                     
-    0xe025, // 27: set    x, 5                       
-    0x001e, // 28: jmp    30                         
-    0xe02d, // 29: set    x, 13                      
-    0xbf42, // 30: nop                           [31]
-    0x005e, // 31: jmp    x--, 30                    
+    0x80a0, //  4: pull   block                      
+    0xe400, //  5: set    pins, 0                [4] 
+    0xa807, //  6: mov    pins, osr              [8] 
+    0x6061, //  7: out    null, 1                    
+    0xe301, //  8: set    pins, 1                [3] 
+    0x0085, //  9: jmp    y--, 5                     
+    0x0043, // 10: jmp    x--, 3                     
+    0xe200, // 11: set    pins, 0                [2] 
+    0x80a0, // 12: pull   block                      
+    0x6024, // 13: out    x, 4                       
+    0xe001, // 14: set    pins, 1                    
+    0xe080, // 15: set    pindirs, 0                 
+    0xe047, // 16: set    y, 7                       
+    0x2520, // 17: wait   0 pin, 0               [5] 
+    0x4701, // 18: in     pins, 1                [7] 
+    0x0091, // 19: jmp    y--, 17                    
+    0x8000, // 20: push   noblock                    
+    0x0050, // 21: jmp    x--, 16                    
+    0xe044, // 22: set    y, 4                       
+    0xbf42, // 23: nop                           [31]
+    0x0097, // 24: jmp    y--, 23                    
             //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
 static const struct pio_program readgcc_program = {
     .instructions = readgcc_program_instructions,
-    .length = 32,
+    .length = 25,
     .origin = -1,
 };
 

@@ -1,56 +1,39 @@
 .program readgcc
 
 
-outerloop:
-    pull block          ;bring data from FIFO into OSR waiting if FIFO empty
-    out x, 1            ;pull first bit from OSR 
-    jmp !x skip         ;if 0 set bit length (y) to 24, if 1 set bit length to 9
+
+pull block          
+out x, 4            ;how many bytes to write
+
+set pindirs 1
+writebyte:
     set y, 7
-    jmp innerloop
+    pull block
+    writebit:
+        set pins, 0 [4]
+        mov pins, osr [8]
+        out null, 1
+        set pins, 1 [3]
+        jmp y-- writebit
+    jmp x-- writebyte
 
-skip:
-    set y, 23
-
-innerloop:
-    set pindirs, 1      ;set pin to output
-    out x, 1            ;move one bit from OSR into x register
-    jmp !x zerobit         ;if bit = 0, jump to zerobit
-
-onebit:
-    set pins, 0 [4]     ;one bit
-    set pins, 1 [11]  
-    jmp y-- innerloop
-    jmp endbit
+set pins, 0 [2]         ;end bit
+pull block              ;how many bytes to read
+out x, 4
+set pins, 1
 
 
-zerobit:
-    set pins, 0 [14]    ;zero bit
-    set pins, 1 [1] 
-    jmp y-- innerloop
-
-endbit:
-    set pins, 0 [4]     ;one bit
-    set pindirs, 0
-    set y, 7            ;how many bytes to read
-
-readbitouter:
-    set x, 7            ;bits for byte
-    
-readbit:
-    wait 0 pin 0 [5]    ;wait for begining of next bit
-    in pins, 1 [5]          ;read bit
-    jmp x-- readbit
+set pindirs 0
+readbyte:
+    set y, 7
+    readbit:
+        wait 0 pin 0 [5]
+        in pins, 1 [7]
+        jmp y-- readbit
     push noblock
-    jmp y-- readbitouter
+    jmp x-- readbyte
 
-out x, 1    ;Read bit to see how long to delay
-jmp !x originDelay
-set x, 5        ;TODO DELAY TIMES CAN BE REDUCED
-jmp delay
-
-originDelay:
-    set x, 13   ;TODO DELAY TIMES CAN BE REDUCED
-
-delay:
-    nop[31]     ;TODO DELAY TIMES CAN BE REDUCED
-    jmp x-- delay
+set y, 4
+delay: 
+    nop[31]
+    jmp y-- delay
