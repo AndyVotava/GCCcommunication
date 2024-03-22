@@ -13,7 +13,7 @@
 // ------- //
 
 #define readgcc_wrap_target 0
-#define readgcc_wrap 21
+#define readgcc_wrap 24
 
 static const uint16_t readgcc_program_instructions[] = {
             //     .wrap_target
@@ -39,13 +39,16 @@ static const uint16_t readgcc_program_instructions[] = {
     0x0091, // 19: jmp    y--, 17                    
     0x8000, // 20: push   noblock                    
     0x0050, // 21: jmp    x--, 16                    
+    0xe044, // 22: set    y, 4                       
+    0xbf42, // 23: nop                           [31]
+    0x0097, // 24: jmp    y--, 23                    
             //     .wrap
 };
 
 #if !PICO_NO_HARDWARE
 static const struct pio_program readgcc_program = {
     .instructions = readgcc_program_instructions,
-    .length = 22,
+    .length = 25,
     .origin = -1,
 };
 
