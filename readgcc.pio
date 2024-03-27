@@ -1,7 +1,5 @@
 .program readgcc
 
-
-
 pull block          
 out x, 4            ;how many bytes to write
 
@@ -33,7 +31,7 @@ readbyte:
     push noblock
     jmp x-- readbyte
 
-set y, 4
+set y, 31
 delay: 
     nop[31]
     jmp y-- delay
