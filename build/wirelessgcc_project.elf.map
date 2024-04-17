@@ -57,6 +57,14 @@ Discarded input sections
                 0x00000000       0x4a CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj
  .text._ZN12GCcontroller11printreportEv
                 0x00000000       0x2c CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
+ .debug_line    0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
+ .debug_str     0x00000000      0x128 CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
+ .comment       0x00000000       0x4a CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
+ .ARM.attributes
+                0x00000000       0x2c CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1436,9 +1444,9 @@ Discarded input sections
                 0x00000000       0x40 CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.__func__.0
                 0x00000000       0x13 CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccmUzcb0.o
- .data          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccmUzcb0.o
- .bss           0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccmUzcb0.o
+ .text          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccmfUyZn.o
+ .data          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccmfUyZn.o
+ .bss           0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccmfUyZn.o
  .data          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1654,7 +1662,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\Andy\AppData\Local\Temp\ccmUzcb0.o
+ .boot2         0x10000000      0x100 C:\Users\Andy\AppData\Local\Temp\ccmfUyZn.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -3166,6 +3174,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed)
                 0x00000001                ASSERT (((__binary_info_header_end - __logical_binary_start) <= 0x100), Binary info must be in first 256 bytes of the binary)
 LOAD CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj
+LOAD CMakeFiles/wirelessgcc_project.dir/reciever.cpp.obj
 LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -3237,7 +3246,7 @@ LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v
 LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD C:\Users\Andy\AppData\Local\Temp\ccmUzcb0.o
+LOAD C:\Users\Andy\AppData\Local\Temp\ccmfUyZn.o
 LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3358,7 +3367,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x000007fa       0x2c CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x00000826       0x22 C:\Users\Andy\AppData\Local\Temp\ccmUzcb0.o
+                0x00000826       0x22 C:\Users\Andy\AppData\Local\Temp\ccmfUyZn.o
  .ARM.attributes
                 0x00000848       0x1e c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
