@@ -22,7 +22,7 @@
 1249	1333	7328241181331801	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj	f1f1d7637f560a3b
 2221	2375	7328241191513565	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/net/ecm_rndis_device.c.obj	4ee79c6405e652c4
 1238	1799	7328241184144568	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj	60efa8591ddd82f7
-20	187	7328244890522618	CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj	63a31cbe1484b145
+22	190	7332122990380242	CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj	63a31cbe1484b145
 1278	1656	7328241183564970	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj	e4a11de178b1cde2
 1247	1565	7328241183324958	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj	ec22550bc36d7ed4
 1565	1823	7328241185165012	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj	15a066379e166b4c
@@ -81,10 +81,8 @@
 2359	2504	7328241193053541	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj	906e7324df46eacc
 2376	2549	7328241193520851	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj	282d0ab6ddb8a4d7
 2347	2574	7328241193757187	CMakeFiles/wirelessgcc_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj	152b722a4629ca1a
-187	392	7328244891732008	wirelessgcc_project.elf	3993a61773db3bcc
-24	951	7332120169020916	CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj	63a31cbe1484b145
-952	1454	7332120172986079	wirelessgcc_project.elf	3993a61773db3bcc
-20	193	7332121874174808	CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj	63a31cbe1484b145
-194	414	7332121875519564	wirelessgcc_project.elf	3993a61773db3bcc
-22	190	7332122990380242	CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj	63a31cbe1484b145
 190	374	7332122991431763	wirelessgcc_project.elf	3993a61773db3bcc
+28	76	7350777058538299	readgcc.pio.h	d31b76101094d71d
+28	76	7350777058538299	C:/Users/Andy/Documents/wirelessGCC/build/readgcc.pio.h	d31b76101094d71d
+76	1258	7350777070347485	CMakeFiles/wirelessgcc_project.dir/wirelessgcc.cpp.obj	63a31cbe1484b145
+1258	1774	7350777074446178	wirelessgcc_project.elf	3993a61773db3bcc
