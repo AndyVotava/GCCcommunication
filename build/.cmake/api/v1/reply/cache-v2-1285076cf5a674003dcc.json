@@ -195,7 +195,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "c:/Users/Andy/Documents/wirelessGCC/build"
+			"value" : "c:/Users/Andy/Documents/GCCcommunication/build"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -279,10 +279,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/gcc-arm-none-eabi/bin/arm-none-eabi-g++.exe"
 		},
 		{
@@ -407,10 +407,10 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
+			"type" : "STRING",
 			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/gcc-arm-none-eabi/bin/arm-none-eabi-gcc.exe"
 		},
 		{
@@ -679,7 +679,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/wirelessGCC/build/CMakeFiles/pkgRedirects"
+			"value" : "C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -739,7 +739,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/Users/Andy/Documents/wirelessGCC"
+			"value" : "C:/Users/Andy/Documents/GCCcommunication"
 		},
 		{
 			"name" : "CMAKE_INSTALL_PREFIX",
@@ -1307,7 +1307,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "[C:/msys64/ucrt64/bin/python3.10.exe][cfound components: Interpreter ][v3.10.11()]"
+			"value" : "[C:/Users/Andy/AppData/Local/Programs/Python/Python312/python.exe][cfound components: Interpreter ][v3.12.3()]"
 		},
 		{
 			"name" : "PICO_BOARD",
@@ -1463,7 +1463,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/cmsis C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1691,7 +1691,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "C:/msys64/ucrt64/bin/python3.10.exe"
+			"value" : "C:/Users/Andy/AppData/Local/Programs/Python/Python312/python.exe"
 		},
 		{
 			"name" : "_Python3_INTERPRETER_PROPERTIES",
@@ -1703,7 +1703,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "Python;3;10;11;32;;;C:\\msys64\\ucrt64\\lib\\python3.10;C:\\msys64\\ucrt64\\lib\\python3.10;C:\\msys64\\ucrt64\\lib\\python3.10\\site-packages;C:\\msys64\\ucrt64\\lib\\python3.10\\site-packages"
+			"value" : "Python;3;12;3;32;;;C:\\Users\\Andy\\AppData\\Local\\Programs\\Python\\Python312\\Lib;C:\\Users\\Andy\\AppData\\Local\\Programs\\Python\\Python312\\Lib;C:\\Users\\Andy\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages;C:\\Users\\Andy\\AppData\\Local\\Programs\\Python\\Python312\\Lib\\site-packages"
 		},
 		{
 			"name" : "_Python3_INTERPRETER_SIGNATURE",
@@ -1715,19 +1715,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "0dcabca985fc2b35173b2599b2d20ff0"
-		},
-		{
-			"name" : "_Python3_Interpreter_REASON_FAILURE",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Interpreter reason failure"
-				}
-			],
-			"type" : "INTERNAL",
-			"value" : ""
+			"value" : "9d6785dbd1e6a527c6d3557bffc9f461"
 		},
 		{
 			"name" : "_Python3_NumPy_REASON_FAILURE",
@@ -1763,7 +1751,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/wirelessGCC/build/pico-sdk"
+			"value" : "C:/Users/Andy/Documents/GCCcommunication/build/pico-sdk"
 		},
 		{
 			"name" : "pico_sdk_IS_TOP_LEVEL",
@@ -1799,7 +1787,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/wirelessGCC/build"
+			"value" : "C:/Users/Andy/Documents/GCCcommunication/build"
 		},
 		{
 			"name" : "wirelessgcc_project_IS_TOP_LEVEL",
@@ -1823,7 +1811,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/wirelessGCC"
+			"value" : "C:/Users/Andy/Documents/GCCcommunication"
 		}
 	],
 	"kind" : "cache",

@@ -320,7 +320,7 @@
 			[
 				{
 					"backtrace" : 13,
-					"path" : "C:/Users/Andy/Documents/wirelessGCC/build"
+					"path" : "C:/Users/Andy/Documents/GCCcommunication/build"
 				},
 				{
 					"backtrace" : 2,
@@ -336,7 +336,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Andy/Documents/wirelessGCC/build/generated/pico_base"
+					"path" : "C:/Users/Andy/Documents/GCCcommunication/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -712,7 +712,7 @@
 			[
 				{
 					"backtrace" : 13,
-					"path" : "C:/Users/Andy/Documents/wirelessGCC/build"
+					"path" : "C:/Users/Andy/Documents/GCCcommunication/build"
 				},
 				{
 					"backtrace" : 2,
@@ -728,7 +728,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Andy/Documents/wirelessGCC/build/generated/pico_base"
+					"path" : "C:/Users/Andy/Documents/GCCcommunication/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,
@@ -1161,7 +1161,7 @@
 			[
 				{
 					"backtrace" : 13,
-					"path" : "C:/Users/Andy/Documents/wirelessGCC/build"
+					"path" : "C:/Users/Andy/Documents/GCCcommunication/build"
 				},
 				{
 					"backtrace" : 2,
@@ -1177,7 +1177,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "C:/Users/Andy/Documents/wirelessGCC/build/generated/pico_base"
+					"path" : "C:/Users/Andy/Documents/GCCcommunication/build/generated/pico_base"
 				},
 				{
 					"backtrace" : 2,

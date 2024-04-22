@@ -18,7 +18,3 @@ target_link_libraries(wirelessgcc_project PRIVATE pico_stdlib hardware_pio)
 pico_enable_stdio_usb(wirelessgcc_project 1)     #this command is for printing for debugging
 
 pico_add_extra_outputs(wirelessgcc_project)
-
-file(MAKE_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/generated)
-# generate .hex file and .pio.h file for the RP2040 datasheet (to make sure
-# the datasheet always shows the output of the latest pioasm version)
