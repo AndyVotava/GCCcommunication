@@ -751,7 +751,7 @@
 				}
 			],
 			"type" : "PATH",
-			"value" : "C:/Program Files (x86)/wirelessgcc_project"
+			"value" : "C:/Program Files (x86)/GCCcoms_project"
 		},
 		{
 			"name" : "CMAKE_LINKER",
@@ -971,7 +971,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "wirelessgcc_project"
+			"value" : "GCCcoms_project"
 		},
 		{
 			"name" : "CMAKE_RANLIB",
@@ -1308,6 +1308,42 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[C:/Users/Andy/AppData/Local/Programs/Python/Python312/python.exe][cfound components: Interpreter ][v3.12.3()]"
+		},
+		{
+			"name" : "GCCcoms_project_BINARY_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Andy/Documents/GCCcommunication/build"
+		},
+		{
+			"name" : "GCCcoms_project_IS_TOP_LEVEL",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "ON"
+		},
+		{
+			"name" : "GCCcoms_project_SOURCE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Value Computed by CMake"
+				}
+			],
+			"type" : "STATIC",
+			"value" : "C:/Users/Andy/Documents/GCCcommunication"
 		},
 		{
 			"name" : "PICO_BOARD",
@@ -1776,42 +1812,6 @@
 			],
 			"type" : "STATIC",
 			"value" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk"
-		},
-		{
-			"name" : "wirelessgcc_project_BINARY_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/GCCcommunication/build"
-		},
-		{
-			"name" : "wirelessgcc_project_IS_TOP_LEVEL",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "ON"
-		},
-		{
-			"name" : "wirelessgcc_project_SOURCE_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "Value Computed by CMake"
-				}
-			],
-			"type" : "STATIC",
-			"value" : "C:/Users/Andy/Documents/GCCcommunication"
 		}
 	],
 	"kind" : "cache",

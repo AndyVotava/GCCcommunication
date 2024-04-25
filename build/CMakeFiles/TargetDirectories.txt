@@ -1,6 +1,6 @@
-C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/wirelessgcc_project.dir
-C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/wirelessgcc_project_readgcc_pio_h.dir
-C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/wirelessgcc_project_writegcc_pio_h.dir
+C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/GCCcoms_project.dir
+C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/GCCcoms_project_readgcc_pio_h.dir
+C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/GCCcoms_project_writegcc_pio_h.dir
 C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/edit_cache.dir
 C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/rebuild_cache.dir
 C:/Users/Andy/Documents/GCCcommunication/build/pico-sdk/CMakeFiles/edit_cache.dir

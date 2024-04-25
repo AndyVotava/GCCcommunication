@@ -19,9 +19,9 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						6,
-						7,
-						8
+						0,
+						1,
+						2
 					]
 				},
 				{
@@ -585,9 +585,9 @@
 					"source" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/boot_stage2",
 					"targetIndexes" : 
 					[
-						0,
-						1,
-						2
+						3,
+						4,
+						5
 					]
 				},
 				{
@@ -789,8 +789,8 @@
 					"source" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/tinyusb",
 					"targetIndexes" : 
 					[
-						4,
-						5
+						7,
+						8
 					]
 				},
 				{
@@ -853,7 +853,7 @@
 					"source" : "C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk/src/rp2_common/pico_cyw43_driver",
 					"targetIndexes" : 
 					[
-						3
+						6
 					]
 				},
 				{
@@ -1032,12 +1032,12 @@
 					[
 						0
 					],
-					"name" : "wirelessgcc_project",
+					"name" : "GCCcoms_project",
 					"targetIndexes" : 
 					[
-						6,
-						7,
-						8
+						0,
+						1,
+						2
 					]
 				},
 				{
@@ -1128,17 +1128,38 @@
 					"parentIndex" : 0,
 					"targetIndexes" : 
 					[
-						0,
-						1,
-						2,
 						3,
 						4,
-						5
+						5,
+						6,
+						7,
+						8
 					]
 				}
 			],
 			"targets" : 
 			[
+				{
+					"directoryIndex" : 0,
+					"id" : "GCCcoms_project::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GCCcoms_project-Debug-e527fb52b1650429e729.json",
+					"name" : "GCCcoms_project",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GCCcoms_project_readgcc_pio_h::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GCCcoms_project_readgcc_pio_h-Debug-99426522493713584f9a.json",
+					"name" : "GCCcoms_project_readgcc_pio_h",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "GCCcoms_project_writegcc_pio_h::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-GCCcoms_project_writegcc_pio_h-Debug-195e84d372ab7796bb21.json",
+					"name" : "GCCcoms_project_writegcc_pio_h",
+					"projectIndex" : 0
+				},
 				{
 					"directoryIndex" : 43,
 					"id" : "bs2_default::@bc554eaed616d198a22d",
@@ -1180,27 +1201,6 @@
 					"jsonFile" : "target-tinyusb_pico_pio_usb_usb_tx_pio_h-Debug-084685bf0f66cde330c2.json",
 					"name" : "tinyusb_pico_pio_usb_usb_tx_pio_h",
 					"projectIndex" : 1
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "wirelessgcc_project::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wirelessgcc_project-Debug-4c2106a18a463f9ef146.json",
-					"name" : "wirelessgcc_project",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "wirelessgcc_project_readgcc_pio_h::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wirelessgcc_project_readgcc_pio_h-Debug-e64eb3badb5ef383aac3.json",
-					"name" : "wirelessgcc_project_readgcc_pio_h",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
-					"id" : "wirelessgcc_project_writegcc_pio_h::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-wirelessgcc_project_writegcc_pio_h-Debug-9a80d5c3401583c0e38d.json",
-					"name" : "wirelessgcc_project_writegcc_pio_h",
-					"projectIndex" : 0
 				}
 			]
 		}

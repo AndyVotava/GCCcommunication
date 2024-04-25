@@ -126,7 +126,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=TRUE
 CMAKE_FIND_PACKAGE_REDIRECTS_DIR:STATIC=C:/Users/Andy/Documents/GCCcommunication/build/CMakeFiles/pkgRedirects
 
 //Install path prefix, prepended onto install directories.
-CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/wirelessgcc_project
+CMAKE_INSTALL_PREFIX:PATH=C:/Program Files (x86)/GCCcoms_project
 
 //Path to a program.
 CMAKE_LINKER:FILEPATH=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/gcc-arm-none-eabi/bin/arm-none-eabi-ld.exe
@@ -168,7 +168,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=wirelessgcc_project
+CMAKE_PROJECT_NAME:STATIC=GCCcoms_project
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/gcc-arm-none-eabi/bin/arm-none-eabi-ranlib.exe
@@ -241,6 +241,15 @@ DOXYGEN_DOT_EXECUTABLE:FILEPATH=DOXYGEN_DOT_EXECUTABLE-NOTFOUND
 //Doxygen documentation generation tool (https://www.doxygen.nl)
 DOXYGEN_EXECUTABLE:FILEPATH=DOXYGEN_EXECUTABLE-NOTFOUND
 
+//Value Computed by CMake
+GCCcoms_project_BINARY_DIR:STATIC=C:/Users/Andy/Documents/GCCcommunication/build
+
+//Value Computed by CMake
+GCCcoms_project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+GCCcoms_project_SOURCE_DIR:STATIC=C:/Users/Andy/Documents/GCCcommunication
+
 //PICO target board (e.g. pico)
 PICO_BOARD:STRING=pico
 
@@ -306,15 +315,6 @@ pico_sdk_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 pico_sdk_SOURCE_DIR:STATIC=C:/Program Files/Raspberry Pi/Pico SDK v1.5.1/pico-sdk
-
-//Value Computed by CMake
-wirelessgcc_project_BINARY_DIR:STATIC=C:/Users/Andy/Documents/GCCcommunication/build
-
-//Value Computed by CMake
-wirelessgcc_project_IS_TOP_LEVEL:STATIC=ON
-
-//Value Computed by CMake
-wirelessgcc_project_SOURCE_DIR:STATIC=C:/Users/Andy/Documents/GCCcommunication
 
 
 ########################
