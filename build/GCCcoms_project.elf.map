@@ -53,10 +53,13 @@ Discarded input sections
  .text          0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
  .data          0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
  .bss           0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .text          0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .data          0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .bss           0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  .rodata._ZN12GCcontroller11printreportEv.str1.4
-                0x00000000       0x4a CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x00000000       0x4a CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  .text._ZN12GCcontroller11printreportEv
-                0x00000000       0x2c CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x00000000       0x2c CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  .text          0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .data          0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
  .bss           0x00000000        0x0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1438,9 +1441,9 @@ Discarded input sections
                 0x00000000       0x40 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .rodata.__func__.0
                 0x00000000       0x13 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .text          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccguABxt.o
- .data          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccguABxt.o
- .bss           0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccguABxt.o
+ .text          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccWteVLb.o
+ .data          0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccWteVLb.o
+ .bss           0x00000000        0x0 C:\Users\Andy\AppData\Local\Temp\ccWteVLb.o
  .data          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-calloc.o)
@@ -1656,7 +1659,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\Andy\AppData\Local\Temp\ccguABxt.o
+ .boot2         0x10000000      0x100 C:\Users\Andy\AppData\Local\Temp\ccWteVLb.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -1721,29 +1724,29 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
                 0x100002b8                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002bc       0x48 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp/crtbegin.o
+ .text.main     0x10000304       0x6c CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x10000304                main
  .text._Z11reversebitsh
-                0x10000304       0x22 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x10000304                reversebits(unsigned char)
- *fill*         0x10000326        0x2 
+                0x10000370       0x22 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                0x10000370                reversebits(unsigned char)
+ *fill*         0x10000392        0x2 
  .text._ZN12GCcontrollerC2Ej
-                0x10000328       0xd8 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x10000328                GCcontroller::GCcontroller(unsigned int)
-                0x10000328                GCcontroller::GCcontroller(unsigned int)
+                0x10000394       0xd8 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                0x10000394                GCcontroller::GCcontroller(unsigned int)
+                0x10000394                GCcontroller::GCcontroller(unsigned int)
  .text._ZN12GCcontroller9getreportEv
-                0x10000400      0x12a CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x10000400                GCcontroller::getreport()
+                0x1000046c      0x12a CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                0x1000046c                GCcontroller::getreport()
  .text._ZN12GCcontroller9getoriginEv
-                0x1000052a      0x10a CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x1000052a                GCcontroller::getorigin()
+                0x10000596      0x10a CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                0x10000596                GCcontroller::getorigin()
  .text._ZN9GCconsoleC2Ej
-                0x10000634       0xd4 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x10000634                GCconsole::GCconsole(unsigned int)
-                0x10000634                GCconsole::GCconsole(unsigned int)
+                0x100006a0       0xd4 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                0x100006a0                GCconsole::GCconsole(unsigned int)
+                0x100006a0                GCconsole::GCconsole(unsigned int)
  .text._ZN9GCconsole5writeE8GCreportS0_
-                0x10000708      0x33c CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x10000708                GCconsole::write(GCreport, GCreport)
- .text.main     0x10000a44       0x6c CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                0x10000a44                main
+                0x10000774      0x33c CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                0x10000774                GCconsole::write(GCreport, GCreport)
  .text.gpio_set_function
                 0x10000ab0       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
                 0x10000ab0                gpio_set_function
@@ -2511,19 +2514,19 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
 .rodata         0x10007a40     0x18a4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata._ZN9GCconsole5writeE8GCreportS0_.str1.4
-                0x10007a40       0x26 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x10007a40       0x26 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  *fill*         0x10007a66        0x2 
  .rodata._ZL15readgcc_program
-                0x10007a68        0x6 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x10007a68        0x6 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  *fill*         0x10007a6e        0x2 
  .rodata._ZL16writegcc_program
-                0x10007a70        0x6 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x10007a70        0x6 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  *fill*         0x10007a76        0x2 
  .rodata._ZL28readgcc_program_instructions
-                0x10007a78       0x32 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x10007a78       0x32 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  *fill*         0x10007aaa        0x2 
  .rodata._ZL29writegcc_program_instructions
-                0x10007aac       0x26 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                0x10007aac       0x26 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  *fill*         0x10007ad2        0x2 
  .rodata.spin_lock_claim_unused.str1.4
                 0x10007ad4       0x1b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -3166,6 +3169,7 @@ LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.
                 0x00000001                ASSERT ((__StackLimit >= __HeapLimit), region RAM overflowed)
                 0x00000001                ASSERT (((__binary_info_header_end - __logical_binary_start) <= 0x100), Binary info must be in first 256 bytes of the binary)
 LOAD CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+LOAD CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
 LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -3237,7 +3241,7 @@ LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.
 LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
 LOAD CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-LOAD C:\Users\Andy\AppData\Local\Temp\ccguABxt.o
+LOAD C:\Users\Andy\AppData\Local\Temp\ccWteVLb.o
 LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -3264,109 +3268,112 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000004a       0x2c CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
  .ARM.attributes
-                0x00000076       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000076       0x2c CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  .ARM.attributes
-                0x000000a2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x000000a2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .ARM.attributes
-                0x000000ce       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x000000ce       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .ARM.attributes
-                0x000000fa       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000fa       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
  .ARM.attributes
-                0x00000126       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000126       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
  .ARM.attributes
-                0x00000152       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x00000152       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
  .ARM.attributes
-                0x00000174       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000017e       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
  .ARM.attributes
-                0x000001a0       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x000001a0       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
  .ARM.attributes
-                0x000001cc       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x000001cc       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
  .ARM.attributes
-                0x000001f8       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                0x000001f8       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
  .ARM.attributes
-                0x00000224       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000224       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
  .ARM.attributes
-                0x00000250       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000250       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .ARM.attributes
-                0x0000027c       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x0000027c       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
  .ARM.attributes
-                0x000002a8       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x000002a8       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
  .ARM.attributes
-                0x000002d4       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x000002d4       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .ARM.attributes
-                0x00000300       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x00000300       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
  .ARM.attributes
-                0x0000032c       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000032c       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
  .ARM.attributes
-                0x00000358       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000358       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
  .ARM.attributes
-                0x00000384       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000384       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .ARM.attributes
-                0x000003b0       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x000003b0       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .ARM.attributes
-                0x000003d2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x000003dc       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .ARM.attributes
-                0x000003fe       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x000003fe       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
  .ARM.attributes
-                0x00000420       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000042a       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
  .ARM.attributes
-                0x00000442       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000044c       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
  .ARM.attributes
-                0x0000046e       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000046e       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .ARM.attributes
-                0x00000490       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000049a       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
  .ARM.attributes
-                0x000004b2       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x000004bc       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
  .ARM.attributes
-                0x000004d4       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x000004de       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
  .ARM.attributes
-                0x00000500       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x00000500       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .ARM.attributes
-                0x00000522       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000052c       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
  .ARM.attributes
-                0x00000544       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                0x0000054e       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
  .ARM.attributes
-                0x00000566       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000570       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
  .ARM.attributes
-                0x00000592       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000592       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .ARM.attributes
-                0x000005be       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x000005be       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x000005ea       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000005ea       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
-                0x00000616       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000616       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .ARM.attributes
-                0x00000642       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x00000642       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .ARM.attributes
-                0x0000066e       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000066e       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .ARM.attributes
-                0x0000069a       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000069a       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .ARM.attributes
-                0x000006c6       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x000006c6       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
  .ARM.attributes
-                0x000006f2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x000006f2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .ARM.attributes
-                0x0000071e       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000071e       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
  .ARM.attributes
-                0x0000074a       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000074a       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .ARM.attributes
-                0x00000776       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000776       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
  .ARM.attributes
-                0x000007a2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x000007a2       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
  .ARM.attributes
-                0x000007ce       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000007ce       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
  .ARM.attributes
-                0x000007fa       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                0x000007fa       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x00000826       0x22 C:\Users\Andy\AppData\Local\Temp\ccguABxt.o
+                0x00000826       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
  .ARM.attributes
-                0x00000848       0x1e c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x00000852       0x22 C:\Users\Andy\AppData\Local\Temp\ccWteVLb.o
  .ARM.attributes
-                0x00000866       0x2c c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
+                0x00000874       0x1e c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000892       0x2c c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
 
 .comment        0x00000000       0x49
  .comment       0x00000000       0x49 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
                                  0x4a (size before relaxing)
+ .comment       0x00000049       0x4a CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  .comment       0x00000049       0x4a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .comment       0x00000049       0x4a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .comment       0x00000049       0x4a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -3405,106 +3412,443 @@ LOAD linker stubs
  .comment       0x00000049       0x4a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .comment       0x00000049       0x4a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_info     0x00000000    0x2bdb9
- .debug_info    0x00000000     0x3c27 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
- .debug_info    0x00003c27     0x187e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_info    0x000054a5      0x1e3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_info    0x00005688      0x6be CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_info    0x00005d46      0x58e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_info    0x000062d4     0x1c9e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_info    0x00007f72      0x1a4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_info    0x00008116     0x20d5 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_info    0x0000a1eb      0x2d1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_info    0x0000a4bc     0x4068 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_info    0x0000e524     0x13f0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_info    0x0000f914     0x123b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_info    0x00010b4f      0xdd2 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_info    0x00011921      0xfcf CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_info    0x000128f0      0x51b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_info    0x00012e0b      0x4ee CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_info    0x000132f9      0x1d8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_info    0x000134d1     0x1053 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_info    0x00014524     0x1a5f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_info    0x00015f83       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_info    0x00015fa5      0x27c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_info    0x00016221       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_info    0x00016243       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_info    0x00016265      0x2d1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_info    0x00016536       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_info    0x00016558       0x26 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_info    0x0001657e       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_info    0x000165a0      0x2eb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_info    0x0001688b       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_info    0x000168ad       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_info    0x000168cf       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_info    0x000168f1      0x2fb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_info    0x00016bec     0x183c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_info    0x00018428     0x104f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_info    0x00019477      0x79f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_info    0x00019c16     0x1b69 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_info    0x0001b77f      0x5fc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_info    0x0001bd7b      0x257 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_info    0x0001bfd2      0xf3a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_info    0x0001cf0c     0x2080 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_info    0x0001ef8c      0xfe4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_info    0x0001ff70     0x3c23 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_info    0x00023b93      0x8be CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_info    0x00024451     0x19bd CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_info    0x00025e0e     0x14db CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_info    0x000272e9     0x2851 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_info    0x00029b3a     0x227f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_info     0x00000000    0x2c41e
+ .debug_info    0x00000000      0x7d5 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_info    0x000007d5     0x3ab7 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .debug_info    0x0000428c     0x187e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_info    0x00005b0a      0x1e3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_info    0x00005ced      0x6be CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_info    0x000063ab      0x58e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_info    0x00006939     0x1c9e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_info    0x000085d7      0x1a4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_info    0x0000877b     0x20d5 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_info    0x0000a850      0x2d1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_info    0x0000ab21     0x4068 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_info    0x0000eb89     0x13f0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_info    0x0000ff79     0x123b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_info    0x000111b4      0xdd2 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_info    0x00011f86      0xfcf CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_info    0x00012f55      0x51b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_info    0x00013470      0x4ee CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_info    0x0001395e      0x1d8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_info    0x00013b36     0x1053 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_info    0x00014b89     0x1a5f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_info    0x000165e8       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_info    0x0001660a      0x27c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_info    0x00016886       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_info    0x000168a8       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_info    0x000168ca      0x2d1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_info    0x00016b9b       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_info    0x00016bbd       0x26 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_info    0x00016be3       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_info    0x00016c05      0x2eb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_info    0x00016ef0       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_info    0x00016f12       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_info    0x00016f34       0x22 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_info    0x00016f56      0x2fb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_info    0x00017251     0x183c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_info    0x00018a8d     0x104f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_info    0x00019adc      0x79f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_info    0x0001a27b     0x1b69 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_info    0x0001bde4      0x5fc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_info    0x0001c3e0      0x257 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_info    0x0001c637      0xf3a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_info    0x0001d571     0x2080 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_info    0x0001f5f1      0xfe4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_info    0x000205d5     0x3c23 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_info    0x000241f8      0x8be CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_info    0x00024ab6     0x19bd CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_info    0x00026473     0x14db CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_info    0x0002794e     0x2851 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_info    0x0002a19f     0x227f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
 
-.debug_abbrev   0x00000000     0x771e
- .debug_abbrev  0x00000000      0x53e CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
- .debug_abbrev  0x0000053e      0x379 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_abbrev  0x000008b7       0xeb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_abbrev  0x000009a2      0x2e9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_abbrev  0x00000c8b      0x21b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_abbrev  0x00000ea6      0x4e7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_abbrev  0x0000138d      0x116 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_abbrev  0x000014a3      0x397 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_abbrev  0x0000183a      0x1aa CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_abbrev  0x000019e4      0x571 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_abbrev  0x00001f55      0x3b8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_abbrev  0x0000230d      0x297 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_abbrev  0x000025a4      0x31c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_abbrev  0x000028c0      0x3c7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_abbrev  0x00002c87      0x1ea CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_abbrev  0x00002e71      0x1a8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_abbrev  0x00003019      0x109 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_abbrev  0x00003122      0x4cb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_abbrev  0x000035ed      0x384 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_abbrev  0x00003971       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_abbrev  0x00003983      0x13b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_abbrev  0x00003abe       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_abbrev  0x00003ad0       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_abbrev  0x00003ae2      0x179 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_abbrev  0x00003c5b       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_abbrev  0x00003c6d       0x14 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_abbrev  0x00003c81       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_abbrev  0x00003c93      0x18c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_abbrev  0x00003e1f       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_abbrev  0x00003e31       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_abbrev  0x00003e43       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_abbrev  0x00003e55       0xad CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_abbrev  0x00003f02      0x4a5 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_abbrev  0x000043a7      0x3e8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_abbrev  0x0000478f      0x2b2 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_abbrev  0x00004a41      0x4c7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_abbrev  0x00004f08      0x14e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_abbrev  0x00005056      0x163 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_abbrev  0x000051b9      0x2b6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_abbrev  0x0000546f      0x4ff CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_abbrev  0x0000596e      0x40d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_abbrev  0x00005d7b      0x561 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_abbrev  0x000062dc      0x309 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_abbrev  0x000065e5      0x463 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_abbrev  0x00006a48      0x41c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_abbrev  0x00006e64      0x437 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_abbrev  0x0000729b      0x483 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.debug_abbrev   0x00000000     0x7978
+ .debug_abbrev  0x00000000      0x279 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_abbrev  0x00000279      0x51f CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .debug_abbrev  0x00000798      0x379 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_abbrev  0x00000b11       0xeb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_abbrev  0x00000bfc      0x2e9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_abbrev  0x00000ee5      0x21b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_abbrev  0x00001100      0x4e7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_abbrev  0x000015e7      0x116 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_abbrev  0x000016fd      0x397 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_abbrev  0x00001a94      0x1aa CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_abbrev  0x00001c3e      0x571 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_abbrev  0x000021af      0x3b8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_abbrev  0x00002567      0x297 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_abbrev  0x000027fe      0x31c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_abbrev  0x00002b1a      0x3c7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_abbrev  0x00002ee1      0x1ea CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_abbrev  0x000030cb      0x1a8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_abbrev  0x00003273      0x109 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_abbrev  0x0000337c      0x4cb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_abbrev  0x00003847      0x384 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_abbrev  0x00003bcb       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_abbrev  0x00003bdd      0x13b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_abbrev  0x00003d18       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_abbrev  0x00003d2a       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_abbrev  0x00003d3c      0x179 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_abbrev  0x00003eb5       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_abbrev  0x00003ec7       0x14 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_abbrev  0x00003edb       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_abbrev  0x00003eed      0x18c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_abbrev  0x00004079       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_abbrev  0x0000408b       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_abbrev  0x0000409d       0x12 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_abbrev  0x000040af       0xad CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_abbrev  0x0000415c      0x4a5 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_abbrev  0x00004601      0x3e8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_abbrev  0x000049e9      0x2b2 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_abbrev  0x00004c9b      0x4c7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_abbrev  0x00005162      0x14e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_abbrev  0x000052b0      0x163 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_abbrev  0x00005413      0x2b6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_abbrev  0x000056c9      0x4ff CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_abbrev  0x00005bc8      0x40d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_abbrev  0x00005fd5      0x561 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_abbrev  0x00006536      0x309 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_abbrev  0x0000683f      0x463 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_abbrev  0x00006ca2      0x41c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_abbrev  0x000070be      0x437 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_abbrev  0x000074f5      0x483 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+.debug_aranges  0x00000000     0x1618
+ .debug_aranges
+                0x00000000       0x20 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_aranges
+                0x00000020       0x50 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .debug_aranges
+                0x00000070      0x100 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_aranges
+                0x00000170       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_aranges
+                0x00000198       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_aranges
+                0x000001e0       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_aranges
+                0x00000238       0xc8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_aranges
+                0x00000300       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_aranges
+                0x00000320       0x90 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_aranges
+                0x000003b0       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_aranges
+                0x000003e0       0xe8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_aranges
+                0x000004c8       0x88 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_aranges
+                0x00000550       0x78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_aranges
+                0x000005c8       0x68 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_aranges
+                0x00000630       0x70 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_aranges
+                0x000006a0       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_aranges
+                0x000006c8       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_aranges
+                0x00000720       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_aranges
+                0x00000750       0x88 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_aranges
+                0x000007d8       0x90 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_aranges
+                0x00000868       0x68 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_aranges
+                0x000008d0       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_aranges
+                0x00000900       0x40 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_aranges
+                0x00000940      0x140 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_aranges
+                0x00000a80       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_aranges
+                0x00000aa0       0xc8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_aranges
+                0x00000b68       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_aranges
+                0x00000b88      0x130 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_aranges
+                0x00000cb8       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_aranges
+                0x00000cd8       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_aranges
+                0x00000d28       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_aranges
+                0x00000d60       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_aranges
+                0x00000d88       0x18 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_aranges
+                0x00000da0      0x100 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_aranges
+                0x00000ea0       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_aranges
+                0x00000ef8       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_aranges
+                0x00000f50       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_aranges
+                0x00000fb0       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_aranges
+                0x00000fe0       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_aranges
+                0x00001010       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_aranges
+                0x00001060       0xe0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_aranges
+                0x00001140       0x70 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_aranges
+                0x000011b0      0x118 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_aranges
+                0x000012c8       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_aranges
+                0x00001318       0xa8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_aranges
+                0x000013c0       0x98 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_aranges
+                0x00001458      0x108 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_aranges
+                0x00001560       0xb8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+.debug_ranges   0x00000000     0x6a70
+ .debug_ranges  0x00000000       0x10 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_ranges  0x00000010     0x1858 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .debug_ranges  0x00001868      0x150 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_ranges  0x000019b8       0x18 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_ranges  0x000019d0       0xd8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_ranges  0x00001aa8       0xf0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_ranges  0x00001b98      0x400 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_ranges  0x00001f98       0x10 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_ranges  0x00001fa8      0xac0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_ranges  0x00002a68       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_ranges  0x00002aa0      0xcb8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_ranges  0x00003758      0x3d0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_ranges  0x00003b28      0x248 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_ranges  0x00003d70      0x130 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_ranges  0x00003ea0       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_ranges  0x00003f00       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_ranges  0x00003f30       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_ranges  0x00003f78       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_ranges  0x00003f98      0x168 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_ranges  0x00004100      0x108 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_ranges  0x00004208       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_ranges  0x00004268       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_ranges  0x000042a0       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_ranges  0x000042d8      0x138 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_ranges  0x00004410       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_ranges  0x00004440       0xc0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_ranges  0x00004500      0x128 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_ranges  0x00004628       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_ranges  0x00004650       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_ranges  0x00004698       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_ranges  0x000046c8       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_ranges  0x000046e8      0x258 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_ranges  0x00004940      0x2b0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_ranges  0x00004bf0       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_ranges  0x00004c38      0x470 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_ranges  0x000050a8       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_ranges  0x000050c8       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_ranges  0x00005100       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_ranges  0x00005158      0x1b8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_ranges  0x00005310       0x78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_ranges  0x00005388      0xb78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_ranges  0x00005f00       0x88 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_ranges  0x00005f88      0x128 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_ranges  0x000060b0      0x170 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_ranges  0x00006220      0x370 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_ranges  0x00006590      0x4e0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+.debug_line     0x00000000    0x1c2fb
+ .debug_line    0x00000000      0x521 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_line    0x00000521     0x234f CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .debug_line    0x00002870      0xd98 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_line    0x00003608      0x2d6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_line    0x000038de      0x4e2 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_line    0x00003dc0      0x4df CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_line    0x0000429f     0x112d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_line    0x000053cc      0x28e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_line    0x0000565a     0x116d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_line    0x000067c7      0x319 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_line    0x00006ae0     0x1cb7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_line    0x00008797      0xd04 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_line    0x0000949b      0x8e8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_line    0x00009d83      0x9ba CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_line    0x0000a73d      0xae6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_line    0x0000b223      0x60c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_line    0x0000b82f      0x45b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_line    0x0000bc8a      0x2ff CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_line    0x0000bf89      0xc0b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_line    0x0000cb94     0x1254 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_line    0x0000dde8      0x163 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+ .debug_line    0x0000df4b      0x26b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_line    0x0000e1b6      0x2ec CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+ .debug_line    0x0000e4a2      0x441 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+ .debug_line    0x0000e8e3      0x3bc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_line    0x0000ec9f      0x6b9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+ .debug_line    0x0000f358       0xb3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+ .debug_line    0x0000f40b      0x3f7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+ .debug_line    0x0000f802      0x3ae CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_line    0x0000fbb0      0x1e3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+ .debug_line    0x0000fd93       0xdd CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+ .debug_line    0x0000fe70       0xeb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+ .debug_line    0x0000ff5b      0x211 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+ .debug_line    0x0001016c     0x1036 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_line    0x000111a2      0xbeb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_line    0x00011d8d      0x4f1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_line    0x0001227e      0xf0e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_line    0x0001318c      0x34b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_line    0x000134d7      0x410 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_line    0x000138e7      0x866 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_line    0x0001414d      0xf71 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_line    0x000150be      0xadf CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_line    0x00015b9d     0x20a7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_line    0x00017c44      0x4bf CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_line    0x00018103      0xea6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_line    0x00018fa9      0xc5b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_line    0x00019c04     0x15a1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_line    0x0001b1a5     0x1156 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+.debug_str      0x00000000     0x8312
+ .debug_str     0x00000000      0x4c4 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+                                0x589 (size before relaxing)
+ .debug_str     0x000004c4      0x444 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+                                0x99f (size before relaxing)
+ .debug_str     0x00000908      0x7ce CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                                0xa1d (size before relaxing)
+ .debug_str     0x000010d6       0x9d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                                0x244 (size before relaxing)
+ .debug_str     0x00001173      0x1d3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                                0x388 (size before relaxing)
+ .debug_str     0x00001346      0x108 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                                0x36f (size before relaxing)
+ .debug_str     0x0000144e      0x3f7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                                0x7ed (size before relaxing)
+ .debug_str     0x00001845       0x78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                                0x225 (size before relaxing)
+ .debug_str     0x000018bd      0x27b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+                                0x617 (size before relaxing)
+ .debug_str     0x00001b38       0xe7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                                0x2e5 (size before relaxing)
+ .debug_str     0x00001c1f      0x721 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+                                0xc79 (size before relaxing)
+ .debug_str     0x00002340      0x15a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                                0x741 (size before relaxing)
+ .debug_str     0x0000249a      0x102 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+                                0x40e (size before relaxing)
+ .debug_str     0x0000259c      0x36c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                                0x634 (size before relaxing)
+ .debug_str     0x00002908      0x2b5 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                                0x6de (size before relaxing)
+ .debug_str     0x00002bbd       0xa3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                                0x300 (size before relaxing)
+ .debug_str     0x00002c60      0x12b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                                0x346 (size before relaxing)
+ .debug_str     0x00002d8b       0x87 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                                0x243 (size before relaxing)
+ .debug_str     0x00002e12      0x2e1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                                0x806 (size before relaxing)
+ .debug_str     0x000030f3      0x27d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                                0x4a4 (size before relaxing)
+ .debug_str     0x00003370       0x71 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                                 0xa0 (size before relaxing)
+ .debug_str     0x000033e1       0xe0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                                0x27e (size before relaxing)
+ .debug_str     0x000034c1       0x5d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                                 0x9a (size before relaxing)
+ .debug_str     0x0000351e       0x61 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                                 0x9e (size before relaxing)
+ .debug_str     0x0000357f       0xb9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                                0x2bd (size before relaxing)
+ .debug_str     0x00003638       0x67 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                                 0xa4 (size before relaxing)
+ .debug_str     0x0000369f       0x6c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                                 0xa9 (size before relaxing)
+ .debug_str     0x0000370b       0x5f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                                 0x9c (size before relaxing)
+ .debug_str     0x0000376a       0x9d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                                0x2d9 (size before relaxing)
+ .debug_str     0x00003807       0x65 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                                 0xa2 (size before relaxing)
+ .debug_str     0x0000386c       0x63 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                                 0xa0 (size before relaxing)
+ .debug_str     0x000038cf       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+                                 0x9d (size before relaxing)
+ .debug_str     0x0000392f      0x260 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                                0x406 (size before relaxing)
+ .debug_str     0x00003b8f      0x4d1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                                0x9ec (size before relaxing)
+ .debug_str     0x00004060      0x353 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                                0x8ff (size before relaxing)
+ .debug_str     0x000043b3      0x54f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                                0x78a (size before relaxing)
+ .debug_str     0x00004902      0x347 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                                0xb10 (size before relaxing)
+ .debug_str     0x00004c49      0xafe CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                                0xe75 (size before relaxing)
+ .debug_str     0x00005747       0xdc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                                0x297 (size before relaxing)
+ .debug_str     0x00005823      0x324 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                                0x61a (size before relaxing)
+ .debug_str     0x00005b47      0xa2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                                0xed4 (size before relaxing)
+ .debug_str     0x00006573      0x161 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                                0x835 (size before relaxing)
+ .debug_str     0x000066d4      0x950 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                               0x16fb (size before relaxing)
+ .debug_str     0x00007024      0x107 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                                0x53f (size before relaxing)
+ .debug_str     0x0000712b      0x738 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                               0x152c (size before relaxing)
+ .debug_str     0x00007863      0x235 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                                0xae5 (size before relaxing)
+ .debug_str     0x00007a98      0x3cb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                                0x767 (size before relaxing)
+ .debug_str     0x00007e63      0x4af CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+                                0xa69 (size before relaxing)
+
+.debug_frame    0x00000000     0x2e54
+ .debug_frame   0x00000000       0x28 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_frame   0x00000028       0xe4 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
+ .debug_frame   0x0000010c      0x278 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+ .debug_frame   0x00000384       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+ .debug_frame   0x000003bc       0x9c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+ .debug_frame   0x00000458       0xc4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ .debug_frame   0x0000051c      0x20c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ .debug_frame   0x00000728       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
+ .debug_frame   0x00000748      0x1b0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
+ .debug_frame   0x000008f8       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
+ .debug_frame   0x00000948      0x2dc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
+ .debug_frame   0x00000c24      0x15c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ .debug_frame   0x00000d80      0x164 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
+ .debug_frame   0x00000ee4       0xf8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+ .debug_frame   0x00000fdc      0x130 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+ .debug_frame   0x0000110c       0x44 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+ .debug_frame   0x00001150       0xa8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+ .debug_frame   0x000011f8       0x40 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+ .debug_frame   0x00001238      0x150 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ .debug_frame   0x00001388      0x1f8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .debug_frame   0x00001580       0x64 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+ .debug_frame   0x000015e4       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+ .debug_frame   0x00001610       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+ .debug_frame   0x0000163c      0x2d8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ .debug_frame   0x00001914       0xe8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+ .debug_frame   0x000019fc       0xac CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+ .debug_frame   0x00001aa8       0xfc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ .debug_frame   0x00001ba4       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ .debug_frame   0x00001bec       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+ .debug_frame   0x00001c44       0xe4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+ .debug_frame   0x00001d28      0x268 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+ .debug_frame   0x00001f90      0x120 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ .debug_frame   0x000020b0      0x35c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+ .debug_frame   0x0000240c       0xcc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+ .debug_frame   0x000024d8      0x1f4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+ .debug_frame   0x000026cc      0x1c4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
+ .debug_frame   0x00002890      0x33c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+ .debug_frame   0x00002bcc      0x260 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+ .debug_frame   0x00002e2c       0x28 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
 
 .debug_loc      0x00000000    0x1dfa4
- .debug_loc     0x00000000     0x3046 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
+ .debug_loc     0x00000000     0x3046 CMakeFiles/GCCcoms_project.dir/src/gcclibrary.cpp.obj
  .debug_loc     0x00003046     0x1237 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .debug_loc     0x0000427d       0xe9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .debug_loc     0x00004366      0x45f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -3541,331 +3885,3 @@ LOAD linker stubs
  .debug_loc     0x00018940      0xe2f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
  .debug_loc     0x0001976f     0x2b8e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .debug_loc     0x0001c2fd     0x1ca7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-
-.debug_aranges  0x00000000     0x1600
- .debug_aranges
-                0x00000000       0x58 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
- .debug_aranges
-                0x00000058      0x100 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_aranges
-                0x00000158       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_aranges
-                0x00000180       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_aranges
-                0x000001c8       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_aranges
-                0x00000220       0xc8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_aranges
-                0x000002e8       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_aranges
-                0x00000308       0x90 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_aranges
-                0x00000398       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_aranges
-                0x000003c8       0xe8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_aranges
-                0x000004b0       0x88 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_aranges
-                0x00000538       0x78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_aranges
-                0x000005b0       0x68 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_aranges
-                0x00000618       0x70 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_aranges
-                0x00000688       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_aranges
-                0x000006b0       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_aranges
-                0x00000708       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_aranges
-                0x00000738       0x88 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_aranges
-                0x000007c0       0x90 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_aranges
-                0x00000850       0x68 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_aranges
-                0x000008b8       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_aranges
-                0x000008e8       0x40 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_aranges
-                0x00000928      0x140 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_aranges
-                0x00000a68       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_aranges
-                0x00000a88       0xc8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_aranges
-                0x00000b50       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_aranges
-                0x00000b70      0x130 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_aranges
-                0x00000ca0       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_aranges
-                0x00000cc0       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_aranges
-                0x00000d10       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_aranges
-                0x00000d48       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_aranges
-                0x00000d70       0x18 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_aranges
-                0x00000d88      0x100 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_aranges
-                0x00000e88       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_aranges
-                0x00000ee0       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_aranges
-                0x00000f38       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_aranges
-                0x00000f98       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_aranges
-                0x00000fc8       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_aranges
-                0x00000ff8       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_aranges
-                0x00001048       0xe0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_aranges
-                0x00001128       0x70 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_aranges
-                0x00001198      0x118 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_aranges
-                0x000012b0       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_aranges
-                0x00001300       0xa8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_aranges
-                0x000013a8       0x98 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_aranges
-                0x00001440      0x108 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_aranges
-                0x00001548       0xb8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-
-.debug_ranges   0x00000000     0x6a68
- .debug_ranges  0x00000000     0x1860 CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
- .debug_ranges  0x00001860      0x150 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_ranges  0x000019b0       0x18 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_ranges  0x000019c8       0xd8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_ranges  0x00001aa0       0xf0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_ranges  0x00001b90      0x400 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_ranges  0x00001f90       0x10 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_ranges  0x00001fa0      0xac0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_ranges  0x00002a60       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_ranges  0x00002a98      0xcb8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_ranges  0x00003750      0x3d0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_ranges  0x00003b20      0x248 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_ranges  0x00003d68      0x130 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_ranges  0x00003e98       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_ranges  0x00003ef8       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_ranges  0x00003f28       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_ranges  0x00003f70       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_ranges  0x00003f90      0x168 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_ranges  0x000040f8      0x108 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_ranges  0x00004200       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_ranges  0x00004260       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_ranges  0x00004298       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_ranges  0x000042d0      0x138 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_ranges  0x00004408       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_ranges  0x00004438       0xc0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_ranges  0x000044f8      0x128 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_ranges  0x00004620       0x28 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_ranges  0x00004648       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_ranges  0x00004690       0x30 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_ranges  0x000046c0       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_ranges  0x000046e0      0x258 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_ranges  0x00004938      0x2b0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_ranges  0x00004be8       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_ranges  0x00004c30      0x470 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_ranges  0x000050a0       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_ranges  0x000050c0       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_ranges  0x000050f8       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_ranges  0x00005150      0x1b8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_ranges  0x00005308       0x78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_ranges  0x00005380      0xb78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_ranges  0x00005ef8       0x88 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_ranges  0x00005f80      0x128 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_ranges  0x000060a8      0x170 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_ranges  0x00006218      0x370 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_ranges  0x00006588      0x4e0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-
-.debug_line     0x00000000    0x1bee7
- .debug_line    0x00000000     0x245c CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
- .debug_line    0x0000245c      0xd98 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_line    0x000031f4      0x2d6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_line    0x000034ca      0x4e2 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_line    0x000039ac      0x4df CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_line    0x00003e8b     0x112d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_line    0x00004fb8      0x28e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_line    0x00005246     0x116d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_line    0x000063b3      0x319 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_line    0x000066cc     0x1cb7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_line    0x00008383      0xd04 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_line    0x00009087      0x8e8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_line    0x0000996f      0x9ba CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_line    0x0000a329      0xae6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_line    0x0000ae0f      0x60c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_line    0x0000b41b      0x45b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_line    0x0000b876      0x2ff CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_line    0x0000bb75      0xc0b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_line    0x0000c780     0x1254 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_line    0x0000d9d4      0x163 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
- .debug_line    0x0000db37      0x26b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_line    0x0000dda2      0x2ec CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
- .debug_line    0x0000e08e      0x441 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
- .debug_line    0x0000e4cf      0x3bc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_line    0x0000e88b      0x6b9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
- .debug_line    0x0000ef44       0xb3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
- .debug_line    0x0000eff7      0x3f7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
- .debug_line    0x0000f3ee      0x3ae CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_line    0x0000f79c      0x1e3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
- .debug_line    0x0000f97f       0xdd CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
- .debug_line    0x0000fa5c       0xeb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
- .debug_line    0x0000fb47      0x211 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
- .debug_line    0x0000fd58     0x1036 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_line    0x00010d8e      0xbeb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_line    0x00011979      0x4f1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_line    0x00011e6a      0xf0e CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_line    0x00012d78      0x34b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_line    0x000130c3      0x410 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_line    0x000134d3      0x866 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_line    0x00013d39      0xf71 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_line    0x00014caa      0xadf CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_line    0x00015789     0x20a7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_line    0x00017830      0x4bf CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_line    0x00017cef      0xea6 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_line    0x00018b95      0xc5b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_line    0x000197f0     0x15a1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_line    0x0001ad91     0x1156 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-
-.debug_str      0x00000000     0x82d6
- .debug_str     0x00000000      0x8cc CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
-                                0x9e1 (size before relaxing)
- .debug_str     0x000008cc      0x7ce CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                                0xa1d (size before relaxing)
- .debug_str     0x0000109a       0x9d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                                0x244 (size before relaxing)
- .debug_str     0x00001137      0x1d3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                                0x388 (size before relaxing)
- .debug_str     0x0000130a      0x108 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                                0x36f (size before relaxing)
- .debug_str     0x00001412      0x3f7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                                0x7ed (size before relaxing)
- .debug_str     0x00001809       0x78 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                                0x225 (size before relaxing)
- .debug_str     0x00001881      0x27b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
-                                0x617 (size before relaxing)
- .debug_str     0x00001afc       0xe7 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                                0x2e5 (size before relaxing)
- .debug_str     0x00001be3      0x721 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
-                                0xc79 (size before relaxing)
- .debug_str     0x00002304      0x15a CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                                0x741 (size before relaxing)
- .debug_str     0x0000245e      0x102 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
-                                0x40e (size before relaxing)
- .debug_str     0x00002560      0x36c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                                0x634 (size before relaxing)
- .debug_str     0x000028cc      0x2b5 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                                0x6de (size before relaxing)
- .debug_str     0x00002b81       0xa3 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                                0x300 (size before relaxing)
- .debug_str     0x00002c24      0x12b CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                                0x346 (size before relaxing)
- .debug_str     0x00002d4f       0x87 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                                0x243 (size before relaxing)
- .debug_str     0x00002dd6      0x2e1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                                0x806 (size before relaxing)
- .debug_str     0x000030b7      0x27d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                                0x4a4 (size before relaxing)
- .debug_str     0x00003334       0x71 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
-                                 0xa0 (size before relaxing)
- .debug_str     0x000033a5       0xe0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                                0x27e (size before relaxing)
- .debug_str     0x00003485       0x5d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                                 0x9a (size before relaxing)
- .debug_str     0x000034e2       0x61 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                                 0x9e (size before relaxing)
- .debug_str     0x00003543       0xb9 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                                0x2bd (size before relaxing)
- .debug_str     0x000035fc       0x67 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                                 0xa4 (size before relaxing)
- .debug_str     0x00003663       0x6c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                                 0xa9 (size before relaxing)
- .debug_str     0x000036cf       0x5f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                                 0x9c (size before relaxing)
- .debug_str     0x0000372e       0x9d CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                                0x2d9 (size before relaxing)
- .debug_str     0x000037cb       0x65 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                                 0xa2 (size before relaxing)
- .debug_str     0x00003830       0x63 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                                 0xa0 (size before relaxing)
- .debug_str     0x00003893       0x60 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
-                                 0x9d (size before relaxing)
- .debug_str     0x000038f3      0x260 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
-                                0x406 (size before relaxing)
- .debug_str     0x00003b53      0x4d1 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                                0x9ec (size before relaxing)
- .debug_str     0x00004024      0x353 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                                0x8ff (size before relaxing)
- .debug_str     0x00004377      0x54f CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                                0x78a (size before relaxing)
- .debug_str     0x000048c6      0x347 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                                0xb10 (size before relaxing)
- .debug_str     0x00004c0d      0xafe CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                                0xe75 (size before relaxing)
- .debug_str     0x0000570b       0xdc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                                0x297 (size before relaxing)
- .debug_str     0x000057e7      0x324 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                                0x61a (size before relaxing)
- .debug_str     0x00005b0b      0xa2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                                0xed4 (size before relaxing)
- .debug_str     0x00006537      0x161 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                                0x835 (size before relaxing)
- .debug_str     0x00006698      0x950 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                               0x16fb (size before relaxing)
- .debug_str     0x00006fe8      0x107 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                                0x53f (size before relaxing)
- .debug_str     0x000070ef      0x738 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                               0x152c (size before relaxing)
- .debug_str     0x00007827      0x235 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                                0xae5 (size before relaxing)
- .debug_str     0x00007a5c      0x3cb CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                                0x767 (size before relaxing)
- .debug_str     0x00007e27      0x4af CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
-                                0xa69 (size before relaxing)
-
-.debug_frame    0x00000000     0x2e44
- .debug_frame   0x00000000       0xfc CMakeFiles/GCCcoms_project.dir/GCCcoms.cpp.obj
- .debug_frame   0x000000fc      0x278 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .debug_frame   0x00000374       0x38 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
- .debug_frame   0x000003ac       0x9c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
- .debug_frame   0x00000448       0xc4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- .debug_frame   0x0000050c      0x20c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- .debug_frame   0x00000718       0x20 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/lock_core.c.obj
- .debug_frame   0x00000738      0x1b0 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/mutex.c.obj
- .debug_frame   0x000008e8       0x50 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_sync/critical_section.c.obj
- .debug_frame   0x00000938      0x2dc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_time/time.c.obj
- .debug_frame   0x00000c14      0x15c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- .debug_frame   0x00000d70      0x164 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/common/pico_util/pheap.c.obj
- .debug_frame   0x00000ed4       0xf8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
- .debug_frame   0x00000fcc      0x130 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .debug_frame   0x000010fc       0x44 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
- .debug_frame   0x00001140       0xa8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
- .debug_frame   0x000011e8       0x40 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
- .debug_frame   0x00001228      0x150 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- .debug_frame   0x00001378      0x1f8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .debug_frame   0x00001570       0x64 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
- .debug_frame   0x000015d4       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
- .debug_frame   0x00001600       0x2c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
- .debug_frame   0x0000162c      0x2d8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- .debug_frame   0x00001904       0xe8 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .debug_frame   0x000019ec       0xac CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
- .debug_frame   0x00001a98       0xfc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- .debug_frame   0x00001b94       0x48 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- .debug_frame   0x00001bdc       0x58 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
- .debug_frame   0x00001c34       0xe4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
- .debug_frame   0x00001d18      0x268 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
- .debug_frame   0x00001f80      0x120 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- .debug_frame   0x000020a0      0x35c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
- .debug_frame   0x000023fc       0xcc CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
- .debug_frame   0x000024c8      0x1f4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
- .debug_frame   0x000026bc      0x1c4 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/tusb.c.obj
- .debug_frame   0x00002880      0x33c CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
- .debug_frame   0x00002bbc      0x260 CMakeFiles/GCCcoms_project.dir/C_/Program_Files/Raspberry_Pi/Pico_SDK_v1.5.1/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
- .debug_frame   0x00002e1c       0x28 c:/progra~1/raspbe~1/picosd~1.1/gcc-ar~1/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libg.a(lib_a-strlen-stub.o)
