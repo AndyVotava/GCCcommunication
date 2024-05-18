@@ -6,12 +6,12 @@ project(GCCcoms_project)
 
 pico_sdk_init()
 
-add_executable(GCCcoms_project GCCcoms.cpp src/gcclibrary.cpp)
+add_executable(GCCcoms_project src/GCCcoms.cpp src/gcclibrary.cpp)
 
 pico_generate_pio_header(GCCcoms_project ${CMAKE_CURRENT_LIST_DIR}/pio/readgcc.pio)
 pico_generate_pio_header(GCCcoms_project ${CMAKE_CURRENT_LIST_DIR}/pio/writegcc.pio)
 
-target_sources(GCCcoms_project PRIVATE GCCcoms.cpp)
+target_sources(GCCcoms_project PRIVATE src/GCCcoms.cpp)
 
 target_link_libraries(GCCcoms_project PRIVATE pico_stdlib hardware_pio)
 

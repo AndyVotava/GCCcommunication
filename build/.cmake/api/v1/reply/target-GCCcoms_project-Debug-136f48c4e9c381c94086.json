@@ -2321,7 +2321,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "GCCcoms.cpp",
+			"path" : "src/GCCcoms.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{

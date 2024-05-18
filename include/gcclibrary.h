@@ -22,24 +22,36 @@ struct __attribute__((packed)) GCreport {
 class GCcontroller{
     public:
     uint pin;
+    GCreport origin;
+    GCreport report;
+
     GCcontroller(uint pin);
+
+    //This function polls the Gamecube controller for report and writes it to the private variable report, then returns it.
     GCreport getreport();
+
+    //Prints the private variable report.
     void printreport();
+    
+    //This function polls the Gamecube controller for origin and writes it to the private variable origin, then returns it.
     GCreport getorigin();
+
+    //Prints the private variable origin.
     void printorigin();
 
     private:
     PIO pio = pio1;
     uint sm; 
-    GCreport origin;
-    GCreport report;
 };
+
 
 class GCconsole
 {
 public:
 uint pin;
 GCconsole(uint pin);
+
+//Writes data to console baised on console request, returns true when Gamcube controller should be polled for data.
 bool write(GCreport origin, GCreport report);
 
 private:
