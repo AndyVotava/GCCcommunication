@@ -1,3 +1,0 @@
-/Users/andyvotava/src/GCC library/build/pioasm/CMakeFiles/pioasm.dir
-/Users/andyvotava/src/GCC library/build/pioasm/CMakeFiles/edit_cache.dir
-/Users/andyvotava/src/GCC library/build/pioasm/CMakeFiles/rebuild_cache.dir
