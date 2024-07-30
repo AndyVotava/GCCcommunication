@@ -1,12 +1,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
-#include "readgcc.pio.h"
-#include "writegcc.pio.h"
-#include "coms.pio.h"
+#include "joybus.pio.h"
 #include <stdio.h>      //for print
-
-uint8_t reversebits(uint8_t n);
-
 
 struct __attribute__((packed)) GCreport {
     public:
@@ -20,46 +15,20 @@ struct __attribute__((packed)) GCreport {
     uint8_t analogR;
 };
 
-class GCcontroller{
-    public:
-    uint pin;
-    GCreport origin;
-    GCreport report;
+class GCcontroller
+{
+private:
+    /* data */
+public:
+    GCcontroller(uint8_t pin);
+    void begin();
+    void outmode();
+    void inmode();
 
-    GCcontroller(uint pin);
-
-    //This function polls the Gamecube controller for report and writes it to the private variable report, then returns it.
-    GCreport getreport();
-
-    //Prints the private variable report.
-    void printreport();
-    
-    //This function polls the Gamecube controller for origin and writes it to the private variable origin, then returns it.
-    GCreport getorigin();
-
-    //Prints the private variable origin.
-    void printorigin();
-
-
-    PIO pio = pio1;
-    uint sm; 
+    uint sm;
     uint offset;
     pio_sm_config c;
-    private:
-
 };
 
 
-class GCconsole
-{
-public:
-uint pin;
-GCconsole(uint pin);
 
-//Writes data to console baised on console request, returns true when Gamcube controller should be polled for data.
-bool write(GCreport origin, GCreport report);
-
-private:
-PIO pio = pio0;
-uint sm;
-};
