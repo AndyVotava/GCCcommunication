@@ -16,9 +16,9 @@ GCcontroller::GCcontroller(uint pin):pin(pin){
 
     sm = pio_claim_unused_sm(pio, true);
 
-    uint offset = pio_add_program(pio, &readgcc_program);
+    offset = pio_add_program(pio, &coms_program);
 
-    pio_sm_config c = readgcc_program_get_default_config(offset);
+    c = coms_program_get_default_config(offset);
 
     sm_config_set_set_pins(&c, pin, 1);
     sm_config_set_in_pins(&c, pin);

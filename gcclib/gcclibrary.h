@@ -2,6 +2,7 @@
 #include "hardware/pio.h"
 #include "readgcc.pio.h"
 #include "writegcc.pio.h"
+#include "coms.pio.h"
 #include <stdio.h>      //for print
 
 uint8_t reversebits(uint8_t n);
@@ -39,9 +40,13 @@ class GCcontroller{
     //Prints the private variable origin.
     void printorigin();
 
-    private:
+
     PIO pio = pio1;
     uint sm; 
+    uint offset;
+    pio_sm_config c;
+    private:
+
 };
 
 
