@@ -25,6 +25,7 @@ public:
     void outmode();
     void inmode();
 
+    PIO pio = pio0;
     uint sm;
     uint offset;
     pio_sm_config c;
