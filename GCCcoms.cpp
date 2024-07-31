@@ -1,27 +1,22 @@
-#include "gcclibrary.h"
-#include "hardware/watchdog.h"
+#include "gccontroller.h"
 
 
 int main() {
+
     stdio_init_all();
 
-    watchdog_enable(100, 1);
+    GCcontroller controller(0);
 
-    GCcontroller controller1(0);
-    GCconsole console1(1);
+        controller.init();
+        sleep_us(25);
+        controller.get_origin();
+        sleep_us(100);
 
-    controller1.getorigin();
-    controller1.getreport();  //get initial values for report, TODO: make default in constructor of controller/console
-    
     while(true){
-
-        if (console1.write(controller1.origin, controller1.report)){    //input class variable report and origin
-            controller1.getreport();   //Update class variable report
-        }
-        watchdog_update();
         
+        controller.get_report();
+        sleep_us(100);
         
     }
-    return 0;
 
 }
