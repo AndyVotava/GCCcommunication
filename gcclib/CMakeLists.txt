@@ -1,4 +1,4 @@
-add_library(gcclib gcclibrary.cpp)
+add_library(gcclib gccontroller.cpp)
 
 target_link_libraries(gcclib 
       pico_stdlib
