@@ -1,3 +1,6 @@
+#ifndef GCREPORT
+#define GCREPORT
+
 struct __attribute__((packed)) gc_report {
     public:
     uint8_t SYXBA;
@@ -9,3 +12,5 @@ struct __attribute__((packed)) gc_report {
     uint8_t analogL;
     uint8_t analogR;
 };
+
+#endif
