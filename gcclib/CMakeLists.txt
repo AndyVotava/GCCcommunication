@@ -1,4 +1,4 @@
-add_library(gcclib gccontroller.cpp gcconsole.cpp)
+add_library(gcclib gccontroller.cpp gcconsole.cpp GCreport.cpp)
 
 target_link_libraries(gcclib 
       pico_stdlib

@@ -1,7 +1,7 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "joybus.pio.h"
-#include "gc_report.h"
+#include "GCreport.h"
 #include <stdio.h>      //for print
 
 #define PROBE_CONTROLLER 0b111010101010101010
@@ -16,8 +16,8 @@ private:
     uint sm;
     uint offset;
     pio_sm_config c;    
-    gc_report report;
-    gc_report origin;
+    GCreport report;
+    GCreport origin;
 
 public:
     GCcontroller(uint8_t pin);

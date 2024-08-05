@@ -1,10 +1,11 @@
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
 #include "joybus.pio.h"
-#include "gc_report.h"
+#include "GCreport.h"
 #include <stdio.h>      //for print
 
-#define CONTROLLER_PROBE_RESPONSE
+#define TWO_NULL_BYTES 0b10101010101010101010101010101010
+
 
 class gcconsole
 {
@@ -18,5 +19,5 @@ private:
     
 public:
     gcconsole(uint8_t pin);
-    void write_data();
+    bool write_data();
 };
