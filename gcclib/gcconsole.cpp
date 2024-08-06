@@ -28,7 +28,7 @@ gcconsole::gcconsole(uint8_t pin){
 }
 
 
-bool gcconsole::write_data(){
+bool gcconsole::write_data(GCreport origin, GCreport report){
     uint8_t request = pio_sm_get_blocking(pio, sm);
 
 
@@ -49,10 +49,10 @@ bool gcconsole::write_data(){
 
         outmode();
         
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.SYXBA << 8 | default_GCreport.LRZD));
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.xStick << 8 | default_GCreport.yStick));
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.cxStick << 8 | default_GCreport.cyStick));
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.analogL << 8 | default_GCreport.analogR));
+        pio_sm_put_blocking(pio, sm, to_pio(origin.SYXBA << 8 | origin.LRZD));
+        pio_sm_put_blocking(pio, sm, to_pio(origin.xStick << 8 | origin.yStick));
+        pio_sm_put_blocking(pio, sm, to_pio(origin.cxStick << 8 | origin.cyStick));
+        pio_sm_put_blocking(pio, sm, to_pio(origin.analogL << 8 | origin.analogR));
         pio_sm_put_blocking(pio, sm, TWO_NULL_BYTES);
         pio_sm_put_blocking(pio, sm, 0b11);
         
@@ -67,10 +67,10 @@ bool gcconsole::write_data(){
 
         outmode();
         
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.SYXBA << 8 | default_GCreport.LRZD));
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.xStick << 8 | default_GCreport.yStick));
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.cxStick << 8 | default_GCreport.cyStick));
-        pio_sm_put_blocking(pio, sm, to_pio(default_GCreport.analogL << 8 | default_GCreport.analogR));
+        pio_sm_put_blocking(pio, sm, to_pio(report.SYXBA << 8 | report.LRZD));
+        pio_sm_put_blocking(pio, sm, to_pio(report.xStick << 8 | report.yStick));
+        pio_sm_put_blocking(pio, sm, to_pio(report.cxStick << 8 | report.cyStick));
+        pio_sm_put_blocking(pio, sm, to_pio(report.analogL << 8 | report.analogR));
         pio_sm_put_blocking(pio, sm, 0b11);
 
         return true;

@@ -16,10 +16,10 @@ private:
     uint sm;
     uint offset;
     pio_sm_config c;    
-    GCreport report;
-    GCreport origin;
 
 public:
+    GCreport report;
+    GCreport origin;
     GCcontroller(uint8_t pin);
     uint8_t init();
     void outmode();

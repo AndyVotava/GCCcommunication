@@ -19,5 +19,5 @@ private:
     
 public:
     gcconsole(uint8_t pin);
-    bool write_data();
+    bool write_data(GCreport origin, GCreport report);
 };

@@ -6,26 +6,20 @@ int main() {
 
     stdio_init_all();
 
-    /*
     GCcontroller controller(0);
+    gcconsole gamecubeconsole(1);
 
     controller.init();
     sleep_us(25);
     controller.get_origin();
     sleep_us(100);
+    controller.get_report();
 
     while(true){
         
-        controller.get_report();
-        sleep_us(100);
-    }
-    */
+        if(gamecubeconsole.write_data(controller.origin, controller.report)){
+            controller.get_report();
+        }
 
-    gcconsole gamecubeconsole(1);
-
-    while (true)
-    {
-        gamecubeconsole.write_data();
     }
-    
 }
