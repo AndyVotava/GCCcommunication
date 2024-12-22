@@ -12,12 +12,13 @@
 class GCcontroller
 {
 private:
-    PIO pio = pio0;
-    uint sm;
+
     uint offset;
     pio_sm_config c;    
 
 public:
+    PIO pio = pio0;
+    uint sm;    
     GCreport report;
     GCreport origin;
     GCcontroller(uint8_t pin);
@@ -25,7 +26,9 @@ public:
     void outmode();
     void inmode();
     void get_origin();
-    void get_report();
+    bool get_report();
+    uint32_t pio_sm_get_with_timeout(uint32_t timeout_ms);
+    bool update_report_field(uint8_t& field);
 
 };
 

@@ -31,21 +31,19 @@ gcconsole::gcconsole(uint8_t pin){
 bool gcconsole::write_data(GCreport origin, GCreport report){
     uint8_t request = pio_sm_get_blocking(pio, sm);
 
-
+    
     if(request == 0x00){
-        sleep_us(5);
+        busy_wait_us(5);
 
         outmode();
 
-        pio_sm_put_blocking(pio, sm, 0b10101010101010101110101110101010);
-        pio_sm_put_blocking(pio, sm, 0b111110101010101011);
-
-        return false;
+        pio_sm_put_blocking(pio, sm, to_pio(0x09 << 8));
+        pio_sm_put_blocking(pio, sm, 0b111111101010101010);
     }
-
+    
     else if(request == 0x41){
 
-        sleep_us(5);
+        busy_wait_us(10);
 
         outmode();
         
@@ -55,15 +53,13 @@ bool gcconsole::write_data(GCreport origin, GCreport report){
         pio_sm_put_blocking(pio, sm, to_pio(origin.analogL << 8 | origin.analogR));
         pio_sm_put_blocking(pio, sm, TWO_NULL_BYTES);
         pio_sm_put_blocking(pio, sm, 0b11);
-        
-        return true;
     }
-
+    
     else if (request == 0x40){
         pio_sm_get_blocking(pio, sm);
         pio_sm_get_blocking(pio, sm);
 
-        sleep_us(5);
+        busy_wait_us(10);
 
         outmode();
         
@@ -73,13 +69,18 @@ bool gcconsole::write_data(GCreport origin, GCreport report){
         pio_sm_put_blocking(pio, sm, to_pio(report.analogL << 8 | report.analogR));
         pio_sm_put_blocking(pio, sm, 0b11);
 
-        return true;
-
+    }    
+    else{
+        //problem
+        return false;
     }
 
-    
-    return false;
+    while(true){
+        if(pio_sm_get_pc(pio, sm) < offset+joybus_offset_outmode){
+            //pio_sm_exec(pio, sm, 0b1000000000000000);
+            //pio_sm_get(pio, sm);
+            return true;
+        }
+    }
+
 }
-
-
-

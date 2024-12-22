@@ -1,5 +1,29 @@
 #include "gccontroller.h"
 
+uint32_t GCcontroller::pio_sm_get_with_timeout(uint32_t timeout_us) {
+    uint32_t start_time = time_us_32();
+
+    while (true) {
+        if (!pio_sm_is_rx_fifo_empty(pio, sm)) {
+            return pio_sm_get(pio, sm); 
+        }
+
+        if (time_us_32() - start_time > timeout_us) {
+            return 0xFFFFFFFF;
+        }
+    }
+}
+
+bool GCcontroller::update_report_field(uint8_t& field) {
+    uint32_t value = pio_sm_get_with_timeout(200);
+    if (value != 0xFFFFFFFF) {
+        field = value;
+        return true;
+    }
+    return false;
+}
+
+
 GCcontroller::GCcontroller(uint8_t pin)
 {
     sm = pio_claim_unused_sm(pio, true);
@@ -19,7 +43,6 @@ GCcontroller::GCcontroller(uint8_t pin)
     pio_sm_set_clkdiv(pio, sm, 5);
     pio_sm_set_enabled(pio, sm, true);
 }
-
 
 
 void GCcontroller::outmode(){
@@ -64,19 +87,19 @@ void GCcontroller::get_origin(){
     origin.analogL = pio_sm_get_blocking(pio, sm);
 }
 
-void GCcontroller::get_report(){
+bool GCcontroller::get_report(){
     outmode();
-
-    pio_sm_put_blocking(pio, sm, 0b11111010101010101010101010101110);
+    pio_sm_put_blocking(pio, sm, 0b11111010101010101010101010101110);   //ask controller for report
     pio_sm_put_blocking(pio, sm, 0b111010101010101010);
     
-    report.SYXBA = pio_sm_get_blocking(pio, sm);
-    report.LRZD = pio_sm_get_blocking(pio, sm);
-    report.xStick = pio_sm_get_blocking(pio, sm);
-    report.yStick = pio_sm_get_blocking(pio, sm);
-    report.cxStick = pio_sm_get_blocking(pio, sm);
-    report.cyStick = pio_sm_get_blocking(pio, sm);
-    report.analogL = pio_sm_get_blocking(pio, sm);
-    report.analogL = pio_sm_get_blocking(pio, sm);
+    if(!update_report_field(report.SYXBA))return false;
+    if(!update_report_field(report.LRZD))return false;
+    if(!update_report_field(report.xStick))return false;
+    if(!update_report_field(report.yStick))return false;
+    if(!update_report_field(report.cxStick))return false;
+    if(!update_report_field(report.cyStick))return false;
+    if(!update_report_field(report.analogL))return false;
+    if(!update_report_field(report.analogR))return false;
 
+    return true;
 }
